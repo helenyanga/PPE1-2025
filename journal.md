@@ -1,9 +1,9 @@
 #Journal de bord du projet encadré
 
-Une modification.
-##bonjour bonjour
-git status
+#Séance 1 : 24-09-2025
 
-au revoir
-le cours
-leçon test
+
+#Séance 2 : 01-10-2025
+##Exercice 2 : slide *git-intro-exercices*
+
+
