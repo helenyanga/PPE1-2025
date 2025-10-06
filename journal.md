@@ -54,7 +54,7 @@ Les 50 ressources (URL) doivent prouver que le mot est attesté. Nous devons fai
  ![Problèmes rencontrées lors de la décompression du fichier zip](/home/helena/Documents/images_journal_s1/zip1.jpg "zip1")
 
 
-	J’ai finalement réussi à décompresser le fichier zip après avoir compris mon erreur (l’url était souligné). Par la suite, je n'ai pas réussi à comprendre comment rassembler les fichiers en formant une arborescente.
+J’ai finalement réussi à décompresser le fichier zip après avoir compris mon erreur (l’url était souligné). Par la suite, je n'ai pas réussi à comprendre comment rassembler les fichiers en formant une arborescente.
 
 
 ![Décompression du fichier zip](/home/helena/Documents/images_journal_s1/zip2.jpg "zip2")
@@ -66,7 +66,7 @@ Les 50 ressources (URL) doivent prouver que le mot est attesté. Nous devons fai
 
 - Pour les pipelines de Unix, il s’agit de fabriquer des logiciels entre eux pour automatiser les tâches et produire des résultats complexes.
 
-	Je n'ai pas compris les informations en bleu sur la gauche, à côté du nom kubuntu, dans le terminal.
+Je n'ai pas compris les informations en bleu sur la gauche, à côté du nom kubuntu, dans le terminal.
 
 
 **5. Ce que je n’ai pas eu le temps de faire :**
@@ -111,6 +111,10 @@ Les 50 ressources (URL) doivent prouver que le mot est attesté. Nous devons fai
 
 - Après avoir lancer la commande *git status*, j'ai utilisé *git add journal.md* pour l'ajouter dans le dépôt GitHub (**Exercice 2.c - Git mise en pratique**).
 
+- J'ai réussi à écrire du text et à synchroniser les modifications avec le dépôt GitHub et le fichier Gedit.
+
+- J'ai réussi à crée un tag pour l'exercice sur Git mise en pratique.
+
 
 **Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour parer aux dificultés :**
 
@@ -122,37 +126,27 @@ Les 50 ressources (URL) doivent prouver que le mot est attesté. Nous devons fai
 
 - Concernant l'exercice "Git mise pratique", au début des exercices, j'étais assez à l'aise car les procédures pour créer un dépôt Git avec GitHub était semblable au celui du dépôt "git-along". 
 
-	Ensuite, j'ai lu les liens pour comprendre les commandes de Markdown et de GitHub pour m'aider dans les exercices suivants.
+Ensuite, j'ai lu les liens pour comprendre les commandes de Markdown et de GitHub pour m'aider dans les exercices suivants.
 
-	Puis, j'ai eu un conflit avec Git lors de la synchronisation de mon fichier gedit sur lequel j'écrivais du texte et sur le dépôt Git du journal de bord. D'après ce que j'avais compris, j'avais crée des commits différents dans le dépôt et dans gedit. GitHUb ne savait donc pas s'il devait les écraser. Pour parer à ce problème, j'ai ouvert les branches et ai suivit des instructions sur Internet. 
+Puis, j'ai eu un conflit avec Git lors de la synchronisation de mon fichier gedit sur lequel j'écrivais du texte et sur le dépôt Git du journal de bord. D'après ce que j'avais compris, j'avais crée des commits différents dans le dépôt et dans gedit. GitHUb ne savait donc pas s'il devait les écraser. Pour parer à ce problème, j'ai ouvert les branches et ai suivit des instructions sur Internet. 
 
 
 ![Intructions pour réparer le conflit Git](/home/helena/Documents/images_journal_s1/git1.jpg "gip1")
 
 
-	J'ai poursuivi les instructions avec le diaporama *git-intro_and_more* pour modifier le fichier (lié au dépôt GitHub). En effet, pour le modifier à partir du terminal, j'utilisais la procédure suivante :
+J'ai poursuivi les instructions avec le diaporama *git-intro_and_more* pour modifier le fichier (lié au dépôt GitHub). En effet, pour le modifier à partir du terminal, j'utilisais la procédure suivante :
 
 
  > D'abord, je vérifie l'emplacement des dossiers.
- 
  > ls
- 
  > Ensuite, si besoin, je regarde à l'intérieur (le texte) du fichier que je souhaite travailler afin de vérifier que c'est bien celui-ci.
- 
  > cat Nomdufichier
- 
  > echo "Text" >> Nomdufichier
- 
  > Je vérifie de nouveau si le texte est bien apparu.
- 
  > cat Nomdufichier
- 
  > git pull
- 
  > git add Nomdufichier
- 
  > git commit -m “nomducommit”
- 
  > git push
 
 
