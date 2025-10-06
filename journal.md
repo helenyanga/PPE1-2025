@@ -1,6 +1,6 @@
-#Journal de bord du projet encadré
+# Journal de bord du projet encadré
 
-#Séance 1 : 24-09-2025
+# Séance 1 : 24-09-2025
 
 **1. Ce que j'ai compris :**
 
@@ -80,7 +80,7 @@ Je n'ai pas compris les informations en bleu sur la gauche, à côté du nom kub
 
 
 
-#Séance 2 : 01-10-2025
+# Séance 2 : 01-10-2025
 
 **1. Ce que j'ai compris :**
 
