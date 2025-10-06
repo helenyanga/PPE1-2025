@@ -15,6 +15,8 @@ Ce projet débutera à partir de la semaine 6. Il n’y aura pas d’exposé à 
 - Durant le cours, nous avons abordé rapidement de l’histoire d’Unix avec le commencement de Bell Labs et des projets de GNU. Nous avons également vu les définitions des mots du système de fichier (cf. slide **Unix**). J’ai compris la notion de parent, de dossier ainsi que l’arborescence. Enfin, nous avons survoler les commandes et nous avons commencé à créer une clé de sécurité pour GitHub.
 Je connais quelques commandes comme *ls*.
 
+- Nous utiliserons aussi une autre plateforme, il s'agira de GitLAb.
+
 
 **2. Ce que je pense avoir compris mais, je ne l'ai pas encore appliquer :**
 
@@ -37,7 +39,6 @@ Les 50 ressources (URL) doivent prouver que le mot est attesté. Nous devons fai
 
 
 **4. Activité :**
-
 **Ce que j'ai réussi à faire :**
 
 - J’ai réussi à m’inscrire sur GitHub et GitLab.
@@ -53,7 +54,7 @@ Les 50 ressources (URL) doivent prouver que le mot est attesté. Nous devons fai
  ![Problèmes rencontrées lors de la décompression du fichier zip](/home/helena/Documents/images_journal_s1/zip1.jpg "zip1")
 
 
-J’ai finalement réussi à décompresser le fichier zip après avoir compris mon erreur (l’url était souligné). Par la suite, je n'ai pas réussi à comprendre comment rassembler les fichiers en formant une arborescente.
+	J’ai finalement réussi à décompresser le fichier zip après avoir compris mon erreur (l’url était souligné). Par la suite, je n'ai pas réussi à comprendre comment rassembler les fichiers en formant une arborescente.
 
 
 ![Décompression du fichier zip](/home/helena/Documents/images_journal_s1/zip2.jpg "zip2")
@@ -65,16 +66,112 @@ J’ai finalement réussi à décompresser le fichier zip après avoir compris m
 
 - Pour les pipelines de Unix, il s’agit de fabriquer des logiciels entre eux pour automatiser les tâches et produire des résultats complexes.
 
+	Je n'ai pas compris les informations en bleu sur la gauche, à côté du nom kubuntu, dans le terminal.
+
+
 **5. Ce que je n’ai pas eu le temps de faire :**
 
 - Je dois comprendre les différents chemins et l’utilisation du Jockers!
 - Je dois apprendre toutes les commandes (cf. slide *Unix*)
 - Je dois encore me familiariser avec les commandes Unix pour le terminal.
+- Je dois comprendre à quoi renvoie les informations en bleu sur le terminal.
+
 
 
 
 #Séance 2 : 01-10-2025
 
-##Exercice 2.c : slide **git-intro-exercices**
-Après avoir lancer la commande *git status*, j'ai utilisé *git add journal.md* pour l'ajouter dans le dépôt GitHub.
+**1. Ce que j'ai compris :**
+
+- J'ai compris la différence entre les différents chemins et certaines commandes tels que *mv*, *../* (changer de dossier en allant en arrière), *cd ~/*, *man*, *cat*, et les commandes git comme *git add*, *git commit*, *git commit -m*, *git log*, *git pull*, *git push* et *echo*.
+
+- J’avais fait la clé github à la maison à l’aide du diaporama des professeurs et en cours, j’ai pu vérifier les instructions des professeurs pour voir si c'était correct.
+
+- Nous avons la différence entre Git et GitHub. En effet, Git est un outil, soit un programme tandis que Github héberge des dépôts en ligne.
+
+- Nous avons également vu comment créer un fichier sur GitHub et comment ajouter des fichiers à partir du terminal (*git add* pour ajouter, *git push* pour synchroniser avec Github).
+
+- Je commence à comprendre que le journal de bord permettra de nous familiariser avec plusieurs types de commandes pour créer le projet sur le mot que j'effectuerai avec mon groupe.
+
+- Le fichier dépôt sur GitHub intitulé "git-along" me servira de "poubelle", soit d'essai lors de mes travaux.
+
+**2. Ce que je pense avoir compris mais, je ne l'ai pas encore appliquer :**
+
+- /
+
+
+**3. Ce que je n'ai pas compris :**
+
+- Je ne suis pas encore à l'aise avec toutes les commandes Unix ni avec les commandes git.
+
+
+**4. Activité :**
+##Exercice 2.c : slide **git-intro-exercices (Git mise en pratique)** 
+**Ce que j'ai réussi à faire :**
+
+- Après avoir lancer la commande *git status*, j'ai utilisé *git add journal.md* pour l'ajouter dans le dépôt GitHub (**Exercice 2.c - Git mise en pratique**).
+
+
+**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour parer aux dificultés :**
+
+- Pendant le cours, c’était compliqué à suivre la correction pour l’Exercice1 car je me suis perdue en essayant d’effectuer les mêmes instructions que les professeurs au tableau. Pour essayer de comprendre, j’ai préféré écouter et reporter la correction à la maison en comprenant les commandes utilisées par les enseignants.
+
+- Je n'ai pas non plus reussi à faire les commandes *clone git url* en classe car les instructions données allaient vite et mon terminal affichait des informations que je ne comprenais pas ou encore des résultats différents de celui des professeurs. J'ai pris en note les instrucions au tableau pour pouvoir retravailler à la maison et ainsi revoir comment créer un clone git et un tag. 
+
+	En le pratiquant de nouveau chez moi, j'ai réussi à créer un clone git mais n'ai pas encore crée le tag MonPemierTag.
+
+- Concernant l'exercice "Git mise pratique", au début des exercices, j'étais assez à l'aise car les procédures pour créer un dépôt Git avec GitHub était semblable au celui du dépôt "git-along". 
+
+	Ensuite, j'ai lu les liens pour comprendre les commandes de Markdown et de GitHub pour m'aider dans les exercices suivants.
+
+	Puis, j'ai eu un conflit avec Git lors de la synchronisation de mon fichier gedit sur lequel j'écrivais du texte et sur le dépôt Git du journal de bord. D'après ce que j'avais compris, j'avais crée des commits différents dans le dépôt et dans gedit. GitHUb ne savait donc pas s'il devait les écraser. Pour parer à ce problème, j'ai ouvert les branches et ai suivit des instructions sur Internet. 
+
+
+![Intructions pour réparer le conflit Git](/home/helena/Documents/images_journal_s1/git1.jpg "gip1")
+
+
+	J'ai poursuivi les instructions avec le diaporama *git-intro_and_more* pour modifier le fichier (lié au dépôt GitHub). En effet, pour le modifier à partir du terminal, j'utilisais la procédure suivante :
+
+
+ > D'abord, je vérifie l'emplacement des dossiers.
+ 
+ > ls
+ 
+ > Ensuite, si besoin, je regarde à l'intérieur (le texte) du fichier que je souhaite travailler afin de vérifier que c'est bien celui-ci.
+ 
+ > cat Nomdufichier
+ 
+ > echo "Text" >> Nomdufichier
+ 
+ > Je vérifie de nouveau si le texte est bien apparu.
+ 
+ > cat Nomdufichier
+ 
+ > git pull
+ 
+ > git add Nomdufichier
+ 
+ > git commit -m “nomducommit”
+ 
+ > git push
+
+
+	Remarque : je peux ignorer l'étape de la commande *echo* si j'effectue des modifications du ficher à partir de Gedit par exemple.
+
+	Durant les exercices, je ne comprenais pas vraiment l'utilisation de la commande commit et en utilisant la commande log, j'ai compris qu'elle servait d'historique pour regarder les modifications d'un fichier.
+J'ai également parcouru les commits sur mon terminal et sur la plateforme GitHub pour regarder les modifications.
+
+
+**5. Ce que je n’ai pas eu le temps de faire :**
+
+- Je dois créer un tag MonPremierTag.
+- Je n'ai pas encore utilisé le fichier dépôt "git-along" pour faire des essais avec les commandes git car je les ai effectué sur le fichier du journal de bord.
+- Je dois également revoir la commande pour ajouter des images. Si besoin, je dois rétrécir les images.
+
+
+
+
+
+
+
 
