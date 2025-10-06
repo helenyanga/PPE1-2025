@@ -2,7 +2,7 @@
 
 #Séance 1 : 24-09-2025
 
-1. Ce que j'ai compris :
+**1. Ce que j'ai compris :**
 
 - Github est une plateforme qui permet de partager en ligne et de collaborer ou encore de communiquer avec des personnes, notamment pour un projet : nous pouvons ajouter des commentaires, se renseigner sur l’historique d'un projet ; et organiser ses fichiers ainsi que ses dossiers.
 On l'utilisera pour écrire notre journal de bord individuel. On doit noter notre progression à chaque séance, en indiquant nos réussites et les difficultées rencontrées. 
@@ -16,7 +16,7 @@ Ce projet débutera à partir de la semaine 6. Il n’y aura pas d’exposé à 
 Je connais quelques commandes comme *ls*.
 
 
-2. Ce que je pense avoir compris mais, je ne l'ai pas encore appliquer : 
+**2. Ce que je pense avoir compris mais, je ne l'ai pas encore appliquer :**
 
 - Pour le projet encadré, il y a 2 phases à effectuer. La première consiste à choisir un mot et ses variations dans les 3 langues choisies. Pour ce faire, je dois collecter des données de ce mot via des pages url. 
 Dans la phase 2, je dois analyser et présenter les corpus (le corpus textuel multilingue) avec les outils Unix. Je dois effectuer cette démarche sur un fichier texte html pour les trois langues.
@@ -25,7 +25,7 @@ Les 50 ressources (URL) doivent prouver que le mot est attesté. Nous devons fai
 - Je pense avoir compris la syntaxe d’une commande et je pense pouvoir la reconnaître.
 
 
-3. Ce que je n'ai pas compris : 
+**3. Ce que je n'ai pas compris :**
 
 - Dans le système de fichier, je ne suis pas sûre de bien comprendre la différence entre le chemin absolu et le chemin relatif, et l’utilisation des *Jokers!*.
 
@@ -36,21 +36,21 @@ Les 50 ressources (URL) doivent prouver que le mot est attesté. Nous devons fai
 - Je ne sais pas encore utiliser GitHub ni ajouter des fichiers.
 
 
-4. Activité : 
+**4. Activité :**
 
-Ce que j'ai réussi à faire : 
+**Ce que j'ai réussi à faire :**
 
 - J’ai réussi à m’inscrire sur GitHub et GitLab.
 
 
-Ce que je n'ai pas réussi à faire, les problèmes rencontrés :
+**Ce que je n'ai pas réussi à faire, les problèmes rencontrés :**
 
 - Je n’ai pas vraiment réussi à créer une clé de sécurité pour GitHub. J’avais peut-être oublié une étape ou j’avais mal écrit le code. Je n’ai donc pas pu ajouter la clé à GitHub.
 
 - J’ai refait plusieurs fois les commandes pour décompresser le fichier zip mais, je n’ai pas réussi. Au début, j’ai placé le dossier zip dans un document sur le bureau de l’ordinateur et je pense que la machine ne trouvait pas ce dossier. Je l’ai alors déplacé manuellement dans le Dossier Personnel, puis je l’ai vérifié avec la commande ls, pour trouver son placement. J’ai de nouveau suivi les instructions mais, décompresser ce fichier fut un échec. 
 
 
-![Problèmes rencontrées lors de la décompression du fichier zip](/Documents/images_journal_s1/zip1.jpg)
+![Problèmes rencontrées lors de la décompression du fichier zip](/Documents/images_journal_s1/zip1.jpg ")
 
   
 
