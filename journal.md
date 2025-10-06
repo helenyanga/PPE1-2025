@@ -108,7 +108,7 @@ Je n'ai pas compris les informations en bleu sur la gauche, à côté du nom kub
 
 **4. Activité :**
 
-##Exercice 2.c : slide **git-intro-exercices (Git mise en pratique)** 
+## Exercice 2.c : slide **git-intro-exercices (Git mise en pratique)** 
 
 **Ce que j'ai réussi à faire :**
 
