@@ -13,7 +13,6 @@ Je doit ainsi, réaliser un corpus multilingue pour ce mot. En effet, chaque fic
 Ce projet débutera à partir de la semaine 6. Il n’y aura pas d’exposé à l’oral mais un rendu écrit sera attendu.
 
 - Durant le cours, nous avons abordé rapidement de l’histoire d’Unix avec le commencement de Bell Labs et des projets de GNU. Nous avons également vu les définitions des mots du système de fichier (cf. slide **Unix**). J’ai compris la notion de parent, de dossier ainsi que l’arborescence. Enfin, nous avons survoler les commandes et nous avons commencé à créer une clé de sécurité pour GitHub.
-
 Je connais quelques commandes comme *ls*.
 
 
@@ -49,7 +48,9 @@ Ce que je n'ai pas réussi à faire, les problèmes rencontrés :
 - Je n’ai pas vraiment réussi à créer une clé de sécurité pour GitHub. J’avais peut-être oublié une étape ou j’avais mal écrit le code. Je n’ai donc pas pu ajouter la clé à GitHub.
 
 - J’ai refait plusieurs fois les commandes pour décompresser le fichier zip mais, je n’ai pas réussi. Au début, j’ai placé le dossier zip dans un document sur le bureau de l’ordinateur et je pense que la machine ne trouvait pas ce dossier. Je l’ai alors déplacé manuellement dans le Dossier Personnel, puis je l’ai vérifié avec la commande ls, pour trouver son placement. J’ai de nouveau suivi les instructions mais, décompresser ce fichier fut un échec. 
- 	![alt text](zip1.jpg)
+
+
+![Problèmes rencontrées lors de la décompression du fichier zip](/Documents/images_journal_s1/zip1.jpg)
 
   
 
