@@ -5,3 +5,5 @@ Une modification.
 git status
 
 au revoir
+le cours
+leçon test
