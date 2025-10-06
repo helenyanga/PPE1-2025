@@ -50,8 +50,7 @@ Les 50 ressources (URL) doivent prouver que le mot est attesté. Nous devons fai
 - J’ai refait plusieurs fois les commandes pour décompresser le fichier zip mais, je n’ai pas réussi. Au début, j’ai placé le dossier zip dans un document sur le bureau de l’ordinateur et je pense que la machine ne trouvait pas ce dossier. Je l’ai alors déplacé manuellement dans le Dossier Personnel, puis je l’ai vérifié avec la commande ls, pour trouver son placement. J’ai de nouveau suivi les instructions mais, décompresser ce fichier fut un échec. 
 
 
-![Problèmes rencontrées lors de la décompression du fichier zip](/Documents/images_journal_s1/zip1.jpg ")
-
+ 	![Problèmes rencontrées lors de la décompression du fichier zip](/Documents/images_journal_s1/zip1.jpg)
   
 
 
