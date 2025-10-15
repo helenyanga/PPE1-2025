@@ -10,11 +10,3 @@ Nombre de lieux en 2017:
 Nombre de lieux en 2018:
 3110
 
-
-echo "Nombre de lignes contenant 'Locations' en 2017 : "
-cat 2017/* | grep Location | wc -l >> output.sh
-
-echo "Nombre de lignes contenant 'Locations' en 2018 : "
-cat 2018/* | grep Location | wc -l >> output.sh
-
-idem pour 2016
