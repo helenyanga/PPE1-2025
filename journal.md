@@ -2,7 +2,7 @@
 
 # Séance 1 : 24-09-2025
 
-**1. Ce que j'ai compris :**
+1. Ce que j'ai compris :
 
 - Github est une plateforme qui permet de partager en ligne et de collaborer ou encore de communiquer avec des personnes, notamment pour un projet : nous pouvons ajouter des commentaires, se renseigner sur l’historique d'un projet ; et organiser ses fichiers ainsi que ses dossiers.
 On l'utilisera pour écrire notre journal de bord individuel. On doit noter notre progression à chaque séance, en indiquant nos réussites et les difficultés rencontrées. 
@@ -49,7 +49,7 @@ Les 50 ressources (URL) doivent prouver que le mot est attesté. Nous devons fai
 
 - Je n’ai pas vraiment réussi à créer une clé de sécurité pour GitHub. J’avais peut-être oublié une étape ou j’avais mal écrit le code. Je n’ai donc pas pu ajouter la clé à GitHub.
 
-- J’ai refait plusieurs fois les commandes pour décompresser le fichier zip mais, je n’ai pas réussi. Au début, j’ai placé le dossier zip dans un document sur le bureau de l’ordinateur et je pense que la machine ne trouvait pas ce dossier. Je l’ai alors déplacé manuellement dans le Dossier Personnel, puis je l’ai vérifié avec la commande ls, pour trouver son placement. J’ai de nouveau suivi les instructions mais, décompresser ce fichier fut un échec. 
+- J’ai refait plusieurs fois les commandes pour décompresser le fichier zip mais, je n’ai pas réussi. Au début, j’ai placé le dossier zip dans un document sur le bureau de l’ordinateur et je pense que la machine ne trouvait pas ce dossier. Je l’ai alors déplacé manuellement dans le Dossier Personnel, puis je l’ai vérifié avec la commande *ls*, pour trouver son emplacement. J’ai de nouveau suivi les instructions mais, décompresser ce fichier fut un échec. 
 
 
  ![Problèmes rencontrés lors de la décompression du fichier zip](/home/helena/Documents/images_journal_s1/zip1.jpg "zip1")
@@ -96,6 +96,7 @@ Je n'ai pas compris les informations en bleu sur la gauche, à côté du nom kub
 
 - Le fichier dépôt sur GitHub intitulé "git-along" me servira de "poubelle", soit d'essai lors de mes travaux.
 
+
 **2. Ce que je pense avoir compris mais, je ne l'ai pas encore appliqué :**
 
 - /
@@ -118,6 +119,8 @@ Je n'ai pas compris les informations en bleu sur la gauche, à côté du nom kub
 
 - J'ai réussi à créer un tag pour l'exercice sur Git mise en pratique.
 
+- J'ai réussi à crée un tag "MonPremierTag" et un dépôt "git-along" en classe.
+
 
 **Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour parer aux dificultés :**
 
@@ -125,7 +128,7 @@ Je n'ai pas compris les informations en bleu sur la gauche, à côté du nom kub
 
 - Je n'ai pas non plus réussi à faire les commandes *clone git url* en classe car les instructions données allaient vite et mon terminal affichait des informations que je ne comprenais pas ou encore des résultats différents de celui des professeurs. J'ai pris en note les instructions au tableau pour pouvoir retravailler à la maison et ainsi revoir comment créer un clone git et un tag. 
 
-	En le pratiquant de nouveau chez moi, j'ai réussi à créer un clone git mais n'ai pas encore crée le tag MonPemierTag.
+En le pratiquant de nouveau chez moi, j'ai réussi à créer un clone git.
 
 - Concernant l'exercice "Git mise pratique", au début des exercices, j'étais assez à l'aise car les procédures pour créer un dépôt Git avec GitHub étaient semblables à celui du dépôt "git-along". 
 
@@ -165,20 +168,75 @@ J'ai poursuivi les instructions avec le diaporama *git-intro_and_more* pour modi
 
 	Remarque : je peux ignorer l'étape de la commande *echo* si j'effectue des modifications du fichier à partir de Gedit par exemple.
 
-	Durant les exercices, je ne comprenais pas vraiment l'utilisation de la commande commit et en utilisant la commande log, j'ai compris qu'elle servait d'historique pour regarder les modifications d'un fichier.
+Durant les exercices, je ne comprenais pas vraiment l'utilisation de la commande commit et en utilisant la commande log, j'ai compris qu'elle servait d'historique pour regarder les modifications d'un fichier.
 J'ai également parcouru les commits sur mon terminal et sur la plateforme GitHub pour regarder les modifications.
 
 
 **5. Ce que je n’ai pas eu le temps de faire :**
 
-- Je dois créer un tag MonPremierTag.
 - Je n'ai pas encore utilisé le fichier dépôt "git-along" pour faire des essais avec les commandes git car je les ai effectuées sur le fichier du journal de bord.
 - Je dois également revoir la commande pour ajouter des images. Si besoin, je dois rétrécir les images.
 
 
 
+# Séance 3 : 08-10-2025
+
+1. Ce que j'ai compris :
+
+-
+2. Ce que je pense avoir compris mais, je ne l'ai pas encore appliqué :
+
+-
+
+3. Ce que je n'ai pas compris :
+
+-
+
+
+4. Activité :
+
+**Ce que j'ai réussi à faire :**
+
+-
+
+**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour parer aux dificultés :**
+
+-
+
+
+5. Ce que je n’ai pas eu le temps de faire :
+
+-
 
 
 
+# Séance 4 : 15-10-2025
+
+1. Ce que j'ai compris :
+
+-
+2. Ce que je pense avoir compris mais, je ne l'ai pas encore appliqué :
+
+-
+
+3. Ce que je n'ai pas compris :
+
+-
+
+
+4. Activité :
+
+**Ce que j'ai réussi à faire :**
+
+-
+
+**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour parer aux dificultés :**
+
+-
+
+
+5. Ce que je n’ai pas eu le temps de faire :
+
+-
 
 
