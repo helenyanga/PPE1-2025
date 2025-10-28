@@ -28,18 +28,8 @@ do
     for LINE in ${line}
     do
         N=$( expr $N + 1 )
-        echo -e "$N \t ${line}";
+        echo -e "$N \t" "${line} \t" "curl -I ${line} | grep - HTTP | wc -l \t" "curl -I  {line} | grep - content-type | wc -l \t" "curl -s ${line} | wc - w"
     done
-echo -e "$N \t ${line} \t 200 \t charset=UTF-8 \t mots : 13904"
-echo -e "$N \t ${line} \t 200 \t charset=UTF-8 \t mots : 4129"
-echo -e "$N \t ${line} \t 301 \t vide \t mots : 0"
-echo -e "$N \t ${line} \t 200 \t charset=UTF-8 \t mots : 6555"
-echo -e "$N \t ${line} \t 200 \t charset=UTF-8 \t mots : 4027"
-echo -e "$N \t ${line} \t 000 \t vide \t mots : 0"
-echo -e "$N \t ${line} \t 404 \t charset=UTF-8 \t mots : 2298"
-echo -e "$N \t ${line} \t 200 \t charset=UTF-8 \t mots : 17786"
-echo -e "$N \t ${line} \t 200 \t charset=UTF-8 \t mots : 4238"
-echo -e "$N \t ${line} \t 200 \t charset=UTF-8 \t mots : 22051"
 #commande pour le code HTTP de réponse à la requête et l'encodage de la page, s'il est présent : curl -I adresseurl
 #pour le nombre de mots dans l'url : curl -s adresseurl | wc - w
 done < "$1";
