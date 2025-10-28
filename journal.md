@@ -2,14 +2,14 @@
 
 # Séance 1 : 24-09-2025
 
-1. Ce que j'ai compris :
+**1. Ce que j'ai compris :**
 
-- Github est une plateforme qui permet de partager en ligne et de collaborer ou encore de communiquer avec des personnes, notamment pour un projet : nous pouvons ajouter des commentaires, se renseigner sur l’historique d'un projet ; et organiser ses fichiers ainsi que ses dossiers.
-On l'utilisera pour écrire notre journal de bord individuel. On doit noter notre progression à chaque séance, en indiquant nos réussites et les difficultés rencontrées. 
+- **==Github==** est une plateforme qui permet de partager en ligne et de collaborer ou encore de communiquer avec des personnes, notamment pour un projet. Nous pouvons ajouter des commentaires, se renseigner sur l’historique d'un projet, organiser ses fichiers ainsi que ses dossiers.
+On créera un dépôt Git intitulé "*journal.md*"qui permettra d'écrire notre journal de bord individuel. Dans ce journal, on y retrouvera notre progression et nos travaux lors des séances en indiquant nos réussites, les difficultés rencontrées et nos démarches pour les résoudres.
 
-- Pour le projet encadré, je dois choisir avec mes collègues (un étudiant de Nanterre et un étudiant d'Inalco), un mot et regarder ses variations dans 3 langues différentes sur Internet.
+- Pour le **projet encadré**, je dois choisir avec mes collègues (un étudiant de Nanterre et un étudiant d'Inalco), un mot et regarder ses variations dans 3 langues différentes sur Internet.
 J'ai pensé au français et à l'anglais mais, je réfléchis encore pour la dernière langue. 
-Je dois ainsi, réaliser un corpus multilingue pour ce mot. En effet, chaque fichier par langues doit contenir plus de 50 URL.
+Je dois donc réaliser un corpus multilingue pour ce mot. En effet, chaque fichier par langues doit contenir plus de 50 URLS.
 Ce projet débutera à partir de la semaine 6. Il n’y aura pas d’exposé à l’oral mais un rendu écrit sera attendu.
 
 - Durant le cours, nous avons abordé rapidement de l’histoire d’Unix avec le commencement de Bell Labs et des projets de GNU. Nous avons également vu les définitions des mots du système de fichiers (cf. slide **Unix**). J’ai compris la notion de parent, de dossier ainsi que l’arborescence. Enfin, nous avons survolé les commandes et nous avons commencé à créer une clé de sécurité pour GitHub.
