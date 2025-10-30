@@ -198,7 +198,9 @@ Par ailleurs, je n’ai pas réussi à suivre les étapes de l'*Exercice 1 Un pr
 
 - La commande **cat** qui permet de montrer (soit d'afficher) à l'écran de la Konsole, le contenu d'un fichier (exemple : "cat *.txt" ; ici, "*" est un ***Joker!*** qui permet de dire "sélectionne tous les fichiers qui comportent un ".txt" dans le répertoire courant).
 
-- J'ai compris la sauvegarde des résultats à partir des doubles chevrons 
+- J'ai compris la sauvegarde des résultats qu'on envoie dans un fichier.txt qu'on crée, à partir des doubles chevrons.
+
+- pipes : |
 
 ###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
@@ -253,11 +255,20 @@ exemples :
 
 >> 5) *echo "taperuntexte" >> nomdufichierquonvacrée* : permet d'écrire dans le fichier txt qu'on crée (exemple : *echo "Nombre de lieux en 2016:" >> output.txt*;
 
->> 6) "cat 2016/* | wc -l" : l'option "-l" permet de calculer le nombre de lignes 
+>> 6) "cat 2016/* | wc -l" : l'option "-l" permet de calculer le nombre de lignes ; le "/*" désigne tous les fichires situés dans le dossier 2016/ (soit, le chemin 2016/).
 
 
-- En cours : on a apris à utiliser un bash à partir de *Kate* ou *Nvim*.
-voir notes
+- En cours : on a apris à utiliser un bash à partir de ***Kate*** ou *Nvim*.
+On ouvre un des deux logiciels. J'ai choisi *Kate* et effectue la commande suivante : ***kate monscript.sh"***
+Quand on fait la commande *ls*, on peut remarquer que notre fichier *monscript.sh* a bien été crée.
+On effectue la commande ***bash monscript.sh*** pour dire à la machine qu'on veut excuter notre fichier avec des commandes à l'intérieur.
+A l'intérieur du fichier ***monscript.sh***, en l'ouvrant avec Kate, on écrit : ***#!/usr/bin/bash***. Cette commande permet de dire à la machine que le programme écrit dans l'éditeur de texte doit être interprêté.
+A l'intérieur du fichier, si on écrit *#texte* dans l'éditeur de texte *Kate*, la machine ne prendra pas en compte le mot "texte" présent, grâce au symbole ***#***.
+Après avoir écrit du texte ou un programme (soit un code) dans *Kate*, revenir sur la Konsole puis, écrire la commande suivante : **chmod +x monscript.sh** qui permet de demander la permission à la machine pour rendre le fichier exécutable.
+
+> On a vu les **variables** dans l'éditeur de texte : elles commencent par $1, $2, etc. Créer des variables permettent de préciser à quoi servent tel argument, mais attention à bien l'ajouter dans le bon dossier sinon, le script ne fonctionnera pas.
+
+> Utiliser la commande suivante pour faire exécuter le fichier.sh : ***./nomdufichier.sh***
 
 ###**3. Ce que je n'ai pas compris :**
 
