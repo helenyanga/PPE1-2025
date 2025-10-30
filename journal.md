@@ -127,8 +127,8 @@ Les 50 ressources (URLS) doivent prouver que le mot est attesté. On doit faire 
 >- J'ai réussi à créer un **tag** *gitinto* (pour "gitintro") pour l'exercice sur *Git mise en pratique*. et un tag "MonPremierTag" pour *git-along*. Ces git tag seront utilisés pour indiquer aux enseignants que l'exercice est terminé.
 >>Les instructions pour créer un "git tag" (tagname):
 >>>1. Vérifier qu'on est bien dans le bon dossier sur la Konsole. On peut ajouter si besoin, la commande *cd*.
->>>2. Créer un tag à partir de la commande suivante : ***git tag testtestest-m Nomdutag***
->>>3. Mettre ce tag sur GitHub et donc de l'actualiser : ***git push origin Nomdutag***
+>>>2. Créer un tag à partir de la commande suivante : ***git tag -m "Nomdutag"***
+>>>3. Mettre ce tag sur GitHub et donc de l'actualiser : ***git push origin "Nomdutag"***
 >>>4. Optionnelle : on peut se rendre sur GitHub pour vérifier si le tag est bien apparu.
 
 >**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
@@ -166,7 +166,7 @@ Les 50 ressources (URLS) doivent prouver que le mot est attesté. On doit faire 
 
 >>>git add Nomdufichier
 
->>>git commit -m “nomducommit”
+>>>git commit (ou git commit -m nomducommit)
 
 >>>git push
 
@@ -210,8 +210,7 @@ J'ai également parcouru les commits sur mon terminal et sur la plateforme GitHu
 ## Exercice : diaporama ***Unix*** - *Exercice*
 >**Ce que j'ai réussi à faire :**
 
->-
-j ai refait l ***Exercice*** car j avais pas réussi à faire l'arborescence et grâce à la correction, j'ai refait en classe :
+>- J'ai refait l'exercice ***Exercice*** car j avais pas réussi à faire l'arborescence et grâce à la correction, j'ai refait en classe :
 mkdir pour créer les dossiers ann2016 etc
 mv pour déplacer : refaire la commande : mv /* -> faire bouger ts les fichiers du meme nom dans cd dossier
 
@@ -325,3 +324,5 @@ mv pour déplacer : refaire la commande : mv /* -> faire bouger ts les fichiers 
 
 ***
 ---
+
+testtest
