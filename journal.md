@@ -102,7 +102,8 @@ Les 50 ressources (URLS) doivent prouver que le mot est attesté. On doit faire 
 
 - Le fichier dépôt sur GitHub intitulé ***git-along*** me servira de "poubelle", soit d'essai lors de mes travaux.
 
-- En effectuant les exercices, j'ai compris que les informations en bleu à côté du prénom kubuntu, était le **chemin**.
+- On a corrigé l'*Exercice1* du diaporama ***Unix***. En refaisant l'exercice, j'ai compris que les informations en bleu à côté du prénom kubuntu, était le **chemin**.
+
 
 ###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
@@ -124,16 +125,16 @@ Les 50 ressources (URLS) doivent prouver que le mot est attesté. On doit faire 
 
 >- J'ai réussi à écrire du texte et à synchroniser les modifications avec le dépôt GitHub et le fichier Gedit.
 
->- J'ai réussi à créer un **tag** *gitinto* (pour "gitintro") pour l'exercice sur *Git mise en pratique*. et un tag "MonPremierTag" pour *git-along*. Ces git tag seront utilisés pour indiquer aux enseignants que l'exercice est terminé.
+>- J'ai réussi à créer un **tag** *gitinto* pour l'exercice sur *Git mise en pratique*. et un tag "MonPremierTag" pour *git-along*. Ces git tag seront utilisés pour indiquer aux enseignants que l'exercice est terminé.
 >>Les instructions pour créer un "git tag" (tagname):
 >>>1. Vérifier qu'on est bien dans le bon dossier sur la Konsole. On peut ajouter si besoin, la commande *cd*.
->>>2. Créer un tag à partir de la commande suivante : ***git tag -m "Nomdutag"***
->>>3. Mettre ce tag sur GitHub et donc de l'actualiser : ***git push origin "Nomdutag"***
+>>>2. Créer un tag à partir de la commande suivante : ***git tag -m Nomdutag***
+>>>3. Mettre ce tag sur GitHub et donc de l'actualiser : ***git push origin Nomdutag***
 >>>4. Optionnelle : on peut se rendre sur GitHub pour vérifier si le tag est bien apparu.
 
 >**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
 
->- Pendant le cours, c’était compliqué à suivre la correction pour l’"Exercice1" car je me suis perdue en essayant d’effectuer les mêmes instructions que les professeurs au tableau. Pour essayer de comprendre, j’ai préféré écouter et reporter la correction à la maison en comprenant les commandes utilisées par les enseignants.
+>- Pendant le cours, c’était compliqué à suivre la correction pour l’*Exercice1* car je me suis perdue en essayant d’effectuer les mêmes instructions que les professeurs au tableau. Pour essayer de comprendre, j’ai préféré écouter et reporter la correction à la maison en comprenant les commandes utilisées par les enseignants.
 
 >- Je n'ai pas non plus réussi à faire les commandes ***clone git url*** en classe car les instructions données allaient vite et mon terminal affichait des informations que je ne comprenais pas ou encore des résultats différents de celui des enseignants. J'ai pris en note les instructions au tableau pour pouvoir retravailler à la maison et ainsi revoir comment créer un **clone git** et un tag.
 
@@ -150,25 +151,25 @@ Les 50 ressources (URLS) doivent prouver que le mot est attesté. On doit faire 
 
 >> D'abord, je vérifie l'emplacement des dossiers.
 
->>> ls
+>>> **ls**
 
 >>>Ensuite, si besoin, je regarde à l'intérieur (le texte) du fichier que je souhaite travailler afin de vérifier que c'est bien celui-ci.
 
->>>cat Nomdufichier
+>>>**cat Nomdufichier**
 
->>>echo "Text" >> Nomdufichier
+>>>**echo "Text" >> Nomdufichier**
 
 >>>Je vérifie de nouveau si le texte est bien apparu.
 
->>>cat Nomdufichier
+>>>**cat Nomdufichier**
 
->>>git pull
+>>>**git pull**
 
->>>git add Nomdufichier
+>>>**git add Nomdufichier**
 
->>>git commit (ou git commit -m nomducommit)
+>>>**git commit (ou git commit -m nomducommit)**
 
->>>git push
+>>>**git push**
 
 
 >>*Remarque : je peux ignorer l'étape de la commande "echo" si j'effectue des modifications du fichier à partir de Gedit par exemple.*
@@ -190,55 +191,124 @@ J'ai également parcouru les commits sur mon terminal et sur la plateforme GitHu
 
 ###**1. Ce que j'ai compris :**
 
-- En cours j ai compris qu’on se servait de la commande ***wc*** pour compter le nombre de lignes, de mots, et de caractères dans un fichier.
+- En cours j'ai compris qu’on se servait de la commande ***wc*** (word count) pour compter le nombre de lignes, de mots, et de caractères dans un fichier. On peut utiliser la commande ***man wc*** pour avoir plus d'informations à propos de la commande *wc*.
+Par ailleurs, je n’ai pas réussi à suivre les étapes de l'*Exercice 1 Un premier Script* sur "Scripts Bash" (diaporama : ***01-scripts-exercices.pdf***), alors je l'ai refait à la maison pour assimiler les commandes suivantes : "ls unepartieduounomdufichier*, *grep motrecherché*.
 
 - Je commence petit à petit à comprendre les autres commandes Unix.
 
+- La commande **cat** qui permet de montrer (soit d'afficher) à l'écran de la Konsole, le contenu d'un fichier (exemple : "cat *.txt" ; ici, "*" est un ***Joker!*** qui permet de dire "sélectionne tous les fichiers qui comportent un ".txt" dans le répertoire courant).
+
+- J'ai compris la sauvegarde des résultats à partir des doubles chevrons 
+
 ###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
-- /
+- Les commandes suivantes : ***grep*** (permet de rechercher un mot spécifique, il va donc filtrer les lignes qui contiennent le mot spécifique) et *ls unepartieduounomdufichier* *
+exemples : 
+> grep Location
+> ls 2016*
+> ls *.pdf ; ls *.docx ; ls EnergieEolienne.*
+> man mv
+> man EnergieEolienne.* docs
 
+-  Les 3 flux standards : 0, 1, 2 ; et la commande **Ctrl D** pour sortir du shell.
+
+- Les redirections vers et depuis des fichiers : 
+> "<" : remplace le clavier par le contenu d'un fichier (cf. Figure 4) ;
+
+![Figure 4 : La commande "<" et ">>.](/home/helena/Documents/M1TAL/images_journal_projet/commande_chevron1.jpg "La commande "<" et ">>.")
+*Figure 5 : La commande "<" et ">>.*.
+
+> "1>" ou ">" : écrit stdout dans un fichier ;
+> "2>" : écrit stderr dans un fichier ; 
+> "&>" : écrit stdout et stderr dans un fichier ; 
+> le double chevron ">>", ">>&", "2>>" : on écrit en ajoutant la sortie à la fin d'un fichier (cf. Figure 4); 
+> Il faut faire **attention avec le chevron simple ">", ">&", "2>" car ils écrassent le fichier s'il existe déjà !**
+
+
+
+> **Les étapes pour calculter le nombre de lignes, de mots et de caractères pour un fichier** : 
+
+>>1) *wc nomdufichier.txt* ;
+ 
+>> 2) *wc < nomdufichier.txt* ; 
+
+>> 3) *wc nomdufichier.txt >> nomdufichiercrée.txt* ;
+
+>> 4) *ls* (option non obligatoire mais permet de voir s'il a bien été crée) ;
+
+>> 5) *cat nomdufichiercrée.txt* ; 
+
+>> 6) "cat *.txt | grep motspécifiquerecherché | wc" ;
+
+
+> **Les étapes pour un dossier contenant plusieurs fichiers :** 
+
+>> 1) Aller dans le bon chemin avec la commande *cd ~/* ;
+
+>> 2) Si besoin, faire *ls* ;
+
+>> 3) "cat 2016/* | wc" 
+
+>> 4) On peut utiliser *>> nomdufichierquoncrée.txt* pour indiquer à la machine qu'on veut écrire le résultat dans le fichier txt qu'on va créer. **Mais attention à ne pas utiliser qu'un seul chevron sinon tout le contenu antiérieurement ajouté sera effacé soit remplacé par le nouveau résultat !**
+
+>> 5) *echo "taperuntexte" >> nomdufichierquonvacrée* : permet d'écrire dans le fichier txt qu'on crée (exemple : *echo "Nombre de lieux en 2016:" >> output.txt*;
+
+>> 6) "cat 2016/* | wc -l" : l'option "-l" permet de calculer le nombre de lignes 
+
+
+- En cours : on a apris à utiliser un bash à partir de *Kate* ou *Nvim*.
+voir notes
 
 ###**3. Ce que je n'ai pas compris :**
 
-- En cours, je n’ai pas réussi à suivre les étapes de l'exercice sur "Scripts Bash" (diaporama : ***01-scripts-exercices.pdf***) alors j ai refait à la maison pour comprendre les commandes suivantes : "nomdufichier/* , grep motrecherché".
-
-
+- /
 
 ###**4. Activité(s) :**
 
 ## Exercice : diaporama ***Unix*** - *Exercice*
 >**Ce que j'ai réussi à faire :**
 
->- J'ai refait l'exercice ***Exercice*** car j avais pas réussi à faire l'arborescence et grâce à la correction, j'ai refait en classe :
-mkdir pour créer les dossiers ann2016 etc
-mv pour déplacer : refaire la commande : mv /* -> faire bouger ts les fichiers du meme nom dans cd dossier
+>- J'ai refait l'exercice *Exercice1* car je n'avais pas réussi à faire l'arborescence (cf. séance 1) et grâce à la correction (cf. séance 2), je l'ai recommencé à la maison. J'ai utilisé les commandes suivantes : 
+
+>>1) ***mkdir*** pour créer les dossiers *fichiers_ann*, *fichiers_docs*, *fichiers_umg* et *fichiers_txt* ;
+
+>>2) ***cd*** pour se aller ou changer de dossier en précisant le **chemin** exemple : *cd fichiers_ann/* ou *cd fichiers_ann/ann2016/* (vérifier qu'on est dans le bon dossier);
+
+>>3) **ls 2016*** pour afficher tout les fichiers ayant "2016" en son nom (cf. Figure 4);
+
+![Figure 5 : La commande "ls 2016" suivi d'un astérix*.](/home/helena/Documents/M1TAL/images_journal_projet/commande_trie_fichiers1.jpg "La commande "ls 2016" suivi d'un astérix*.")
+*Figure 5 : La commande ls 2016 suivi d'un astérix*.
+
+>>4) "ls 2016*.ann" pour afficher tous les fichiers ayant "2016" et terminant par ".ann" ;
+
+>>5) "mv 2016*.ann fichiers_ann/ann2016" qui va permettre de déplacer tous les fichiers qui contiennent "2016" et ".ann" dans le dossier "ann2016" à la aide du chemin “fichiers_ann/ann2016” (cf. Figure 5) ; et je fais de même pour les autres fichiers restant.
+
+![Figure 6 : La commande "ls 2016" suivi d'un astérix et du "*ann".](/home/helena/Documents/M1TAL/images_journal_projet/commande_trie_fichiers2.jpg "La commande "ls 2016" suivi d'un astérix et du "*ann".")
+*Figure 6 : La commande ls 2016 suivi d'un astérix*.
+
 
 >**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
 
->-/
+>- /
 
-## Exercice : diaporama "Scripts Bash" ***01-scripts-exercices.pdf*** - * Exercice 1 : Un premier script.
+## Exercice : A partir de l'*Exercice1*, compter le 
 
 >**Ce que j'ai réussi à faire :**
 
 >-grep et wc - l et ou w -> faire /* pr appeler ts les fichiers qu ont le meme nom
 => je pensais avoir réussi à faire mais j ai tout fais sur kate (dans kate j ai juste mis les réuslats que j ai copier sur la sortie de la konsole et ai coller dans l editeur de texte kate)  et la konsole hors kate alors qu il fallait faire dans la konsole de kate. j ai donc refait l exercice.
 
->- En réeffectuant l'exercice "Scrips Bash - *Exercice 1 : Un premier script*
->- En classe, on a fait la correction et j'ai refait
-
->- avec les instructions du corrigé : voir séance 4
 
 
 >**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
 
->- A la maison, j'ai commencé l'exercice "Scrips Bash - *Exercice 1 : Un premier script*
+>- A la maison, j'ai commencé l'exercice "Scrips Bash - *Exercice 1 : Un premier script* -> pas tereminé car bloquée pour calculer
 
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
 
--
+- Tester *sort* (trier des lignes), *uniq* (supprimer les lignes qui se répètent), *cut* (sélectionne des colonnes d'un fichier tabulaire) et *tail* (ne garde que les dernières lignes d'un flux ou d'un fichier).
+
 
 ***
 ---
@@ -268,16 +338,16 @@ mv pour déplacer : refaire la commande : mv /* -> faire bouger ts les fichiers 
 
 ###**4. Activité(s) :**
 
-## Exercice 2.c : diaporama ***git-intro-exercices (Git mise en pratique)***
+## Exercice : diaporama "Scripts Bash" ***01-scripts-exercices.pdf*** - *Exercice 1 : Un premier script*.
 
 >**Ce que j'ai réussi à faire :**
 
->-
+>->- En classe, on a fait la correction de "Scrips Bash - *Exercice 1 : Un premier script* et j'ai refait le devoir avec les instructions du corrigé 
 
 >-
 >**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
 
->-
+>-ls 
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
 
@@ -290,9 +360,9 @@ mv pour déplacer : refaire la commande : mv /* -> faire bouger ts les fichiers 
 
 ###**1. Ce que j'ai compris :**
 
-- En cours j ai compris qu’on se servait de la commande ***wc*** pour compter le nombre de lignes, de mots, et de caractères dans un fichier.
+- 
 
-- Je commence petit à petit à comprendre les autres commandes Unix.
+- 
 
 ###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
@@ -301,13 +371,13 @@ mv pour déplacer : refaire la commande : mv /* -> faire bouger ts les fichiers 
 
 ###**3. Ce que je n'ai pas compris :**
 
-- En cours, je n’ai pas réussi à suivre les étapes de l'exercice sur "Scripts Bash" (diaporama : ***01-scripts-exercices.pdf***) alors j ai refait à la maison pour comprendre les commandes suivantes : "nomdufichier/* , grep motrecherché".
+- 
 
 
 
 ###**4. Activité(s) :**
 
-## Exercice 2.c : diaporama ***git-intro-exercices (Git mise en pratique)***
+## Exercice : diaporama ***jjjjjjj***
 
 >**Ce que j'ai réussi à faire :**
 
@@ -325,4 +395,4 @@ mv pour déplacer : refaire la commande : mv /* -> faire bouger ts les fichiers 
 ***
 ---
 
-testtest
+
