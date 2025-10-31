@@ -466,6 +466,8 @@ La notation se suit ainsi : "cat 2016/2016*ann | grep Location | cut -f3" ;
 
 ## Exercice : diaporama "Unix" - *Exercice : "Example: lire et expliquer ce code*.
 
+>**Ce que j'ai réussi à faire :**
+
 Lecture : 
 
 >si la variable # -ne 1
@@ -504,17 +506,13 @@ Lecture :
 
 >done : je ne sais pas : chevron qui signifie je donne la variable fichier
 
-> j'affiche "la variable OK est une url et la variable NOK sont des lignes douteuses"
-
-
-
->**Ce que j'ai réussi à faire :**
+> j'affiche "la variable OK est une url et la variable NOK sont des lignes douteuses
 
 >- /
 
 >**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
 
->-
+>- /
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
 
