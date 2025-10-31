@@ -377,29 +377,102 @@ Après avoir écrit du texte ou un programme (soit un code) dans *Kate*, revenir
 
 > */tmp/ permet de stocker des fichiers temporaires.
 
+- Les enseignants ont expliqué comment fonctionnait les diverses commandes entre la machine (l'ordinateur) et GitHub : 
+
+![Figure 17 : Schéma présentant la circulation des données entre GitHub et la machine lorsqu'on utilise ces commandes : "add", "commit", "push", "pull".](/home/helena/Documents/M1TAL/images_journal_projet/schema.jpg " Schéma présentant la circulation des données entre GitHub et la machine lorsqu'on utilise ces commandes : "add", "commit", "push", "pull".")
+*Figure 17 : Schéma présentant la circulation des données entre GitHub et la machine lorsqu'on utilise ces commandes : "add", "commit", "push", "pull".*
+
+- Quand on ouvre un éditeur de texte comme *Kate* par exemple, et que les caractères n'ont pas de couleurs, cela signifie que le fichier n'est pas un **bash** (".sh"). A l'inverse, s'il y a de la couleurs, cela signifie que le fichier peut être exécuté (bash). Pour ce faire, onn utilise la commande **chmod +x nomdufichier.sh" pour le rendre exécutable et donc lui demander la permission de l'être.
+
+
 ###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
-- /
+- La suite de la correction pour les autres exercices de "Script Bash" : 
+
+> Exercice 2 :
+
+> Dans le fichier bash, on prend en argument ANNEE=$1 et TYPE=$2 au lieu de fixer ann2016, etc.
+
+> On utilise la commande "cat $ANNEE/*.ann || grep "$TYPE" | wc -l".
+
+> Utiliser *pwd* pour savoir le chemin complet.
+
+> Dans le terminal, on écrira "Location" à la place de TYPE afin qu'il nous donne le résultat.
+
+> Le dollar $ est un identifiant pour que la machine se repère (fait référence à).
+
+> On peut utiliser le chemin absolu ou le chemin relatif pour répondre à cet exercice.
+
+
+> Pour la deuxième partie de l'exercice 2 (2.b), il faut utiliser des arguments : mois, année et un certain lieu à afficher. On commence par l'année et le mois.
+
+> Utiliser la commande *ls*.
+
+> Utiliser la commande *cat* (si besoin utiliser la commande *--help*) : "cat 2016/2016*ann | grep Location" (attention, la notation peut également différer selon la nomination des dossiers !)
+
+> Faire la commande *cut -f1*, f pour la colonne et 1 pour le numéro de la colonne. Ensuite, trier par ordre alphabétique avec la commande suivante : *cut -f3*. 
+La notation se suit ainsi : "cat 2016/2016*ann | grep Location | cut -f3" ;
+
+> Faire la commande suivante : cat 2016/2016*ann | grep Location | cut -f3 | sort | uniq -c | sort -n ;
+
+> Ensuite : cat 2016/2016*ann | grep Location | cut -f3 | sort | uniq -c | sort -g ;
+
+> Ajouter un "head" à l'aide de la commande suivante : "cat 2016/2016*ann | grep Location | cut -f3 | sort | uniq -c | sort -n | trail".
+
+> Dans le script, on doit écrire la commande suivante :
+
+>>ANNEE=$1
+
+>>MOIS=$2
+
+>>TOPN=$3
+
+>>"cat ${ANNEE}/${ANNEE}_${MOIS}*.ann | grep Location | cut -f3 | sort | uniq -c | sort -n | trail -n $TOPN".
+
+> Le troisième argument va devenir une étoile.
+
+> Ensuite nous auront une nouvelle variable : DATADIR=$1 (ce qui décallera le nom des autres variables). Dans le script, remplacer le code par celui-ci : "cat 2016/2016*ann | grep Location | cut -f3 | sort | uniq -c | sort -n -r | head -n $TOPN".
+
+
+- Exercice 3 : 
+
+> Boucle ***if*** : 
+
+> S'assurer que les confditions soient réunies. On a donc besoin de 4 arguments.
+
+> *$#* dans le script : donne le nombre d'argument au programme, ici on veut exactement 4. Donc si le nombre d'argument est égale à 4.
+
+> On peut **combiner** avec des "et" et/ou des "ou".
+
+> Attention, sans ***exit*** dans la boucle, la boucle continuera.
+
+> La boucle s'applique plusieurs fois sur les données différentes.
+
+> On peut **incrémenter** pour plusieurs valeurs comme a, b, c, d, e.
+
+> **Ctrl c** : pour arrêter brusquement une boucle infinie.
+
+> Prendre en argument l'année, le mois, et certains lieux affiché. Faire "cat 2016/*". 
+
+- Durant cette séance, on a également corrigé le journal.md c'est-à-dire, comment on le crée et comment on le modifie dans le terminal avec la commande *echo* : *echo "bonjour">>journal.md*. Ici, on dit à la machine qu'on ajoute "bonjour" dans le fichier "journal.md". 
 
 
 ###**3. Ce que je n'ai pas compris :**
 
-- En cours, je n’ai pas réussi à suivre les étapes de l'exercice sur "Scripts Bash" (diaporama : ***01-scripts-exercices.pdf***) alors j ai refait à la maison pour comprendre les commandes suivantes : "nomdufichier/* , grep motrecherché".
+- /
 
 
+###**4. Activité(s) :** /
 
-###**4. Activité(s) :**
-
-## Exercice : diaporama "Scripts Bash" ***01-scripts-exercices.pdf*** - *Exercice 1 : Un premier script*.
+## Exercice : diaporama "Unix" ***01-scripts-exercices.pdf*** - *Exercice 1 : Un premier script*.
 
 >**Ce que j'ai réussi à faire :**
 
->->- En classe, on a fait la correction de "Scrips Bash - *Exercice 1 : Un premier script* et j'ai refait le devoir avec les instructions du corrigé 
+>- /
 
->-
 >**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
 
->-ls 
+>-
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
 
