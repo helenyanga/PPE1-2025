@@ -1,5 +1,9 @@
 # Journal de bord du projet encadré
+
+
 ---
+
+
 # Séance 1 : 24-09-2025
 
 ###**1. Ce que j'ai compris :**
@@ -83,8 +87,11 @@ Les 50 ressources (URLS) doivent prouver que le mot est attesté. On doit faire 
 - Je dois comprendre à quoi renvoient les informations en bleu sur le terminal.
 
 
+
 ***
 ---
+
+
 
 # Séance 2 : 01-10-2025
 
@@ -200,7 +207,8 @@ Par ailleurs, je n’ai pas réussi à suivre les étapes de l'*Exercice 1 Un pr
 
 - J'ai compris la sauvegarde des résultats qu'on envoie dans un fichier.txt qu'on crée, à partir des doubles chevrons.
 
-- pipes : |
+- **pipes** : **|**
+
 
 ###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
@@ -270,14 +278,16 @@ Après avoir écrit du texte ou un programme (soit un code) dans *Kate*, revenir
 
 > Utiliser la commande suivante pour faire exécuter le fichier.sh : ***./nomdufichier.sh***
 
+
 ###**3. Ce que je n'ai pas compris :**
 
 - /
 
+
 ###**4. Activité(s) :**
 
 ## Exercice : diaporama ***Unix*** - *Exercice*
->**Ce que j'ai réussi à faire :**
+>**Ce que j'ai réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
 
 >- J'ai refait l'exercice *Exercice1* car je n'avais pas réussi à faire l'arborescence (cf. séance 1) et grâce à la correction (cf. séance 2), je l'ai recommencé à la maison. J'ai utilisé les commandes suivantes : 
 
@@ -297,28 +307,48 @@ Après avoir écrit du texte ou un programme (soit un code) dans *Kate*, revenir
 ![Figure 6 : La commande "ls 2016" suivi d'un astérix et du "*ann".](/home/helena/Documents/M1TAL/images_journal_projet/commande_trie_fichiers2.jpg "La commande "ls 2016" suivi d'un astérix et du "*ann".")
 *Figure 6 : La commande ls 2016 suivi d'un astérix*.
 
+## Exercice : diaporama "Scripts Bash" ***01-scripts-exercices.pdf*** - *Exercice 1 : Un premier script*.
 
->**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
+>**Ce que j'ai réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
 
->- /
+> J'ai suivi les intructions vus en classe pour calculer le nombre de fois qu’on a "Location" dans les fichiers "ann2016". Je me suis placée dans le dossier "fichiers_ann" qui regroupait les dossiers "ann2016", "ann2017", "ann2018" et ait écrit les commandes sur la Konsole (cf. Figure 7). Ensuite, je me suis déplacée dans le dossier "ann2016" pour calculer le nombre de lignes qui comportent le mot "Location" mais, les résultats n'apparaissaient pas dans le fichier crée "output_ex1".
 
-## Exercice : A partir de l'*Exercice1*, compter le 
+![Figure 7 : Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash" (1).](/home/helena/Documents/M1TAL/images_journal_projet/location1.jpg "Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash". (1)")
+*Figure 7 : Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash" (1).*
 
->**Ce que j'ai réussi à faire :**
+> Après avoir vérifié dans le fichier "ann2016", j'ai pu constater que le résultat s'imprimait dans un autre fichier "output_ex1" que je créais dans le dossier "ann2016". J'avais ainsi, deux fichiers "output_ex1" dont un dans le dossier "fichiers_ann" et un autre dans le dossier "ann2016". J’ai compris que je créais un autre fichier txt qui avait le même nom "output_ex1", alors pour éviter ça, j'ai déplacé le fichier "output_ex1" avec la commande *mv* dans chaque dossier "ann2016", "ann2017" et "ann2018" (cf.Figure 8, Figure 9). 
 
->-grep et wc - l et ou w -> faire /* pr appeler ts les fichiers qu ont le meme nom
-=> je pensais avoir réussi à faire mais j ai tout fais sur kate (dans kate j ai juste mis les réuslats que j ai copier sur la sortie de la konsole et ai coller dans l editeur de texte kate)  et la konsole hors kate alors qu il fallait faire dans la konsole de kate. j ai donc refait l exercice.
+![Figure 8 : Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Scripts Bash" (2).](/home/helena/Documents/M1TAL/images_journal_projet/location2.jpg "Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash" (2).")
+*Figure 8 : Les commandes utilisées pour l'"Exercice 1 Un premier script" - "Scripts Bash" (2).*
 
+![Figure 9 : Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Scripts Bash" (3).](/home/helena/Documents/M1TAL/images_journal_projet/location2.jpg "Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash" (3).")
+*Figure 9 : Les commandes utilisées pour l'"Exercice 1 Un premier script" - "Scripts Bash" (3).*
 
+> J'ai noté les résultats sur l'éditeur de texte *Kate* (cf. Figure 10). Je pensais avoir réussi l'exercice, mais quand on a discuté de cet exercice en cours, j'ai remarqué que le code devait se trouver sur l'éditeur *Kate* et non sur la Konsole. J'ai du refaire cet exercice avec *Kate* mais, j'ai rencontré des difficultés sur mon terminal (cf. Figure 11, 12, 13). En effet, je n'ai pas compris pourquoi le code ne fonctionnait pas, pourtant je suis dans le bon chemin. N'ayant pas compris le problème qui persistait, je n'ai pas pu avancer dans les autres exercices et je n'ai ni ajouté de tag car je n'ai pas pu réussir l'exercice du bash.
 
->**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
+![Figure 10 : Résultats pour chaque année.](/home/helena/Documents/M1TAL/images_journal_projet/trace_ecrite_location.jpg "Résultats pour chaque année.")
+*Figure 10 : Résultats pour chaque année.*
 
->- A la maison, j'ai commencé l'exercice "Scrips Bash - *Exercice 1 : Un premier script* -> pas tereminé car bloquée pour calculer
+![Figure 11 : *Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (1).](/home/helena/Documents/M1TAL/images_journal_projet/comptessh1.jpg "*Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (3).")
+*Figure 11 : "Exercice 1 Un premier script" - "Scripts Bash" - en fichier ".sh" (1).*
+
+![Figure 12 : *Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (2).](/home/helena/Documents/M1TAL/images_journal_projet/comptessh2.jpg "*Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (2).")
+*Figure 12 : "Exercice 1 Un premier script" - "Scripts Bash" - en fichier ".sh" (2).*
+
+![Figure 13 : *Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (3).](/home/helena/Documents/M1TAL/images_journal_projet/comptessh3.jpg "*Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (3).")
+*Figure 13 : "Exercice 1 Un premier script" - "Scripts Bash" - en fichier ".sh" (3).*
 
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
 
-- Tester *sort* (trier des lignes), *uniq* (supprimer les lignes qui se répètent), *cut* (sélectionne des colonnes d'un fichier tabulaire) et *tail* (ne garde que les dernières lignes d'un flux ou d'un fichier).
+- Tester ***sort*** (trier des lignes), ***uniq*** (supprimer les lignes qui se répètent), ***cut*** (sélectionne des colonnes d'un fichier tabulaire) et ***tail*** (ne garde que les dernières lignes d'un flux ou d'un fichier).
+
+- Revoir les instruction de contrôle : les instructions conditionnelles (l'instruction **if** avec les confitions possibles, cf. diaporama ***Unix*** ; sur les chemins : *-f fichier*, *-d dossier*, *-s fichier* ; sur des chaînes de caractèrs : *=* ou *!=* , *<* ou *>* , *-n chaine* , *-z* ; equal : *a -eq b* ; not equal : *a -ne b* ; less than : *a -lt b* ; greater than : *a -gt b* ; si a inférieur ou égale à b : *a -le b* ; si a supérieur ou égale à b : *a -ge b*).
+
+- La validation des arguments.
+
+- Les boucles ***for*** et ***while***. 
+
 
 
 ***
@@ -328,13 +358,24 @@ Après avoir écrit du texte ou un programme (soit un code) dans *Kate*, revenir
 
 # Séance 4 : 15-10-2025
 
-- J'intègre petit à petit les commandes git pour pousser sur git (*git push*) ou récupérer des fichiers sur GitHub (*git pull*) et la création de tag. Je suis également plus à l'aise avec commandes Unix.
-
 ###**1. Ce que j'ai compris :**
 
-- En cours j ai compris qu’on se servait de la commande ***wc*** pour compter le nombre de lignes, de mots, et de caractères dans un fichier.
+- J'assimile petit à petit les commandes git pour pousser sur git (*git push*) ou récupérer des fichiers sur GitHub (*git pull*) et la création de tag. Je suis également plus à l'aise avec commandes Unix.
 
-- Je commence petit à petit à comprendre les autres commandes Unix.
+- On a fait la correction des exercices "Scripts Bash", notamment l'*Exercice 1 Un premier script*, où j'ai eu des difficultés avec mon terminal (cf. Séance 3). Après la correction en classe, j'ai refait l'*Exercice 1 Un premier script* (cf. Figure 14, 15, 16) d'où mon commit "erreur-correction1" qui a remplacé mon exercice par la correction dans le dépôt *comptes.sh*, sur GitHub. Mais, sur ce site, j'ai remis mon exercice initiale au-dessus de la correction dans le *comptes.sh* pour garder une trace des résultats pour chaque année (cf. Figure 11).
+
+![Figure 14 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (1).](/home/helena/Documents/M1TAL/images_journal_projet/corrige_comptessh.jpg " Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (1).")
+*Figure 14 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (1).*
+
+> On peut utiliser le **chemin absolu** à l'aide de la commande ***pwd*** pour que la machine écrit les résultats dans le fichier ".sh" pour l'*Exercice 1 Un premier script*. 
+
+![Figure 15 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (2).](/home/helena/Documents/M1TAL/images_journal_projet/corrige_comptessh1.jpg " Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (2).")
+*Figure 15 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (1).*
+
+![Figure 16 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (3).](/home/helena/Documents/M1TAL/images_journal_projet/corrige_comptessh2.jpg " Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (2).")
+*Figure 16 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (3).*
+
+> */tmp/ permet de stocker des fichiers temporaires.
 
 ###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
@@ -362,10 +403,14 @@ Après avoir écrit du texte ou un programme (soit un code) dans *Kate*, revenir
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
 
--
+- Faire la suite des exercices de "Scripts Bash".
+
+
 
 ***
 ---
+
+
 
 # Séance 5 : - -2025
 
