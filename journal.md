@@ -464,7 +464,49 @@ La notation se suit ainsi : "cat 2016/2016*ann | grep Location | cut -f3" ;
 
 ###**4. Activité(s) :** /
 
-## Exercice : diaporama "Unix" ***01-scripts-exercices.pdf*** - *Exercice 1 : Un premier script*.
+## Exercice : diaporama "Unix" - *Exercice : "Example: lire et expliquer ce code*.
+
+Lecture : 
+
+>si la variable # -ne 1
+
+>ensuite
+
+>on écrit “Ce programme demande un argument”
+
+>puis, il quitte(sort)
+
+>fi, on met fin à la boucle
+
+>la variable FICHIER_URL est la variable 1
+
+>OK= 0 : jsais pas
+
+>NOK : jsais pas
+
+>pendant que -r lit ? les lignes : 
+
+>si la variable LINE est le lien https
+
+>alors 
+
+>on écrit “resemble à une URL valide”
+
+>OK=variable : je ne sais pas ; à l’expression de la variable OK, on lui ajoute 1
+
+>sinon,
+
+>on écrit “ressemble pas à une URL valide”
+
+>NOK=variable : je ne sais pas  ; et on lui ajoute 1
+
+>fi, on met fin à la boucle
+
+>done : je ne sais pas : chevron qui signifie je donne la variable fichier
+
+> j'affiche "la variable OK est une url et la variable NOK sont des lignes douteuses"
+
+
 
 >**Ce que j'ai réussi à faire :**
 
