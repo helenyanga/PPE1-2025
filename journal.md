@@ -270,7 +270,7 @@ exemples :
 On ouvre un des deux logiciels. J'ai choisi *Kate* et effectue la commande suivante : ***kate monscript.sh"***
 Quand on fait la commande *ls*, on peut remarquer que notre fichier *monscript.sh* a bien été crée.
 On effectue la commande ***bash monscript.sh*** pour dire à la machine qu'on veut excuter notre fichier avec des commandes à l'intérieur.
-A l'intérieur du fichier ***monscript.sh***, en l'ouvrant avec Kate, on écrit : ***#!/usr/bin/bash***. Cette commande permet de dire à la machine que le programme écrit dans l'éditeur de texte doit être interprêté.
+A l'intérieur du fichier ***monscript.sh***, en l'ouvrant avec Kate, on écrit : ***#!/usr/bin/bash***. Cette commande est le Shebang et il permet de dire à la machine que le programme écrit dans l'éditeur de texte doit être interprêté.
 A l'intérieur du fichier, si on écrit *#texte* dans l'éditeur de texte *Kate*, la machine ne prendra pas en compte le mot "texte" présent, grâce au symbole ***#***.
 Après avoir écrit du texte ou un programme (soit un code) dans *Kate*, revenir sur la Konsole puis, écrire la commande suivante : **chmod +x monscript.sh** qui permet de demander la permission à la machine pour rendre le fichier exécutable.
 
@@ -575,6 +575,32 @@ J'ai essayé les commandes pour l'url suivante : https://lustensile.fr/recette/g
 
 - Les outils d'aide à l'écriture - éditions de code : collaboration syntaxique (éditeur d'analyse sur le code par exemple, il permet de repérer ce qu'est une variable), complétion, limiter (analyse statistique du code) et le langage serveur protocole (logiciel d'analyse en parallèle avec notre éditeur qui permet de conseiller).
 
+- Quelque vocabulaire que je ne comprenais pas vraiment : 
+
+>-*if* est toujours suivi par l’instructuion *then* ;
+
+>-Le code condition *if*, syntaxe :
+
+>>*if [condition à spécifier ici]*
+
+>>>then 
+
+>>>>*#bloc à exécuter ssi la condition est vraie*
+
+>>fi #détermine la fin de la structure conditionnelle
+
+>-Comparateur de comparaison en bash : si la condition est xxxx ensuite, j’affiche le message via la commande "echo" et la boucle est terminée;
+
+>-L'ajout du *else* : sinon si la condition est fausse, on exécute le code ci-dessous ;
+
+>-| | : ou (barre oblique) ;
+
+>-| : un pipeline qui permet de renvoyer dans un autre endroit en passant par des tunnels
+
+- Cette vidéo YouTube m'a permis de mieux comprendre le script bash : 
+
+>-J'ai appris comment créer un fichier. Pour ce faire, on utilise la commande ***touch*** comme par exemple : ***touch nomfichier.txt***.
+>-*cat nomfichier.sh | wc -l* : avec le pipeline **|** ; il faut toujours ajouter une pipeline après une première commande ! Dans ce code, je lui ai envoyé à la pipeline la commande *cat*. 
 
 ###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
@@ -628,15 +654,21 @@ On veut que la boucle *while* boucle sur le contenu du fichier.
 > 2) Dans ce programme, on test si cet argument n'est pas un fichier : 
 
 >> if [ ! -f $1]
->> then
->>> echo "Vous devez indiquer un fichier."
->>> exit
->> fi
 
+>> then
+
+>>> echo "Vous devez indiquer un fichier."
+
+>>> exit
+
+>> fi
+ 
 
 ###**3. Ce que je n'ai pas compris :**
 
-- / 
+- Pendant l'exercice du miniprojet, je n'ai pas réussi à comprendre la syntaxe du code à la fin (cf. Figure 40). J'ai regardé des vidéos et certains sites sur bash mais, je n'ai pas compris le problème du code, c'est-à-dire : pourquoi la machine ne traduit-elle pas que ${line} (dans le code établi à l'intérieur de *echo*) est une url du fichier "fr.txt" pourtant, elle l'interprète comme telle dans la boucle *for* et dans la boucle *while*. Je n'ai donc pas pu générer le tableau TSV.
+
+> J'ai tout de même crée le tag le 27.10.25 sur GitHub (cf. Figures 41 et 42) et je n'avais pas encore terminé de rédiger complètement le *journal.md*. Je l'ai mis à jour le 01.11.2025 avec un nouveau tag "miniprojet-1.1" remplaçant l'ancien tag "mini-projet-1" que j'ai effacé.
 
 ###**4. Activité(s) :**
 
@@ -755,7 +787,7 @@ Alors, je suis passée à la boucle *for* car cette boucle me permettra sûremen
 >>-J’affiche le *N* et le contenu de la ligne ;
 >>-Je fais la seconde itération donc je fais la même chose pour la deuxième ligne et j’effectue le même processus pour chaque ligne jusqu’à la dernière ;
 >>-La boucle *for* se termine avec *done* ;
->>-Au début, je n'avis pas fait attention à bien écrire le code de la boucle, car en effet, j'avais oublié *done* à la fin de la boucle *for* donc, j’obtenais "Erreur" en sortie sur la Konsole (cf.Figure 29). Après avoir corrigé les lignes, j'ai obtenu le résultat que je cherchais (cf.Figure 29).
+>>-Au début, je n'avis pas fait attention à bien écrire le code de la boucle, car en effet, j'avais oublié *done* à la fin de la boucle *for* donc, j’obtenais "Erreur" en sortie sur la Konsole (cf.Figure 28). Après avoir corrigé les lignes, j'ai obtenu le résultat que je cherchais (cf.Figure 29).
 
 ![Figure 28 : Exercice "Miniprojet" - Exercice 1 - question 3 (3).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_3.jpg " Exercice "Miniprojet" - Exercice 1 - question 3 (3).")
 *Figure 28 : Exercice "Miniprojet" - Exercice 1 - question 3 (23.* 
@@ -763,16 +795,81 @@ Alors, je suis passée à la boucle *for* car cette boucle me permettra sûremen
 ![Figure 29 : Exercice "Miniprojet" - Exercice 1 - question 3 (4).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_4.jpg " Exercice "Miniprojet" - Exercice 1 - question 3 (4).")
 *Figure 29 : Exercice "Miniprojet" - Exercice 1 - question 3 (4).* 
 
-=> faire les images à partir de la page 34 jpurnal gogole doc 
+>>Je dois maintenant ajouter les tabulations au programme : j’ai utlisé la commande *man echo* pour savoir s'il y a quelques indications pour faire fonctionner le symbole "\t" car en effet, la machine ne prenait pas en compte ce symbole comme une séparation des valeurs dans le code. J'ai donc trouvé l’option *-e* qui permet de dire à la machine d’activer l’interprétation de la barre oblique inversée comme le montre. Ensuite, je l'ai rajouté dans la commande *echo* en option afin que la machine interprète *\t* comme on peut le voir dans la figure 30 :
+
+![Figure 30 : Exercice "Miniprojet" - Exercice 1 - question 3 (5).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_5.jpg " Exercice "Miniprojet" - Exercice 1 - question 3 (5).")
+*Figure 30 : Exercice "Miniprojet" - Exercice 1 - question 3 (5).* 
 
 
 - **Exercice 2 :**
 
->-
+>>Pour ce faire, on doit utiliser *curl* et *grep* pour rechercher les infos qu'on veut. J’ai essayé *curl -i adresseurl* mais, l'adresse comportait trop de métadonnées alors, je n’ai pas réussi à trouver l'**HTTP**. J'ai donc essayé la commande *wget* (sur Konsole): 
+
+![Figure 31 : Exercice "Miniprojet" - Exercice 2 (1).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_1.jpg " Exercice "Miniprojet" - Exercice 2 (1).")
+*Figure 31 : Exercice "Miniprojet" - Exercice 2 (1).* 
+
+>>J’obtiens qu’une seule donnée qui m’intéresse ici, il s'agit du HTTP du premier url qui vaut **200**. Donc, le site fonctionne. Je me suis remis sur la Konsole dans le fichier *Kate* car au début, je n’y étais pas. J’essaye avec ***curl -I adresseurl*** que j'ai remarqué sur le diaporama ***web*** ("tiret i majuscule", équivalent à l’option "head" page 12). En effet, en effectuant cette commande, j'ai obtenu plus d’informations sur l'url tels que l'HTTP, l’**encodage de la page** , ici qui est **charset=UTF-8** pour la première page web (cf. Figure 32).
+
+![Figure 32 : Exercice "Miniprojet" - Exercice 2 (2).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_2.jpg " Exercice "Miniprojet" - Exercice 2 (2).")
+*Figure 32 : Exercice "Miniprojet" - Exercice 2 (2).*
+
+>>Ensuite, pour compter le nombre de mots, j’ai utilisé *cat adresseurl | grep | wc - w*, mais la commande n'a pas fonctionné. J'ai cherché dans *man grep* mais je n'ai pas trouvé d’options avec les adresses url. J’observe ma commande et remarque que *cat* est utilisé pour afficher quelque chose soit du texte qu'on a déja écrit dans un script alors, je remplace *cat* par *curl* dans *curl adresseurl | grep | wc - w*. Mais, cette commande ne fonctionne pas non plus. Alors, je fais *man curl* et je trouve l’option *-s*  (vu également dans le diaorama ***web***, page 12) qui permet de générer les métadonnées de l’url vers le terminal (cf. Figure 33) : 
+
+Dans la figure 33, on peut voir que la Konsole ne nous affiche pas les réusltats qu'on veut.
+
+![Figure 33 : Exercice "Miniprojet" - Exercice 2 (3).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_3.jpg " Exercice "Miniprojet" - Exercice 2 (3).")
+*Figure 33 : Exercice "Miniprojet" - Exercice 2 (3).*
+
+>>Je me rends compte que *grep* est utiliser pour rechercher quelque chose de précis dans un fichier et ce que je veux est uniquement le nombre de mots, non une recherche spécifique. J'enlève donc *grep* et teste la commande suivante : ***curl -s https://fr.wikipedia.org/wiki/Robot | wc - w***. J'obtiens ces résultats suivants (cf. Figure 34) : 
+
+![Figure 34 : Exercice "Miniprojet" - Exercice 2 (4).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_4.jpg " Exercice "Miniprojet" - Exercice 2 (4).")
+*Figure 34 : Exercice "Miniprojet" - Exercice 2 (4).*
+
+>>J'ai donc le **nombre de mots** total qui est de 13904. Dans la sortie Konsole, je dois pouvoir afficher pour chaque ligne avec leurs propres résultats. Pour ce faire, je modifie le code de base (cf. Figure 35) dans la boucle *while*.
+
+![Figure 35 : Exercice "Miniprojet" - Exercice 2 (5).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_5.jpg " Exercice "Miniprojet" - Exercice 2 (5).")
+*Figure 35 : Exercice "Miniprojet" - Exercice 2 (5).*
+
+>> J'ajoute des commandes à l'intérieur de la condition *for* dans la *while* (cf. Figure 36).
+
+![Figure 36 : Exercice "Miniprojet" - Exercice 2 (6).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_6.jpg " Exercice "Miniprojet" - Exercice 2 (6).")
+*Figure 36 : Exercice "Miniprojet" - Exercice 2 (6).*
+
+>>Etant bloquée sur le code, je réalise manuellement (sans la boucle *for*) la même commande pour les 10 urls comme en figure 37 :
+
+![Figure 37 : Exercice "Miniprojet" - Exercice 2 (7).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_7.jpg " Exercice "Miniprojet" - Exercice 2 (67.")
+*Figure 37 : Exercice "Miniprojet" - Exercice 2 (7).*
+
+>> Ici, on voit que j'ai un problème avec le token parenthèse car en effet, la Konsole pense qu‘il s agit d’un caractère spécial en bash. Pour éviter ca, j’ajoute les guillemets et ca fonctionne comme on le voit sur la figure 38. Après avoir réaliser manuellement, j'obtiens une répétition de chaque ligne (cf. Figure 39) et je me rends compte que ce n'est pas ce que je voulais obtenir.
+ 
+![Figure 38 : Exercice "Miniprojet" - Exercice 2 (8).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_8.jpg " Exercice "Miniprojet" - Exercice 2 (8).")
+*Figure 38 : Exercice "Miniprojet" - Exercice 2 (8).*
+
+![Figure 39 : Exercice "Miniprojet" - Exercice 2 (9).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_9.jpg " Exercice "Miniprojet" - Exercice 2 (9).")
+*Figure 39 : Exercice "Miniprojet" - Exercice 2 (9).*
+
+>>J’ai compris comment faire pour que le fichier "fr.txt" soit détecter par la machine, je dois mettre le **chemin en argument** dans la Konsole (cf. Figure 39) : 
+
+>>./miniprojet.sh /home/helena/Documents/plurital/PPE1-2025/miniprojet/urls/fr.txt
+
+>>Maintenant, je vais compléter le code pour qu'il ajoute les 3 informations qui ous intéressent pour chaque ligne. Sur la figure 40, la machine n’effectue pas les commandes *curl* mais, elle affiche le texte dans la commande : 
+
+![Figure 40 : Exercice "Miniprojet" - Exercice 2 (10).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_10.jpg " Exercice "Miniprojet" - Exercice 2 (10).")
+*Figure 40 : Exercice "Miniprojet" - Exercice 2 (10).*
+
+>>Je n'ai pas réussi à terminé le code pour qu'il génère les 3 informations rechercheés pour chaque url (cf. "3. Ce que je j'ai pas compris - Séance 5").
+
+![Figure 41 : Commit déposé sur GitHub le 27.11.25 - "miniprojet-1"](/home/helena/Documents/M1TAL/images_journal_projet/commitMp1.jpg "Commit déposé sur GitHub le 27.11.25 - "miniprojet-1"")
+*Figure 41 : Commit déposé sur GitHub le 27.11.25 - "miniprojet-1".*
+
+![Figure 42 : Tag "miniprojet-1"](/home/helena/Documents/M1TAL/images_journal_projet/tagMp1.jpg "Tag "miniprojet-1"")
+*Figure 42 : Tag "miniprojet-1".*
+
+
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
 
--
+- Terminer l'exercice 2 du "miniprojet" (cf. "3. Ce que je j'ai pas compris - Séance 5").
 
 ***
 ---
