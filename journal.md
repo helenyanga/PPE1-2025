@@ -525,35 +525,248 @@ Lecture :
 
 
 
-# Séance 5 : - -2025
+# Séance 5 : 22-10-2025
 
 ###**1. Ce que j'ai compris :**
 
-- 
+- Le **HTML** est un langage de balisage hypertexte. Il contient donc un formatage, des paragraphes, des images, etc.). On ajoute donc de la structure autour d'un sujet qui servira à représenter les pages web.
 
-- 
+- ***Lynx*** est un navigateur web qui fonctionne avec le terminal. On peut aller sur Internet avec notre terminal. 
+
+> 1) Aller sur un site et copier son url avec *Ctrl c*.
+
+> 2) Utiliser la commande suivante et ajouter l'url à la suite avec *Ctrl v* : ***lynx adresseurl***
+
+> 3) **Optionnel** : les commandes à utiliser quand on a ouvert une page web à partir de la commande ci-dessus : 
+
+> - la touche "**espace**" : aller à la page suivante ; 
+> - ***Ctrl c*** : pour forcer l'arrêt quand on a ouvert une page par erreur et qu'on ne voulait pas l'ouvrir ; 
+> - "**flèche bas**", "**flèche haut**" : défiler vers le bas, défiler vers le haut ; 
+> - la touche "**k**" : permet de voir toutes les commandes (**à tester !**) ; 
+> - ***Ctrl Shift v*** : copier/coller un texte sans formatage.
+
+> L'objectif avec *Lynx* est de **récupérer des pages hors navigation**, à partir des commandes de *Lynx*, pour des projets en collaboration. 
+J'ai essayé les commandes pour l'url suivante : https://lustensile.fr/recette/gateau-nature/?srsltid=AfmBOopT9EeX22DfazGjSEmvHx0hk9N1EdDT_5hvxe1MuT61UHuRvGr.
+
+> 5) Chercher des **options** : si besoin, utiliser ***man lynx*** ou ***lynx --help*** (attention, parfois l'une des deux commandes ne fonctionnenent pas toujours, il est nécessaire de connaître ses deux manières).
+> - ***lynx -dump adresseurl*** : commande qui permet de récupérer une url ; 
+> - ***Crt maj f*** : faire une recherche sur l'écran du terminal ; 
+
+> 6) On ne s'intéresse pas aux url dans les références du site (ça ne fait pas partie du texte) ainsi, pour la liste des liens d'une page, on effectue cette commande suivante : ***-nolist***, c'est-à-dire : ***lynx -nolist adresseurl*** ; si cette commande n'existe pas, on peut faire sur le terminal : ***lynx -dump adresseurl***.
+
+- Les commandes ***wget*** et ***cURL*** permettent de récupérer des métadonnées (encodage, HTTP, etc.) des sites webs à partir de leur url : 
+
+> Installations de *curl* : ***sudo apt install curl***
+
+> Pour récupérer une page web : ***curl adresseurl***
+
+> Pour savoir si une page **web est valide** c'est-à-dire, quel est son encodage, etc, on va utiliser la commande *curl*. Mais, si la page web ne fonctionne pas sur notre terminal, cela signifie que la page web ne fonctionne pas. On parle de **code erreur**.
+
+> Les options : 
+>- ***-o***, ***-i***, etc.
+>- La commande *less* : ***curl -i adresseurl | less*** ; 
+>- L'option *-i* permet d'ajouter des interactions avec le serveur. 
+***curl -i***;
+>- ***curl -L adresseurl*** : *-L* pour les déplacements ;
+>- Combinaison des options : ***curl -L -i adresseurl*** ; 
+>- Ajout d'un fichier HTML à partir de *output.html* et *-o* pour afficher un fichier de sorti : ***curl -L -i -o output.html adresseurl*** ; 
+>- ***-w*** ; ***-s*** ; 
+>- Encodage : **charset = UTF8**
+
+- Les outils d'aide à l'écriture - éditions de code : collaboration syntaxique (éditeur d'analyse sur le code par exemple, il permet de repérer ce qu'est une variable), complétion, limiter (analyse statistique du code) et le langage serveur protocole (logiciel d'analyse en parallèle avec notre éditeur qui permet de conseiller).
+
 
 ###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
-- /
+- En classe, on a fait la correction du code (cf. Séance 4) :
+ 
+> Les questions à se poser, ce qu'il faut savoir loresqu'on décode un programme : 
+
+>> Que veut dire *done < $FICHIERS_URLS* ?
+
+>> Vérifier si "FICHIERS_URLS" est un argument.
+
+>> Une variable peut prendre toute sorte de valeur.
+
+>> Pour comprendre le script, d'une manière générale, il faut repérer quelles sont les commandes appelées, les variables et les redirections (entrées et sorties). 
+
+
+> Lecture corrigée : 
+
+>> On a une variable "FICHIERS_URLS=$1" liée depuis celle-ci et à l'argument ; 
+
+>> Ce chevron pose problème dans *done < $FICHIERS_URLS* ; 
+
+>> Le contenu de ce fichier sera branché sur l'entrée standard du programme, sauf qu'on a seulement le *done* ici : 
+
+>> Le bloc *while* a *done* qui est représenté par une balise ; 
+
+>> *while read* est une commande comme une autre (**voir l'aide de la page manuel du terminal : "read man"**). C'est une étrange fonction car elle prend comme argument le nom de variable et elle stocke ce qui reçoit sur l'entrée standard dans cette variable là, comme si on demandait *echo* "ton nom"* (on apporte la réponse de l'utilisateur). *while* est une condition, elle doit être vraie ou fausse tant que ça exécute, sinon, si c'est faux, on sort de la boucle. *read* prend comme un argument une variable et va stocker comme entrée standard dans la variable. 
+
+>> *while read -r line* : ce sera vrai tant que ça l'ait et lorsque ça arrivera à la fin du fichier, ce sera faux. Donc *read -r line* (entrée standard), sera lu et quand tout sera lu et qu'il n'y aura plus rien à lire, la boucle se terminera. AInsi, ce qu'on envoie à *readù c'est le contenu du fichier. Il va stocker la *line* dans une variable. C'est pour cela qu'on fait une redirection c'est-à-dire, qu'on revient à la boucle *read* car on veut qu'elle lise le contenu (donc toutes les lignes) et pas qu'une seule ligne. Les espaces seront également traités. 
+On veut que la boucle *while* boucle sur le contenu du fichier.
+
+>> Le *done* répond au *do* et au *while*.
+
+- Le Python est différent du bash.
+
+- Vérifier si on a bien un argument dans un script bash :
+
+> 1) Dans ce programme, on test si on a bien un argument :
+
+>> if [ $# -ne 1 ]
+
+>> then
+
+>>> echo "Ce programme demande un argument."
+
+>>> exit
+
+>> fi
+
+
+> 2) Dans ce programme, on test si cet argument n'est pas un fichier : 
+
+>> if [ ! -f $1]
+>> then
+>>> echo "Vous devez indiquer un fichier."
+>>> exit
+>> fi
 
 
 ###**3. Ce que je n'ai pas compris :**
 
-- 
-
-
+- / 
 
 ###**4. Activité(s) :**
 
-## Exercice : diaporama ***jjjjjjj***
+## Exercices 1 et 2 : diaporama ***miniprojet***
 
->**Ce que j'ai réussi à faire :**
+>**Ce que j'ai réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
 
->-
+- **Exercice 1 : Questions**
 
->-
->**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
+>-**Question 1** : La commande *cat* n’écrira pas le contenu, il l’affichera sur l’écran du terminal en passant par un pipeline, tandis que *echo* écrira et affichera le contenu de la ligne sur l'écran du terminal.
+>-**Question 2** : Il faut créer une variable pour ce fichier. On veut donc avoir *$urls/fr.txt* et pour celà, j'ai fait utiliser une commande *if* (cf. Figure 18).
+
+![Figure 18 : Exercice "Miniprojet" - Exercice 1 - question 2 (1).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_1.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (1).")
+*Figure 18 : Exercice "Miniprojet" - Exercice 1 - question 2 (1).*
+
+>> La ligne 26 est amnigüe. Il ne reconnaît peut-être pas la variable *$1*. Il ne voit pas non plus le document/fichier "urls/fr.txt", c‘est pour cela que la machine affiche "No  such file or directory". En effet, j‘ai placé au mauvais endroit le fichier "testminiprojet". Je l’ai donc déplacer avec la commande *mv* dans le dossier "miniprojet", puis j’ai corrigé les lignes (cf. Figure 19).
+
+![Figure 19 : Exercice "Miniprojet" - Exercice 1 - question 2 (2).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_2.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (2).")
+*Figure 19 : Exercice "Miniprojet" - Exercice 1 - question 2 (2).*
+
+>> Mais, je remarque que mon code a par défaut afficher “Ce programme a un argument.” alors, pour être certaine, je fais un test du code en effaçant la condition *else* dans la première condition *if*. J'obtiens en sorite de la Konsole les deux contenus des deux *echo* comme sur l'image ci-dessous : 
+
+![Figure 20 : Exercice "Miniprojet" - Exercice 1 - question 2 (3).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_3.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (3).")
+*Figure 20 : Exercice "Miniprojet" - Exercice 1 - question 2 (3).*
+
+>> Remarque : Je dois également faire faire attention aux espaces dans la condition entre crochet qui réfère à la syntaxe, sinon ca ne fonctionnera pas. On le voit avec les couleurs du code comme on peut le voir sur l’image suivante (cf. Figure 21) : 
+
+![Figure 21 : Exercice "Miniprojet" - Exercice 1 - question 2 (4).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_4.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (4).")
+*Figure 21 : Exercice "Miniprojet" - Exercice 1 - question 2 (4).*
+
+>> Je dois corriger mon programme.
+
+![Figure 22 : Exercice "Miniprojet" - Exercice 1 - question 2 (5).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_5.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (5).")
+*Figure 22 : Exercice "Miniprojet" - Exercice 1 - question 2 (5).*
+
+>> Je corrige encore mon code en changeant la variable car je l'avais mal nommée : urls/fr.txt=$ au lieu de fichier=$1 (nomination vérifiée avec le diaporama ***Unix***).
+
+>-**Question 2.1** : J'ai ajouté une deuxième condition *if* pour s’assurer qu’on donne bien un argument au script, si ce n'est pas le cas (d'où le *sinon*), on s’arrête (cf. Figure 23).
+D’abord, je me suis appercue que je n’étais pas dans le bon dossier alors, j'ai ajouté *cd ~/Documents/xxx/miniprojet/urls*. En effet, si je ne suis pas dans le bon dossier où il y a le fichier "fr.txt", quand je vais exécuter le script, la machine ne va pas savoir où se trouve le fichier "fr.txt". Ensuite, j’ai remodifé le code pour vérifier qu’on donne bien un argument au script : 
+
+![Figure 23 : Exercice "Miniprojet" - Exercice 1 - question 2 (6).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_6.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (6).")
+*Figure 23 : Exercice "Miniprojet" - Exercice 1 - question 2 (6).*
+
+>> Dans la figure 23, la condition affiche bien les deux possibilités : si j'ai le fichier donné "fr.txt" en argument dans la Konsole et si je n'ai pas le fichier donné en argument dans la Konsole, je dois l'écrire sur le terminal. Cependant, on a une condition *else* dans la deuxième condition *if*. On voit que tout le script n'a pas été effectué en entier. En effet, la machine n'a pas pris en compte le bloc *while*.
+
+>> J’ai donc effacé *else* et j’ai laissé *exit* ainsi que le premier *echo* pour voir le résultat. J'ai également déplacé le second "*echo* 'le fichier existe, c’est “$1”'.” pour l'ajouter après la deuxième condition *if*. Le but étant de dire à la machine que si la condition n'est pas validée, alors sur l'écran, la machine affichera “Erreur : le fichier '$1' n’existe pas.” et si la condition est vérifiée, elle n’affichera pas d'erreur et écrira directement “Le fichier existe, c’est '$1'.” comme on le voit dans la figure 24 : 
+
+![Figure 24 : Exercice "Miniprojet" - Exercice 1 - question 2 (7).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_7.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (7).")
+*Figure 24 : Exercice "Miniprojet" - Exercice 1 - question 2 (7).*
+
+>> On voit bien dans la figure 24 que le contenu du texte a bien été lu. En effet, en créeant un test "2testminiprojet.sh", on peut s'apercevoir que si j’avais écrit le nom d’un autre fichier inexistant sur le dossier, la machine affichera "Erreur" sur l'écran du terminal comme le montre la figure 25 : 
+
+![Figure 25 : Exercice "Miniprojet" - Exercice 1 - question 2 (8).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_7.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (8).")
+*Figure 25 : Exercice "Miniprojet" - Exercice 1 - question 2 (8).*
+
+>> De plus, je peux dire que *$1* est donc la variable qui est donnée en argument et cette variable a pour valeur "fr.txt" soit, contient le fichier nommé "fr.txt" par exemple. Avec cette variable *$1*, je peux mettre n’importe quel fichier car elle se réfèrera au fichier que j’aurai défini.
+
+>> Lecture du code que j'ai écris : 
+
+>>>je prédéfinie une variable *$1* et lui donne comme valeur FICHIER_FR ;
+
+>>>s'il a des arguments égales à 0 c'est-à-dire, s'il a 0 arguments ;
+
+>>>ensuite ;
+
+>>>on affiche “Ce programme n’a pas d’argument.” ;
+
+>>>on affiche aussi “"Vous devez donner le nom d'un fichier en tant qu'argument dans la Konsole : " ;
+
+>>>on quitte la condition *if* ;
+
+>>>on termine la condition *if* ;
+
+>>>on a une deuxième condition *if* : si le fichier donné n’existe pas ou n’est pas un vrai fichier ;
+
+>>>ensuite ;
+
+>>>ca affichera “Erreur : le fichier '$1' n’existe pas.” ;
+
+>>>quitter la condition *if* ;
+
+>>>la condition est terminée ;
+
+>>>afficher “Le fichier existe, c’est '$1'.” (si la condition 2 n'a pas eu lieu car elle a été validée) ;
+
+>>>on a la boucle *while* : on lit une par une les lignes du contenu dans le fichier ;
+
+>>>faire ;
+
+>>>afficher la ligne ;
+
+>>>faire entrée standard le fichier (nommé par la variable *$1* qui comporte le "fichier fr.txt")
+
+>-**Question 3 :**
+
+>>J'ai utilisé le même code en lui rajoutant d'autres commandes pour imprimer chaque url avec un numéro à gauche qui commence par 1. Il s'agit ici, de noter chaque ligne par un numéro.
+J’ai crée une variable *LINE=$2* et je veux effectuer une opération qui incrémente +1 à une autre variable *LIGNECOMPTE=$3* qui permet de numéroter la ligne et le réaliser pour chaque url. C’est ce que je voulais établir (à l'aide de la source suivante : https://blog.stephane-robert.info/docs/admin-serveurs/linux/script-shell/) mais, voilà ce que j’ai obtenu : 
+
+![Figure 26 : Exercice "Miniprojet" - Exercice 1 - question 3 (1).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_1.jpg " Exercice "Miniprojet" - Exercice 1 - question 3 (1).")
+*Figure 26 : Exercice "Miniprojet" - Exercice 1 - question 3 (1).*
+
+>>Dans la figure 26, j'ai remarqué qu'ajouter une variable *LINE=$2* n'était pas utile pour mon code car *echo${line}* permettait dejà d’afficher le contenu du fichier txt. Par ailleurs, mon code n'a pas fonctionné à cause de la syntaxe que je n'arrivais pas à construire alors, j'ai essayé avec un compteur à partir du lien suivant : https://blog.stephane-robert.info/docs/admin-serveurs/linux/script-shell/.
+Dans les cours en "Construction de données", je me suis souvenue du symbole pour la tabulation qui permettait de séparéer les valeurs. Il faut utiliser *\t*.
+
+![Figure 27 : Exercice "Miniprojet" - Exercice 1 - question 3 (2).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_2.jpg " Exercice "Miniprojet" - Exercice 1 - question 3 (2).")
+*Figure 27 : Exercice "Miniprojet" - Exercice 1 - question 3 (2).*
+
+>>Je n'ai pas réussi à écrire la syntaxe avec le "compteur" comme on peut le voir dans la figure 27. 
+Alors, je suis passée à la boucle *for* car cette boucle me permettra sûrement de répéter le processus plusieurs fois et c'est ce que je veux obtenir. Je veux, en effet, avoir un numéro pour chaque ligne d'url. Je me suis aider du diaporama ***Unix*** (p.42) pour établir le code suivant : 
+
+>>-J’ai donné une variable *N=0* pour dire que *N* est un nombre et sa valeur vaut 0 afin que dans la boucle *for*, j'ajoute 1 à ce *N* pour chaque ligne ;
+>>-J'ajoute donc la boucle *for* dans la boucle *while* ;
+>>-Pour chaque *LINE* (donc un élément) dans la variable *${line}* (où les lignes sont lues une par une);
+>>-Faire ; 
+>>-*N=$* c'est-à-dire, *N* est une variable ; *( expr $N + 1 )* c'est-à-dire que j’utilise la commande calcultatrice pour calculer : j’ajoute 1 à la valeur initiale *N*, donc N=0 + 1 , *N* vaut maintenant N=1 ;
+>>-J’affiche le *N* et le contenu de la ligne ;
+>>-Je fais la seconde itération donc je fais la même chose pour la deuxième ligne et j’effectue le même processus pour chaque ligne jusqu’à la dernière ;
+>>-La boucle *for* se termine avec *done* ;
+>>-Au début, je n'avis pas fait attention à bien écrire le code de la boucle, car en effet, j'avais oublié *done* à la fin de la boucle *for* donc, j’obtenais "Erreur" en sortie sur la Konsole (cf.Figure 29). Après avoir corrigé les lignes, j'ai obtenu le résultat que je cherchais (cf.Figure 29).
+
+![Figure 28 : Exercice "Miniprojet" - Exercice 1 - question 3 (3).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_3.jpg " Exercice "Miniprojet" - Exercice 1 - question 3 (3).")
+*Figure 28 : Exercice "Miniprojet" - Exercice 1 - question 3 (23.* 
+
+![Figure 29 : Exercice "Miniprojet" - Exercice 1 - question 3 (4).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_4.jpg " Exercice "Miniprojet" - Exercice 1 - question 3 (4).")
+*Figure 29 : Exercice "Miniprojet" - Exercice 1 - question 3 (4).* 
+
+=> faire les images à partir de la page 34 jpurnal gogole doc 
+
+
+- **Exercice 2 :**
 
 >-
 
