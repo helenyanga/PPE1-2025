@@ -668,7 +668,7 @@ On veut que la boucle *while* boucle sur le contenu du fichier.
 
 - Pendant l'exercice du miniprojet, je n'ai pas réussi à comprendre la syntaxe du code à la fin (cf. Figure 40). J'ai regardé des vidéos et certains sites sur bash mais, je n'ai pas compris le problème du code, c'est-à-dire : pourquoi la machine ne traduit-elle pas que ${line} (dans le code établi à l'intérieur de *echo*) est une url du fichier "fr.txt" pourtant, elle l'interprète comme telle dans la boucle *for* et dans la boucle *while*. Je n'ai donc pas pu générer le tableau TSV.
 
-> J'ai tout de même crée le tag le 27.10.25 sur GitHub (cf. Figures 41 et 42) et je n'avais pas encore terminé de rédiger complètement le *journal.md*. Je l'ai mis à jour le 01.11.2025 avec un nouveau tag "miniprojet-1.1" remplaçant l'ancien tag "mini-projet-1" que j'ai effacé.
+> J'ai tout de même crée le tag le 27.11.25 sur GitHub (cf. Figures 41 et 42) et je n'avais pas encore terminé de rédiger complètement le *journal.md*. Je l'ai mis à jour le 01.11.2025 avec un nouveau tag "miniprojet-1.1" remplaçant l'ancien tag "mini-projet-1" que j'ai effacé.
 
 ###**4. Activité(s) :**
 
