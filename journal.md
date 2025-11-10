@@ -875,3 +875,39 @@ Dans la figure 33, on peut voir que la Konsole ne nous affiche pas les réusltat
 ---
 
 
+# Séance 6 : 05-11-2025
+
+###**1. Ce que j'ai compris :**
+
+- 
+
+###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
+
+- 
+ 
+
+###**3. Ce que je n'ai pas compris :**
+
+- 
+
+###**4. Activité(s) :**
+
+## Exercices 1 et 2 : diaporama ***miniprojet*** - Correction du "miniprojet1"
+
+>**Ce que j'ai réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
+
+- 
+![Figure 43 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_1.jpg "Correction du "miniprojet1".")
+*Figure 42 : Correction du "miniprojet1".*
+
+
+
+###**5. Ce que je n’ai pas eu le temps de faire :**
+
+- 
+
+***
+---
+
+
+
