@@ -883,8 +883,29 @@ Dans la figure 33, on peut voir que la Konsole ne nous affiche pas les réusltat
 
 ###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
-- 
- 
+- J'ai refait les commandes vus en cours pour essayer de comprendre quels options aurais-je besoin pour corriger le "miniprojet1" (cf. figure 43, 44).
+
+![Figure 43 : Test commandes"](/home/helena/Documents/M1TAL/images_journal_projet/test1.jpg "Test commandes")
+*Figure 43 :Test commandes".*
+
+![Figure 44 : Test commandes"](/home/helena/Documents/M1TAL/images_journal_projet/test2.jpg "Test commandes")
+*Figure 44 : Test commandes".*
+
+> ***-L*** (location) : demande à curl de suivre les redirections des codes HTTP (301, 200, etc) ; 
+
+> ***cut*** pour découper une information qu'on veut ; 
+
+> ***-d=*** : délimite l'information qu'on veut ; 
+
+> ***-f2*** : deuxième colonne
+
+> ***content_type=$** : on génère content_type comme une variable. 
+
+> Explication des commandes utilisées sur les figures 43 et 44 : o demande donc de mettre à la première ligne (*head -1*) la variable content_type puis, on vérifie avec *echo* si on a bien le charset. On fait un test avec *cut -d= f2* si on veut avoir les informations dans la deuxième colonne du fichier "metadata.tmp" (cf. figure 45) précédement, en délimitantl'information qu'on veut avec *-d=* (indique qu'on veut l'information à partir du signe égale).
+
+![Figure 45: Test commandes"](/home/helena/Documents/M1TAL/images_journal_projet/test3.jpg "Test commandes")
+*Figure 45: Test commandes".*
+
 
 ###**3. Ce que je n'ai pas compris :**
 
@@ -896,15 +917,81 @@ Dans la figure 33, on peut voir que la Konsole ne nous affiche pas les réusltat
 
 >**Ce que j'ai réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
 
-- 
+- En cours, les professeurs ont souligner qu’ils fallait être précis dans le programme (code) quand on écrit des textes notamment à partir de la commande *echo*, afin que nous-même ou un autre utilisateur puisse comprendre ce les instructions.
+Alors, j’ai modifié mes textes dans *echo* pour le rendre plus précis (cf. figure 43).
+J’ai également remplacer le nom de la variable *FICHIER_FR* par *FICHIER_URL*.
+
 ![Figure 43 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_1.jpg "Correction du "miniprojet1".")
-*Figure 42 : Correction du "miniprojet1".*
+*Figure 43 : Correction du "miniprojet1".*
+
+> J'ai remplacé la boucle *for* par la commande *echo* en la complétant par d'autres options et en intégrant les variables dans cette même commande en utilisant les accolades (cf. figure 44).
+
+![Figure 44 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_2.jpg "Correction du "miniprojet1".")
+*Figure 44 : Correction du "miniprojet1".*
+
+Remarque : 
+
+![Figure 45 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_3.jpg "Correction du "miniprojet1".")
+*Figure 45 : Correction du "miniprojet1".*
+
+> J’ajoute une boucle *while* pour vérifier si chaque url est valide ou non dans le fichier "fr.txt" (cf. figure 46).
+
+![Figure 46 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_4.jpg "Correction du "miniprojet1".")
+*Figure 46 : Correction du "miniprojet1".*
+
+> Ensuite, avec la commande *man curl*, je peux (re)voir toutes les options possibles de cette commande pour récupérer certaines métadonnées de chaque url (cf. figure 47).
+
+![Figure 47 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_5.jpg "Correction du "miniprojet1".")
+*Figure 47 : Correction du "miniprojet1".*
+
+> Les commandes utilisés :
+>- *-I* : permet de récupérer toutes les en-têtes sans afficher le contenu, qu'on appelle le corps de la page ;
+>- *-w* : affiche des informations qu’on définit soit-même (exemples de cas : **%{http_code}**, **%{content_type}**) ; on peut également ajouter du texte (chaîne de texte) et des variables ensembles. Avec cette option, on demande à *curl* d’afficher en sortie standard (stdout) l’information demandée (recherchée). Ici, qui sera le code HTTP et l’encodage (content_type).
+Donc, dans la commande :
+
+>**curl -I -w "%{http_code}\n%{content_type}" https://fr.wikipedia.org ** 
+
+>on veut juste afficher les en-têtes de l'url, puis en sortie, on souhaiterait afficher seulement le code HTTP et l'encodage de cet url (cf. figure 48).
+
+![Figure 48 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_6.jpg "Correction du "miniprojet1".")
+*Figure 48 : Correction du "miniprojet1".*
+
+> **-s** :permet de générer les métadonnées de l’url vers le terminal sous silence ;
+
+> **-o /dev/null** : on ne veut pas garder les autres informations de la page car on veut garder que les informations qu’on veut afficher grâce à *-w*. 
+je veux en sortie afficher que les en-tête : dont http et l’encodage (voir photo ci dessous) : 
+
+> **-i** : affiche les en-tête en sortie.
+
+> Je modifie l'option *-I* par **-i** pour afficher les en-têtes de l'url (cf. figure 49).
+
+![Figure 49 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_7.jpg "Correction du "miniprojet1".")
+*Figure 49 : Correction du "miniprojet1".*
+
+> La commande *curl* ne foncitonne pas dans le script (cf. figure 49), alors je modifie le code en essayant de mettre la commande dans les deux variables *ENCODAGE* et *HTTP*.
+
+> Dans le script, j’ai rajouté 2 echo pour indiquer ce que l’on attend :
+
+>>echo "On doit avoir comme résultats :"
+>>echo -e "Numéro_de_la_ligne\tHTTP \tEncodage_Charset\tNombre_de_mots > envoyer_dans_le_fichier_sortie "$FICHIER_SORTIE""
+
+> Ensuite, j’ai appliqué cette commande suivante sur la Konsole pour la tester (cf. figure 50) : 
+>> curl -i -L -s -o "tmp.txt" -w "%{http_code}\n%{content_type}" https://fr.wikipedia.org/wikiRobotique
+
+![Figure 50 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_8.jpg "Correction du "miniprojet1".")
+*Figure 50 : Correction du "miniprojet1".*
+
+> J'obtiens donc bien le contenu de l'url qui a été sauvegardé (ou téléchargé) dans le fichier temporaire "tmp.txt" crée. De plus, j'ai également en sortie de la Konsole les informations dont j'ai besoin : le HTTP et le charset=UTF-8.
+Après ce test validé, je dois l'inclure dans mon programme mais, c'est dans les modifications du code que je rencontre des difficultés. En effet, je ne comprends pas pourquoi *curl* n'est pas pris en compte. Je n'ai pas réussi à le corriger.
 
 
+
+ 
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
 
 - 
+
 
 ***
 ---
