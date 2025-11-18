@@ -1000,3 +1000,62 @@ Après ce test validé, je dois l'inclure dans mon programme mais, c'est dans le
 
 
 
+# Séance 6 : 05-11-2025
+
+###**1. Ce que j'ai compris :**
+
+- 
+
+###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
+
+- 
+
+
+###**3. Ce que je n'ai pas compris :**
+
+- Dans la correction du "miniprojet1", les professeurs avaient insérer dans le programme la commande suivante suivi du fichier tmp : ***rm ./.data.tmp*** , qui permet de supprimer le fichier temporaire après l'utilisation d'après la source suivante : https://blog.stephane-robert.info/docs/admin-serveurs/linux/scripts-shell-securises/.
+
+- L'option ***-z*** dans ***if [ -z "${encoding} ]*** : signifie "est-ce que la chaîne est vide ?", ici c'est "si la variable "encoding" est vide...". Ce qui suit dans le code de correction du "miniprojet1" : encoding="N/A" (dans la boucle *if*) désigne "si la variable encoding ne contient rien donc est vide, on dit que 'l'encoding n'est pas disposible' ".
+
+###**4. Activité(s) :**
+
+## Exercices 1 et 2 : diaporama ***miniprojet*** - Correction du "miniprojet1" (suite)
+
+>**Ce que j'ai réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
+
+- Avant de faire le miniprojet 3, j'ai continué à corriger le "miniprojet1" pour finir le "miniprojet2". Dans la figure 55, j’ai mis les variables à l’intérieur de la boucle car en cours, les variables étaient à l’intérieur de la boucle *while*. Si je veux que ces variables soient prise en compte par cette boucle, je dois les inclure à l'intérieur. En effet, je vois que le programme arrive à exécuter le code bien que cela soit encore incomplet.
+
+![Figure 55: Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_10.jpg "Correction du "miniprojet1".")
+*Figure 55: Correction du "miniprojet1".*
+
+> Je vois également que mon fichier_data.txt a bien été crée : 
+
+![Figure 56: Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_11.jpg "Correction du "miniprojet1".")
+*Figure 56 : Correction du "miniprojet1".*
+
+> J'ai aussi supprimé la variable "FICHIER_SORTIE=$2" car j'ai remarqué que j'utilise déjà un chevron plus bas dans le code pour enregistrer les métadonnées des urls dans un fichier tmp. Mais, le programme n’a pas imprimé ce que je voulais (les 3 métadonnées qui devaient générer à partir du code) dans le fichier tmp (fichier txt, ici) comme on peut le voir en figure 57.
+
+![Figure 57: Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_12.jpg "Correction du "miniprojet1".")
+*Figure 57 : Correction du "miniprojet1".*
+
+> J'ai modifié le fichier car c'était un fichier txt que j'avais généré et non un fichier temporaire (cf. figure 58).
+
+![Figure 58 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_13.jpg "Correction du "miniprojet1".")
+*Figure 58 : Correction du "miniprojet1".*
+
+- Pour chaque variables dont HTPP, ENCODAGE, je dois écrire le code qui permet d'afficher le code HTTP et l'encodage "charset = UTF8" (cf. figure 59). En effet, si je laisse la commande entière "curl -i -L -s -o "fichier_data.tmp" -w "%${http_code}\n%${content_type}" "${line}" comme on le voit dans la figure 54, la machine n'affichera pas les éléments spécifiques.
+
+
+
+ 
+
+###**5. Ce que je n’ai pas eu le temps de faire :**
+
+- 
+
+
+***
+---
+
+
+
