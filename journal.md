@@ -1008,14 +1008,14 @@ Après ce test validé, je dois l'inclure dans mon programme mais, c'est dans le
 
 ###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
-- 
+- L'option ***-z*** dans ***if [ -z "${encoding} ]*** : signifie "est-ce que la chaîne est vide ?", ici c'est "si la variable "encoding" est vide...". Ce qui suit dans le code de correction du "miniprojet1" : encoding="N/A" (dans la boucle *if*) désigne "si la variable encoding ne contient rien donc est vide, on dit que 'l'encoding n'est pas disposible' ". Cette boucle permettra de rentrer "N/A" dans les résultats lorsqu'un url ne contiendra pas le charset.
 
 
 ###**3. Ce que je n'ai pas compris :**
 
 - Dans la correction du "miniprojet1", les professeurs avaient insérer dans le programme la commande suivante suivi du fichier tmp : ***rm ./.data.tmp*** , qui permet de supprimer le fichier temporaire après l'utilisation d'après la source suivante : https://blog.stephane-robert.info/docs/admin-serveurs/linux/scripts-shell-securises/.
 
-- L'option ***-z*** dans ***if [ -z "${encoding} ]*** : signifie "est-ce que la chaîne est vide ?", ici c'est "si la variable "encoding" est vide...". Ce qui suit dans le code de correction du "miniprojet1" : encoding="N/A" (dans la boucle *if*) désigne "si la variable encoding ne contient rien donc est vide, on dit que 'l'encoding n'est pas disposible' ".
+- 
 
 ###**4. Activité(s) :**
 
