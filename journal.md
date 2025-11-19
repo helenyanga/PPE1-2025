@@ -459,7 +459,7 @@ La notation se suit ainsi : "cat 2016/2016*ann | grep Location | cut -f3" ;
 
 ###**3. Ce que je n'ai pas compris :**
 
-- /
+- l'option "-n", "trail", "-r", "-c", "head"
 
 
 ###**4. Activité(s) :** /
@@ -517,7 +517,7 @@ Lecture :
 ###**5. Ce que je n’ai pas eu le temps de faire :**
 
 - Faire la suite des exercices de "Scripts Bash".
-
+- L'option "-n", "trail", "-r", "-c", "head".
 
 
 ***
@@ -901,11 +901,17 @@ Dans la figure 33, on peut voir que la Konsole ne nous affiche pas les réusltat
 
 > ***content_type=$** : on génère content_type comme une variable. 
 
-> Explication des commandes utilisées sur les figures 43 et 44 : o demande donc de mettre à la première ligne (*head -1*) la variable content_type puis, on vérifie avec *echo* si on a bien le charset. On fait un test avec *cut -d= f2* si on veut avoir les informations dans la deuxième colonne du fichier "metadata.tmp" (cf. figure 45) précédement, en délimitantl'information qu'on veut avec *-d=* (indique qu'on veut l'information à partir du signe égale).
+> Explication des commandes utilisées sur les figures 43 et 44 : on demande donc de mettre à la première ligne (*head -1*) la variable content_type puis, on vérifie avec *echo* si on a bien le charset. On fait un test avec *cut -d= -f2* si on veut avoir les informations dans la deuxième colonne du fichier "metadata.tmp" (cf. figure 45) précédement, en délimitantl'information qu'on veut avec *-d=* (indique qu'on veut l'information à partir du signe égale).
 
 ![Figure 45: Test commandes"](/home/helena/Documents/M1TAL/images_journal_projet/test3.jpg "Test commandes")
 *Figure 45: Test commandes".*
 
+- L'option "trail", "-r", "-c" : 
+>- ***trail*** : 
+>- ***-r*** : créer une variable en lecture seule, une constante ?
+>- ***-c*** :
+
+(source : https://blog.stephane-robert.info/docs/admin-serveurs/linux/script-shell/)
 
 ###**3. Ce que je n'ai pas compris :**
 
@@ -991,8 +997,7 @@ Après ce test validé, je dois l'inclure dans mon programme mais, c'est dans le
  
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
-
-- 
+-
 
 
 ***
@@ -1004,18 +1009,30 @@ Après ce test validé, je dois l'inclure dans mon programme mais, c'est dans le
 
 ###**1. Ce que j'ai compris :**
 
-- 
+- Dans un script bash : l'utilisation du ***exit*** lorsqu'on veut sortir d'une boucle tel que *if* : 
+
+> ***exit 1*** : indique un erreur en cas d'absence du fichier (source : https://blog.stephane-robert.info/docs/admin-serveurs/linux/scripts-shell-securises/).
+
+
+
 
 ###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
 - L'option ***-z*** dans ***if [ -z "${encoding} ]*** : signifie "est-ce que la chaîne est vide ?", ici c'est "si la variable "encoding" est vide...". Ce qui suit dans le code de correction du "miniprojet1" : encoding="N/A" (dans la boucle *if*) désigne "si la variable encoding ne contient rien donc est vide, on dit que 'l'encoding n'est pas disposible' ". Cette boucle permettra de rentrer "N/A" dans les résultats lorsqu'un url ne contiendra pas le charset.
 
+- L'option ***-,*** : permet de vérifier si une chaîne de caractère n'est pas vide en bash.
+
+(source : https://blog.stephane-robert.info/docs/admin-serveurs/linux/script-shell/)
+
+- En cours : 
+>-" -1 " : dernière ligne (pour le cas de *-n*)
+>-" -Po " : extraire uniquement une donnée, ici c'est le charset
 
 ###**3. Ce que je n'ai pas compris :**
 
 - Dans la correction du "miniprojet1", les professeurs avaient insérer dans le programme la commande suivante suivi du fichier tmp : ***rm ./.data.tmp*** , qui permet de supprimer le fichier temporaire après l'utilisation d'après la source suivante : https://blog.stephane-robert.info/docs/admin-serveurs/linux/scripts-shell-securises/.
 
-- 
+- En continuant à corriger mon code et en m'aidant de la correction, je n'ai pas compris pourquoi mon code ne foncitonnait pas totalement.
 
 ###**4. Activité(s) :**
 
@@ -1045,13 +1062,31 @@ Après ce test validé, je dois l'inclure dans mon programme mais, c'est dans le
 
 - Pour chaque variables dont HTPP, ENCODAGE, je dois écrire le code qui permet d'afficher le code HTTP et l'encodage "charset = UTF8" (cf. figure 59). En effet, si je laisse la commande entière "curl -i -L -s -o "fichier_data.tmp" -w "%${http_code}\n%${content_type}" "${line}" comme on le voit dans la figure 54, la machine n'affichera pas les éléments spécifiques.
 
+- Dans les séances, j'ai vu que ***head*** permettait de recueillir, soit d'afficher les métadonnées tels que le code HTTP. On a aussi ***tail*** qui permet de garder seulement les dernières lignes d'un flux ou d'un fichier et ici, je veux garder les dernières lignes de l'url pour les afficher sur la Konsole.
+Ensuite, en testant en séance 5, la commande ***head -1*** et la commande ***cut -d= f2***, j'ai compris que j'en aurai besoin pour : 
 
+>- mettre en première ligne à l'aide de *head -1*, le code HTTP ; 
+>- le *cut -d= -f2* pour récupérer les informations et les mettre dans une deuxième colonne ; le *-d=* permettra de délimiter l'information que je veux dont le charset qui commmencera après le signe égale "=".
 
- 
+> Dans ses commandes, je dois aussi ajouter le fichier "FICHIER_DATA" afin de sauvegarder le HTTP et l'encodage. Pour vérifier sur la Konsole qu'on a bien ces métadonnées, j'utilise la commande *echo*.
+Par ailleurs, j'aurai besoin de *grep* pour dire à la machine que je cherche une information précise (le charset). C'est pourquoi, on a utilisé la commande suivante pour la variable *ENCODAGE* et la commande "|head -1" pour la variable "HTTP" (cf. figure 59). Avec la correction, j'ai renommé mes variables : "HTTP" par "http_code" et "ENCODAGE" par "content_type". Cependant, après avoir lancé le programme, je n'ai pas compris pourquoi le code ne se poursuivait pas. 
+J'ai vérifié à l'aide de la correction ce qui posait problème dans mon code, mais je n'ai pas réussi à le faire fonctionner entièrement. De plus, mon fichier tmp "fichier_datat.tmp" n'enregistre pas les métadonnées.
+
+![Figure 59 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_14.jpg "Correction du "miniprojet1".")
+*Figure 59 : Correction du "miniprojet1".*
+
+- N'ayant pas réussi à corriger le "miniprojet1", j'ai utilisé la correction du  "miniprojet.sh" pour enregistrer dans le fichier tmp les métadonnées. Mais, le programme n'a fonctionné (cf. figure 60). J'ai effacé le premier *while* pour comprendre qu'est-ce qui ne fonctionnait pas. En effet, c'était le second *while* qui ne fonctionnait pas. La machine ne pouvait pas le lire. J'ai déplacé la boucle *while* à l'intérieur de la première boucle, en dessous de la boucle *if* pour que la machine exécute le code. Mais, elle n'arrive pas à s'exécuté et donne seulement en sortie le même résultat que dans la figure 60, sur la Konsole. J'ai également ajouté un "continue" pour que la machine continue d'exécuter le reste (cf. figure 61). Or, la Konsole n'affiche rien.
+
+![Figure 60 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_15.jpg "Correction du "miniprojet1".")
+*Figure 60 : Correction du "miniprojet1".*
+
+![Figure 61 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_16.jpg "Correction du "miniprojet1".")
+*Figure 61 : Correction du "miniprojet1".*
+
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
 
-- 
+- Le "miniprojet2" et "miniprojet3" car je n'ai pas réussi à corriger mon code pour créer le tableau afin de faire le code HTML.
 
 
 ***
