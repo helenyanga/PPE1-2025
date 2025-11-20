@@ -53,7 +53,7 @@ N=0
 while read -r line
 do
     #On crée des variables pour l'HTTP, l'encodage, le nombre de mots et le fichier de sortie pour que les résultats se génèrent à l'intérieur de ce même fichier.
-    fichier_data=$(curl -s -i -L -w "%{http_code}\n%{content_type}" -o ./.fichier_data.tsv $line) #Pour le fichier_data_tmp, on peut écrire la même commande en remplaçant fichier_data.tsb par fichier_data.tsv ; de même pour nb_mots.
+    fichier_data=$(curl -s -i -L -w "%{http_code}\n%{content_type}" -o ./.fichier_data.tmp $line) #Pour le fichier_data_tmp, on peut écrire la même commande en remplaçant fichier_data.tsb par fichier_data.tsv ; de même pour nb_mots.
     http_code=$(echo "$fichier_data" | head -1)
     content_type=$(echo "$fichier_data" | tail -1 | grep -Po "charset=\S+" | cut -d"=" -f2)
 
@@ -62,7 +62,7 @@ do
 		content_type="rien"
 	fi
 
-    nb_mots=$(cat ./.fichier_data.tsv | lynx -dump -nolist -stdin $line | wc -w)
+    nb_mots=$(cat ./.fichier_data.tmp | lynx -dump -nolist -stdin $line | wc -w)
 
     echo -e "${N}\t${http_code}\t${content_type}\t${nb_mots}" >> $fichier_sortie #Les chevrons permettent d'envoyer les métadonnées dans le fichier de sortie "tsv".
     N=$( expr $N + 1 )

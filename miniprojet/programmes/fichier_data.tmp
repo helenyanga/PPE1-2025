@@ -1,11 +1,11 @@
-Numéro_de_la_ligne	HTTP 	Encodage_Charset	Nombre_de_mots > envoyer_dans_le_fichier_tmp_en_sortie
-0	https://fr.wikipedia.org/wiki/Robot	200	UTF-8	5800
-1	https://fr.wikipedia.org/wiki/Robot_de_cuisine	200	UTF-8	1280
-2	fr.wikipedia.org/wiki/Robot_d%27indexation	200	UTF-8	1901
-3	https://fr.wikipedia.org/wiki/Bot_informatique	200	UTF-8	2702
-4	https://fr.wikipedia.org/wiki/Atlas_(robot)	200	UTF-8	1286
-5	https://roboty.magistry.fr	000	rien	1286
-6	https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)	404	UTF-8	543
-7	https://fr.wiktionary.org/wiki/robot	200	UTF-8	4932
-8	https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots	200	UTF-8	1260
-9	https://fr.wikipedia.org/wiki/Robotique	200	UTF-8	13144
+Numéro_de_la_ligne	HTTP 	Encodage_Charset	Nombre_de_mots > envoyer_dans_le_fichier_en_sortie
+0	200	UTF-8	5800
+1	200	UTF-8	1280
+2	200	UTF-8	1901
+3	200	UTF-8	2702
+4	200	UTF-8	1288
+5	000	rien	1288
+6	404	UTF-8	543
+7	200	UTF-8	4932
+8	200	UTF-8	1258
+9	200	UTF-8	13144
