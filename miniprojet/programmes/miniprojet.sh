@@ -39,30 +39,37 @@ do
     else
         echo "Ne ressemble pas à une URL valide."
         NOK=$( expr $NOK + 1 )
-        continue
     fi
-done
+done < $fichier_urls
 echo "$OK URLs et $NOK lignes douteuses."
 
 fichier_sortie=$2
-echo "On doit avoir comme résultats :"
-echo -e "Numéro_de_la_ligne\tHTTP \tEncodage_Charset\tNombre_de_mots > envoyer_dans_le_fichier_tmp_en_sortie" > "$fichier_sortie"
+echo "On doit avoir comme résultat :"
+echo -e "Numéro_de_la_ligne\tHTTP \tEncodage_Charset\tNombre_de_mots > envoyer_dans_le fichier_en_sortie : "$2""
+echo -e "Numéro_de_la_ligne\tHTTP \tEncodage_Charset\tNombre_de_mots > envoyer_dans_le_fichier_en_sortie" > "$fichier_sortie"
 
 N=0
 #On veut lire ligne par ligne le contenu du fichier.
 while read -r line
 do
-    #On crée des variables pour l'HTTP et l'encodage.
-    fichier_data=$(curl -s -i -L -w "%{http_code}\n%{content_type}" -o ./.fichier_data.tmp $line)
+    #On crée des variables pour l'HTTP, l'encodage, le nombre de mots et le fichier de sortie pour que les résultats se génèrent à l'intérieur de ce même fichier.
+    fichier_data=$(curl -s -i -L -w "%{http_code}\n%{content_type}" -o ./.fichier_data.tsv $line) #Pour le fichier_data_tmp, on peut écrire la même commande en remplaçant fichier_data.tsb par fichier_data.tsv ; de même pour nb_mots.
     http_code=$(echo "$fichier_data" | head -1)
     content_type=$(echo "$fichier_data" | tail -1 | grep -Po "charset=\S+" | cut -d"=" -f2)
 
-    if [ -z "${content_type}" ]
+    if [ -z "${content_type}" ] #Cette condition permet de vérifier si l'url contient ou non un encodage. S'il n'en contient pas, il affichera "rien".
 	then
 		content_type="rien"
 	fi
 
-    N=$( expr $N + 1 )
+    nb_mots=$(cat ./.fichier_data.tsv | lynx -dump -nolist -stdin $line | wc -w)
 
-#pour le nombre de mots dans l'url : curl -s adresseurl | wc - w
+    echo -e "${N}\t${http_code}\t${content_type}\t${nb_mots}" >> $fichier_sortie #Les chevrons permettent d'envoyer les métadonnées dans le fichier de sortie "tsv".
+    N=$( expr $N + 1 )
 done < $fichier_urls
+
+#Déplacement manuellement :
+echo "Quand le programme sera terminé : écrivez le chemin pour déplacer le fichier crée en sortie dans le dossier que vous souhaitez, avec la commande suivante : mv nomdufichier /chemin/"
+#Ou déplacer avec la commande suivante :
+echo "Ou avant de lancer le programme : vous pouvez également éxécuter votre fichier.sh suivi de votre premier argument qui est le chemin vers le fichier que vous souhaitez. A cela, vous ajoutez un deuxième argument à la suite qui va indiquer le chemin où vous souhaitez déplacé votre fichier de sortie généré. Cela devra prendre la forme suivante : ./nomdufichier.sh /chemin/fichier cheminrépertoirecourant/fichierdesortie (si cette option a été choisie, réexécuter le script en ajoutant le second argument)."
+echo "Exemple : ./miniprojet.sh /home/name/Documents/miniprojet/urls/fr.txt ../tableaux/fichier_data.tsv"

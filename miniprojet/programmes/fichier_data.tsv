@@ -1,0 +1,11 @@
+Numéro_de_la_ligne	HTTP 	Encodage_Charset	Nombre_de_mots > envoyer_dans_le_fichier_en_sortie
+0	200	UTF-8	5800
+1	200	UTF-8	1280
+2	200	UTF-8	1901
+3	200	UTF-8	2702
+4	200	UTF-8	1286
+5	000	rien	1286
+6	404	UTF-8	543
+7	200	UTF-8	4932
+8	200	UTF-8	1258
+9	200	UTF-8	13146
