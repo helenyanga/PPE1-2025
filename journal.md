@@ -1140,8 +1140,23 @@ J'ai vérifié à l'aide de la correction ce qui posait problème dans mon code,
 ![Figure 69 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_23.jpg "Correction du "miniprojet1".")
 *Figure 69 : Correction du "miniprojet1".*
 
-> J'ai ajouté la variable "fichier_data" (*$2*) pour montrer à l'utilisateur le nom du fichier crée.
+> J'ai ajouté la variable "fichier_data" (*$2*) pour montrer à l'utilisateur le nom du fichier crée (cf. figure 69, ligne 48). Je complète aussi la commande *echo* (cf. figure 69, ligne 67) avec la variable "nb_mots" afin que le nombre de mots puisse être afficher sur la konsole. En argument, j'ai mis le fichier sortie "fichier_data.txt" pour générer un fichier txt comportant les résultats en sortie de la konsole. Mais, je veux maintenant que les résultats apparaissent dans un tableau. Pour ce faire, je remplace "fichier_data.txt" par "fichier_data_tsv" dans les lignes 56 et 65. J'obtiens alors un tableau tsv en sortie contenant les métadonnées de chaque url (cf. figure 70 et 71).
 
+> De plus, je remarque un petit détail dans la ligne 65 sur la figure 69 : je veux afficher, selon la consigne, seulement le nombre de ligne de l'url, l'HTTP, l'encodage ainsi que le nombre de mots mais, je ne veux pas afficher les urls. Donc, je les retire en les supprimant.
+
+![Figure 70 : Correction du "miniprojet1" : "fichier_data.tsv".](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_26.jpg "Correction du "miniprojet1 : tableau tsv".")
+*Figure 70 : Correction du "miniprojet1" : "fichier_data.tsv".*
+
+![Figure 71 : Correction du "miniprojet1 : tableau tsv"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_tsv_url.jpg "Correction du "miniprojet1 : tableau tsv".")
+*Figure 71 : Correction du "miniprojet1 : tableau tsv".*
+
+> A la fin du programme, j'utilise la commande *echo* pour donner une information manuelle à l'utilisateur. Je lui demande de déplacer manuellement le fichier tsv dans un autre dossier s'il souhaite. J'indique donc deux possibilités pour l'utilisateur (cf. figure 71) pour que le fichier de sortie crée se déplace dans le dossier "tableaux" (cf. figure 72).
+
+![Figure 72 : Correction du "miniprojet1 : tableau tsv"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_25.jpg "Correction du "miniprojet1 : tableau tsv".")
+*Figure 72 : Correction du "miniprojet1 : tableau tsv".*
+
+![Figure 73 : Correction du "miniprojet1 : tableau tsv"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_27.jpg "Correction du "miniprojet1 : tableau tsv".")
+*Figure 73 : Correction du "miniprojet1 : tableau tsv".*
 
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
