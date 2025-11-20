@@ -1083,6 +1083,36 @@ J'ai vérifié à l'aide de la correction ce qui posait problème dans mon code,
 ![Figure 61 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_16.jpg "Correction du "miniprojet1".")
 *Figure 61 : Correction du "miniprojet1".*
 
+###**5. Ce que je n’ai pas eu le temps de faire :**
+
+- Le "miniprojet2" et "miniprojet3" car je n'ai pas réussi à corriger mon code pour créer le tableau afin de faire le code HTML.
+
+
+***
+---
+
+
+# Séance 7 : 19-11-2025
+
+###**1. Ce que j'ai compris :**
+
+- 
+> 
+
+###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
+
+- 
+
+###**3. Ce que je n'ai pas compris :**
+
+- 
+
+###**4. Activité(s) :**
+
+## Exercices 1 et 2 : diaporama ***miniprojet*** - Correction du "miniprojet1" (suite)
+
+>**Ce que j'ai réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
+
 - En cours, j'ai montré mon code à un des enseignants pour exposer le problème rencontré. En effet, le programme ne pouvait pas lire la suite (cf. figure 62), c'est-à-dire qu'il lisait le début et s'arrêtait à la fin de la boucle *while*. La machine effectuait juste là le programme seul. Or, quand on arrive à la fin de la boucle *while*, on s'aperçoit que "done" n'est par redirigé directement dans le fichier qu'on veut (dont le fichier avec les urls). Donc la machine attend nos instructions. L'utilisateur doit alors dire à la machine à l'aide de "***Ctrl d***" d'effectuer ce qu'il y a après mais, elle le fera un à un. En effet, comme on peut le voir, quand je lance le programme avec la boucle *while* pour vérifier si les urls sont valides ou non, la deuxieme boucle *while* s executera mais en vérifiant une url seulement et attend de nouveau l'instruction de l'utilisateur. Par ailleurs, on peut mettre la première boucle *while* en commentaire avec le dièse ***#*** pour que la machine ne le prenne pas en compte lors du lancement du programme.
 
 ![Figure 62 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_17.jpg "Correction du "miniprojet1".")
@@ -1157,15 +1187,6 @@ J'ai vérifié à l'aide de la correction ce qui posait problème dans mon code,
 
 ![Figure 73 : Correction du "miniprojet1 : tableau tsv"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_27.jpg "Correction du "miniprojet1 : tableau tsv".")
 *Figure 73 : Correction du "miniprojet1 : tableau tsv".*
-
-
-###**5. Ce que je n’ai pas eu le temps de faire :**
-
-- Le "miniprojet2" et "miniprojet3" car je n'ai pas réussi à corriger mon code pour créer le tableau afin de faire le code HTML.
-
-
-***
----
 
 
 
