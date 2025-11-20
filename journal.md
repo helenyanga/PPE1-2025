@@ -1083,7 +1083,7 @@ J'ai vérifié à l'aide de la correction ce qui posait problème dans mon code,
 ![Figure 61 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_16.jpg "Correction du "miniprojet1".")
 *Figure 61 : Correction du "miniprojet1".*
 
-- En cours, j'ai montré mon code à un des enseignants pour exposer le problème rencontré. En effet, le programme ne pouvait pas lire la suite (cf. figure 62), c'est-à-dire qu'il lisait le début et s'arrêtait à la fin de la boucle *while*. La machine effectuait juste là le programme seul. Or, quand on arrive à la fin de la boucle *while*, on s'aperçoit que "done" n'est par redirigé directement dans le fichier qu'on veut (dont le fichier avec les urls). 
+- En cours, j'ai montré mon code à un des enseignants pour exposer le problème rencontré. En effet, le programme ne pouvait pas lire la suite (cf. figure 62), c'est-à-dire qu'il lisait le début et s'arrêtait à la fin de la boucle *while*. La machine effectuait juste là le programme seul. Or, quand on arrive à la fin de la boucle *while*, on s'aperçoit que "done" n'est par redirigé directement dans le fichier qu'on veut (dont le fichier avec les urls). Donc la machine attend nos instructions. L'utilisateur doit alors dire à la machine à l'aide de "***Ctrl d***" d'effectuer ce qu'il y a après mais, elle le fera un à un. En effet, comme on peut le voir, quand je lance le programme avec la boucle *while* pour vérifier si les urls sont valides ou non, la deuxieme boucle *while* s executera mais en vérifiant une url seulement et attend de nouveau l'instruction de l'utilisateur. Par ailleurs, on peut mettre la première boucle *while* en commentaire avec le dièse ***#*** pour que la machine ne le prenne pas en compte lors du lancement du programme.
 
 ![Figure 62 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_17.jpg "Correction du "miniprojet1".")
 *Figure 62 : Correction du "miniprojet1".*
@@ -1107,23 +1107,41 @@ J'ai vérifié à l'aide de la correction ce qui posait problème dans mon code,
 
 > Les pippelines ajoutées à la suite des commandes permettent de "lier" les commandes et les informations entre elles.
 
-> Pour ajouter la commande qui calcule le nombre de mots pour chaque url, on va avoir besoin de la commande ***lynx*** car elle permet d'afficher la page web sans passer par un navigateur sur Internet. A cette commande, on va lui ajouter l'option ***-dump*** pour récupérer une url. On peut également s'aider des commandes suivantes en cas de besoin : ***lynx --help*** ou ***lynx --man*** pour ouvrir le manuel de toutes les options. Faisons un test sur la Konsole pour avec ***lynx -dump adresseurl*** en insérant à la suite de *-dump* l'adresse url de la première ligne dans le fichier txt : 
+> Remarque : 
+
+>> Deux possibilités pour récupérer (sauvegarder) les résultats en sortie : 
+
+>>-Soit, j'insère une commande chevron suivi d'une variable fichier de sortie que je crée dans le script bash puis, je l'appelle en le mettant en argument (ici, il est en second argument) comme on peut le voir dans les figures 64 (ligne 48) et 65.
+
+>>-Soit, je fais la redirection à partir de la konsole en l'appellant à l'aide d une commande (dans ce cas, là c'est le faire manuellement). Je dois créer un fichier et redirigé les résultats dans ce fichier crée sur la konsole. Je n'aurai donc pas besoin de créer une variable de fichier de sortie dans le script.
+
+> Pour ajouter la commande qui calcule le nombre de mots pour chaque url, on va avoir besoin de la commande ***lynx*** car elle permet d'afficher la page web sans passer par un navigateur sur Internet. A cette commande, on va lui ajouter l'option ***-dump*** pour récupérer une url. Faisons un test sur la Konsole pour avec ***lynx -dump adresseurl*** en insérant à la suite de *-dump* l'adresse url de la première ligne dans le fichier "fr.txt" : 
 
 ![Figure 66 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_21.jpg "Correction du "miniprojet1".")
 *Figure 66 : Correction du "miniprojet1".*
 
 > Par ailleurs, lors de la correction du "miniprojet1" en cours, on avait noter que certaines urls étaient mal écrite. On les renomme donc : 
 
->-Pour l'url : XX -> YY.
+>-Pour l'url : https://fr.wikipedia.org/wiki/Atlas_(robot)
+ -> "https://fr.wikipedia.org/wiki/Atlas_(robot)" (cf. figure 66) ;
+ 
+ ![Figure 67 : Exemple d'url mal écrit.](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_url1.jpg "Exemple d'url mal écrit.".")
+*Figure 67 : Exemple d'url mal écrit.*
 
-> Dans la figure 66, on voit qu'on a pleins d'urls qui ont été afficher sur la konsole. Pour compter seulement les mots de l'url qu'on veut et sans prendre en compte les urls ajoutées en plus dans la konsole (elles sont apparues à partir de l'url qu'on a mis dans la commande *lynx -dump*), on va ajouter une autre option qui aura pour rôle d'effacer ces urls qui ne sont pas ce qu'on veut. Si on devait lancer le code avec la commande sans effacer les urls inutiles pour nous, on aura un nombre de mot incorrect à ce que contient réellement la page url. C'est pourquoi, on va utiliser l'option ***-nolist*** qui va retirer les liens d'une page à l'affichage.
+>-Pour l'url : https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci) -> "https://fr.wikipedia.org/wiki/Robot_(Léonard_de_Vinci)" (sans l'accent, en allant sur Internet, on voit que Wikipédia dit : "WIkipédia ne possède pas d'article avec de nom." (source : https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)); 
 
+> Dans la figure 68, on voit qu'on a plein d'urls qui ont été affichées sur la konsole. Pour compter seulement les mots de l'url qu'on veut et sans prendre en compte les urls ajoutées à la fin de la page url qu'on voit dans la konsole (elles sont apparues à partir de l'url qu'on a mis dans la commande *lynx -dump*), on va ajouter une autre option qui aura pour rôle d'effacer ces urls car elles ne correspondent pas à ce qu'on veut. Si on devait lancer le code avec la commande sans effacer les urls, on aura un nombre de mots incorrect à ce que contient réellement la page url. C'est pourquoi, on va utiliser l'option ***-nolist*** qui va retirer les liens d'une page à l'affichage (cf. figure 69).
 
+![Figure 68 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_22.jpg "Correction du "miniprojet1".")
+*Figure 68 : Correction du "miniprojet1".*
 
-#donc : soit je fais fichier de sortie dans la boucle avec la commande echo ; soit je fais la redirection à partir de la konsole en l'appellant a l aide d une commande
-# si je fait le fichier de sortie dnas la boucle while, je dois aj la commande echo a l interieur de la mm boucle pour que la machine affiche sinon il affichera rien comme j ai pu le voir là. et donc dans mon programme, je dois mettre le ficher de sortie et dans ce cas là j'écris en 2e argument le fichier sortie comme par ex fichiertest_txt, au début du lancement du programme ; sinon si je fais la redirection, j enleve la variable fichier_sortie
-#ctrl d est une commande qui permet de dire a la machine : fait ca, exécute ; car comme on peut le voir quand je lance le programme avec la boucle while pour vérifier si les urls sont valides ou non, la deuxieme boucle while s executera. j ai mis la 1ere boucle while en diese (en commentaire) pr pas que la machine le prenne en compte comme qqch a executer. on verra que la machine va donc pouvoir exécuter le deuxieme while.
-#dans ma boucle while : aj un echo.
+> Ensuite, durant la séance 6, pendant la correction du "miniprojet1", on a vu l'option ***-stdin*** pour la commande *lynx* qui permet d'afficher le contenu de la page. Dans la séance 5 à 6, on a vu l'option *wc* pour demander à la machine de compter et on lui ajoute à la suite l'option ***-w*** pour lui dire de compter les mots (cf. figure 69).
+
+![Figure 69 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_23.jpg "Correction du "miniprojet1".")
+*Figure 69 : Correction du "miniprojet1".*
+
+> J'ai ajouté la variable "fichier_data" (*$2*) pour montrer à l'utilisateur le nom du fichier crée.
+
 
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
