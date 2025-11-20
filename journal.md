@@ -1182,11 +1182,14 @@ J'ai vérifié à l'aide de la correction ce qui posait problème dans mon code,
 
 > A la fin du programme, j'utilise la commande *echo* pour donner une information manuelle à l'utilisateur. Je lui demande de déplacer manuellement le fichier tsv dans un autre dossier s'il souhaite. J'indique donc deux possibilités pour l'utilisateur (cf. figure 71) pour que le fichier de sortie crée se déplace dans le dossier "tableaux" (cf. figure 72).
 
-![Figure 72 : Correction du "miniprojet1 : tableau tsv"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_25.jpg "Correction du "miniprojet1 : tableau tsv".")
-*Figure 72 : Correction du "miniprojet1 : tableau tsv".*
+![Figure 72 : Correction du "miniprojet1."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_25.jpg "Correction du "miniprojet1".")
+*Figure 72 : Correction du "miniprojet1".*
 
-![Figure 73 : Correction du "miniprojet1 : tableau tsv"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_27.jpg "Correction du "miniprojet1 : tableau tsv".")
-*Figure 73 : Correction du "miniprojet1 : tableau tsv".*
+![Figure 73 : Correction du "miniprojet1".](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_27.jpg "Correction du "miniprojet1".")
+*Figure 73 : Correction du "miniprojet1".*
 
+> Remarque : J'ai recommencé le fichier tmp pour n'afficher que la ligne, le HTTP, l'encodage et le nombre de mots sans l'url (cf. figure 74).
 
+![Figure 74 : Correction du "miniprojet1" : métadonnées dans le fichier tmp."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_28.jpg "Correction du "miniprojet1" : métadonnées dans le fichier tmp.")
+*Figure 74 : Correction du "miniprojet1" : métadonnées dans le fichier tmp.*
 
