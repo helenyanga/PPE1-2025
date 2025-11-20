@@ -1083,6 +1083,48 @@ J'ai vérifié à l'aide de la correction ce qui posait problème dans mon code,
 ![Figure 61 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_16.jpg "Correction du "miniprojet1".")
 *Figure 61 : Correction du "miniprojet1".*
 
+- En cours, j'ai montré mon code à un des enseignants pour exposer le problème rencontré. En effet, le programme ne pouvait pas lire la suite (cf. figure 62), c'est-à-dire qu'il lisait le début et s'arrêtait à la fin de la boucle *while*. La machine effectuait juste là le programme seul. Or, quand on arrive à la fin de la boucle *while*, on s'aperçoit que "done" n'est par redirigé directement dans le fichier qu'on veut (dont le fichier avec les urls). 
+
+![Figure 62 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_17.jpg "Correction du "miniprojet1".")
+*Figure 62 : Correction du "miniprojet1".*
+
+> Si on veut que le code fonctionne sans faire la suite manuellement, il faut ajouter la redirection à l'aide du chevron "*<*" en précisant le fichier qu'on veut que la machine renvoie, dont le fichier comportant les urls. Pour cela, on ajoute donc à la suite de "done" : "*< $fichier_urls*" (cf. figure 63).
+
+![Figure 63 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_18.jpg "Correction du "miniprojet1".")
+*Figure 63 : Correction du "miniprojet1".*
+
+> On remarque dans la figure 63 que la machine ne nous affiche pas les résultats. Elle s'arrête à la ligne 47 comme on peut le voir dans la sortie de la Konsole (cf. figure 64).
+
+![Figure 64 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_19.jpg "Correction du "miniprojet1".")
+*Figure 64 : Correction du "miniprojet1".*
+
+> Pour afficher les résultats attendus, on va ajouter au code la commande *echo*. Juste à tire indicatif, j'ai également ajouté une commande *echo* à la ligne 48 pour afficher ce qui doit être attendu en sortie. Dans la konsole, on écrit en deuxième argument le fichier de sortie en le nommant. Ici, il s'appelle "fichier_data.tmp".
+
+![Figure 65 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_20.jpg "Correction du "miniprojet1".")
+*Figure 65 : Correction du "miniprojet1".*
+
+> Après que la machine montre les résultats en sortie, je veux mettre ses résultats dans un fichier temporaire (tmp) qui sera un fichier txt afin de sauvegarder temporairement les résultats.
+
+> Les pippelines ajoutées à la suite des commandes permettent de "lier" les commandes et les informations entre elles.
+
+> Pour ajouter la commande qui calcule le nombre de mots pour chaque url, on va avoir besoin de la commande ***lynx*** car elle permet d'afficher la page web sans passer par un navigateur sur Internet. A cette commande, on va lui ajouter l'option ***-dump*** pour récupérer une url. On peut également s'aider des commandes suivantes en cas de besoin : ***lynx --help*** ou ***lynx --man*** pour ouvrir le manuel de toutes les options. Faisons un test sur la Konsole pour avec ***lynx -dump adresseurl*** en insérant à la suite de *-dump* l'adresse url de la première ligne dans le fichier txt : 
+
+![Figure 66 : Correction du "miniprojet1"."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_21.jpg "Correction du "miniprojet1".")
+*Figure 66 : Correction du "miniprojet1".*
+
+> Par ailleurs, lors de la correction du "miniprojet1" en cours, on avait noter que certaines urls étaient mal écrite. On les renomme donc : 
+
+>-Pour l'url : XX -> YY.
+
+> Dans la figure 66, on voit qu'on a pleins d'urls qui ont été afficher sur la konsole. Pour compter seulement les mots de l'url qu'on veut et sans prendre en compte les urls ajoutées en plus dans la konsole (elles sont apparues à partir de l'url qu'on a mis dans la commande *lynx -dump*), on va ajouter une autre option qui aura pour rôle d'effacer ces urls qui ne sont pas ce qu'on veut. Si on devait lancer le code avec la commande sans effacer les urls inutiles pour nous, on aura un nombre de mot incorrect à ce que contient réellement la page url. C'est pourquoi, on va utiliser l'option ***-nolist*** qui va retirer les liens d'une page à l'affichage.
+
+
+
+#donc : soit je fais fichier de sortie dans la boucle avec la commande echo ; soit je fais la redirection à partir de la konsole en l'appellant a l aide d une commande
+# si je fait le fichier de sortie dnas la boucle while, je dois aj la commande echo a l interieur de la mm boucle pour que la machine affiche sinon il affichera rien comme j ai pu le voir là. et donc dans mon programme, je dois mettre le ficher de sortie et dans ce cas là j'écris en 2e argument le fichier sortie comme par ex fichiertest_txt, au début du lancement du programme ; sinon si je fais la redirection, j enleve la variable fichier_sortie
+#ctrl d est une commande qui permet de dire a la machine : fait ca, exécute ; car comme on peut le voir quand je lance le programme avec la boucle while pour vérifier si les urls sont valides ou non, la deuxieme boucle while s executera. j ai mis la 1ere boucle while en diese (en commentaire) pr pas que la machine le prenne en compte comme qqch a executer. on verra que la machine va donc pouvoir exécuter le deuxieme while.
+#dans ma boucle while : aj un echo.
+
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
 
