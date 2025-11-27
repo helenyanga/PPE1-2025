@@ -1,9 +1,6 @@
 # Journal de bord du projet encadré
 
 
----
-
-
 # Séance 1 : 24-09-2025
 
 ### **1. Ce que j'ai compris :**
