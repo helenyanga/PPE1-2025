@@ -1,7 +1,8 @@
 # Journal de bord du projet encadré
----
 
-# Séance 1 : 24-09-2025
+
+# Séance 1 : [^1]24-09-2025
+[^1]: test.
 
 ### **1. Ce que j'ai compris :**
 
@@ -42,9 +43,9 @@ Les 50 ressources (URLS) doivent prouver que le mot est attesté. On doit faire 
 
 ### **4. Activité(s) :**
 
--**Ce que j'ai réussi à faire :**
+>- **Ce que j'ai réussi à faire :**
 
->- J’ai réussi à m’inscrire sur GitHub et GitLab.
+>>-J’ai réussi à m’inscrire sur GitHub et GitLab.
 
 
 >**Ce que je n'ai pas réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
