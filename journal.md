@@ -1193,3 +1193,113 @@ J'ai vérifié à l'aide de la correction ce qui posait problème dans mon code,
 ![Figure 74 : Correction du "miniprojet1" : métadonnées dans le fichier tmp."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_28.jpg "Correction du "miniprojet1" : métadonnées dans le fichier tmp.")
 *Figure 74 : Correction du "miniprojet1" : métadonnées dans le fichier tmp.*
 
+
+# Séance 8 : 26-11-2025
+
+###**1. Ce que j'ai compris :**
+
+- 
+> 
+
+###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
+
+- 
+
+###**3. Ce que je n'ai pas compris :**
+
+- 
+
+###**4. Activité(s) :**
+
+## Exercices "Git 2 : gérer le travail à plusieurs" : diaporama ***git-more-exercices-nohelp.pdf***
+
+>**Ce que j'ai réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
+
+- Je n'ai pas eu de problèmes rencontrés lors des exercices 1 à 4.b. :
+
+>-Pour l'exercice 1, on a trois commmandes à utiliser en cas d'un **conflit git** :  
+
+![Figure 75 : Exercice 1 Avant de commencer](/home/helena/Documents/M1TAL/images_journal_projet/git2ex1.jpg "Exercice 1 Avant de commencer")
+*Figure 75 : Exercice 1 Avant de commencer.*
+
+>-On va faire créer volontairement un conflit git afin d'utiliser les commandes vues plus haut, pour les tester. Mais d'abord, on va aller sur le lien "https://www.lipsum.com" pour copier quelques paragraphes et les coller dans le dépôt *git-along* puis, faire dans le terminal (cf. figure 76) un ***checkout*** du dossier courant pour annuler toutes les modifications depuis le dernier commit (exercice 2).
+
+![Figure 76 : Exercice 2 Créer un README avec un peu de contenu](/home/helena/Documents/M1TAL/images_journal_projet/git2ex2.jpg "Exercice 2 Créer un README avec un peu de contenu")
+*Figure 76 : Exercice 2 Créer un README avec un peu de contenu.*
+
+>-Dans l'exercice 3.a, on va pousser (*push*) les changements qu'on a effectué dans le "READE.md" (soit, dans le git-along). Pour cela, on effectue les commandes *git add*, *git commit* et *git push* (cf figure 77, le numéro 1). Ensuite, dans l'exercice 3.b, on va supprimer un paragraphe (cf. figure 78) dans le dépôt "git-along" mais cette fois, sur l'interface de GitHub. Pour l'exercice 3.b, on va ajouter du texte dans le fichier "README.md" à partir de la commande *echo* sur le terminal (cf. figure 77, le numéro 2). Enfin, en poussant les modifications, on voit qu'on a un problème appellé "conflit GitHub".
+
+>-Remarque : au début, j'avais ajouté du texte "test test test" dans le dépôt *git-along* sur l'interface, puis je l'ai poussé sur le terminal. Mais, je l'ai supprimé pour effectuer les instructions demandées dans l'exercice.
+
+![Figure 77: Exercice 3 Créer un conflit - Exercice 3.b Simuler le commit d’une autre personne (1)](/home/helena/Documents/M1TAL/images_journal_projet/git2ex3b.jpg "Exercice 3 Créer un conflit - Exercice 3.b Simuler le commit d’une autre personne (1)")
+*Figure 77 Exercice 3 Créer un conflit - Exercice 3.b Simuler le commit d’une autre personne (1).*
+
+![Figure 78: Exercice 3 Créer un conflit - Exercice 3.a Simuler le commit d’une autre personne (2)](/home/helena/Documents/M1TAL/images_journal_projet/git2ex3agit.jpg "Exercice 3 Créer un conflit - Exercice 3.a Simuler le commit d’une autre personne (2)")
+*Figure 78 Exercice 3 Créer un conflit - Exercice 3.a Simuler le commit d’une autre personne (2).*
+
+>-Dans l'exercice 4.a, on va garder tous les changements en annulant la mise-en-place. Donc on va récupérer les métadonnées du dépôt *git-along* en ligne avec la commande ***git fetch*** (cf. figure 79). Ensuite, on va utiliser la commande ***git status*** pour que la machine nous montre de combien de commits on est en avance. Enfin, on termine par la commande ***git reset*** pour retourner au dernier commit en commun entre le dépôt en ligne et le dossier locale (dans la machine). On ajoutera à la commade ***git reset*** le ***HEAD~2*** pour indiquer à la machine qu'on a plus de deux commits de différence : ***git reset HEAD~2***(cf. figure 80).
+Pour l'exercice 4.b, on va mettre de côté les modifications en ligne dans un premier temps, avant de les récupérer. Pour cela, on utilise la commande *git status* pour voir si tout est en ordre puis, on fait la commande ***git stash push*** suivit de l'option ***-m*** (***git stash push -m "ecriredutexte"***) pour mettre de côté les modifications (cf. figure 81).
+Dans l'exercice 4.c (cf. figure 82) :
+>> Etape 1 - on vérifie le status du dépôt : *git status* ; 
+>> Etape 2 - on liste les modifications dans notre stash : ***git stash list*** ;
+>> Etape 3 - on les visualisez pour voir ce qui est appliqué (afficher le ***diff***) avec la commande suivante : ***git stash list -p***
+>> Etape 4 - on récupère les modifications en ligne : *git pull*
+
+>-Dans l'exercice 4.d : on veut montrer/afficher les changements appliqués avec le dernier *stach* pour voir s'il s'agit bien des mêmes changements qu'on a fait précédemment. Pour cela, on aura besoin de la commande *git stash show -p* (d'après le diaporama avec "help", on peut utiliser *-p* suivi du nombre de changement). Ensuite, il faut utiliser la commande ***git stash apply*** puis, ***git stash pop*** pour  appliquer les changements dans le stash. Et enfin, suivre les procédures de bases pour envoyer les changements effectués dans la machine vers le GitHub (cf. figure 83).
+
+![Figure 79: Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (1)](/home/helena/Documents/M1TAL/images_journal_projet/git2ex4a1.jpg "Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (1)")
+*Figure 79 Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (1).*
+
+![Figure 80: Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (2)](/home/helena/Documents/M1TAL/images_journal_projet/git2ex4a2.jpg "Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (2)")
+*Figure 80 Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (2).*
+
+![Figure 81: Exercice 4 Débloquer la situation - Exercice 4.b Deuxième temps : mettre ses modifications de coté](/home/helena/Documents/M1TAL/images_journal_projet/git2ex4b.jpg "Exercice 4 Débloquer la situation - Exercice 4.b Deuxième temps : mettre ses modifications de coté")
+*Figure 81 Exercice 4 Débloquer la situation - Exercice 4.b Deuxième temps : mettre ses modifications de coté.*
+
+![Figure 82: Exercice 4 Débloquer la situation - Exercice 4.c Troisième temps : resynchroniser le dépôt et réappliquer les changements](/home/helena/Documents/M1TAL/images_journal_projet/git2ex4c.jpg "Exercice 4 Débloquer la situation - Exercice 4.c Troisième temps : resynchroniser le dépôt et réappliquer les changements")
+*Figure 82 Exercice 4 Débloquer la situation - Exercice 4.c Troisième temps : resynchroniser le dépôt et réappliquer les changements.*
+
+![Figure 83 : Exercice 4 Débloquer la situation - Exercice 4.d Dernier temps : resynchroniser le dépôt et réappliquer les changements](/home/helena/Documents/M1TAL/images_journal_projet/git2ex4d.jpg "Exercice 4 Débloquer la situation - Exercice 4.d Dernier temps : resynchroniser le dépôt et réappliquer les changements")
+*Figure 83 Exercice 4 Débloquer la situation - Exercice 4.d Dernier temps : resynchroniser le dépôt et réappliquer les changements.*
+
+>-Remarque : d'après le pdf **git-more-exercices-help**, on peut voir qu'il y a une proposition complémentaire pour l'exercice 4.b. On peut utiliser ***git diff*** pour "voir les modifications réelles, au cas où". 
+
+>-Exercice 5 : Mot de fin des enseignants
+— Toujours récupérer les métadonnées avant de pull.
+— On peut mettre de côté et réappliquer les changements que nous avons en conflit en quelques commandes
+rapides (avec de l’habitude, c’est très rapide).
+— Ce n’est qu’une façon de faire ! Il reste plein de cas à voir, certains seront vus au S2.
+— On verra également au S2 comment on peut gérer d’autres cas de conflits.
+
+## Exercices 1 et 2 : diaporama ***miniprojet*** - Correction du "miniprojet1" (suite 2)
+
+>**Ce que j'ai réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
