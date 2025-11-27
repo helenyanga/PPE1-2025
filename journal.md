@@ -1,5 +1,5 @@
 # Journal de bord du projet encadré
-
+---
 
 # Séance 1 : 24-09-2025
 
@@ -19,7 +19,7 @@ La commande *ls* est la seule que je connaisse.
 - Nous utiliserons aussi une autre plateforme, il s'agira de ***GitLab***.
 
 
-###**2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
+### **2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
 - Pour le projet encadré, il y a 2 phases à effectuer.
 La première consiste à choisir un mot et ses variations dans les 3 langues choisies. Pour ce faire, je dois collecter des données de ce mot à partir de **pages URLS**.
@@ -29,7 +29,7 @@ Les 50 ressources (URLS) doivent prouver que le mot est attesté. On doit faire 
 - Je pense avoir compris la **syntaxe** d’une commande et je pense pouvoir la reconnaître.
 
 
-###**3. Ce que je n'ai pas compris :**
+### **3. Ce que je n'ai pas compris :**
 
 - Dans le système de fichiers, je ne suis pas sûre de bien comprendre la différence entre le **chemin absolu** et le **chemin relatif**, et l’utilisation des ***Jokers!***.
 
@@ -40,9 +40,9 @@ Les 50 ressources (URLS) doivent prouver que le mot est attesté. On doit faire 
 - Je ne sais pas encore utiliser GitHub ni ajouter des fichiers.
 
 
-###**4. Activité(s) :**
+### **4. Activité(s) :**
 
->**Ce que j'ai réussi à faire :**
+-**Ce que j'ai réussi à faire :**
 
 >- J’ai réussi à m’inscrire sur GitHub et GitLab.
 
