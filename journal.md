@@ -6,8 +6,8 @@
 
 ### **1. Ce que j'ai compris :**
 
-- ***`GitHub`*** est une plateforme qui permet de partager en ligne et de collaborer ou encore de communiquer avec des personnes, notamment pour un projet. Nous pouvons ajouter des commentaires, se renseigner sur l’historique d'un projet, organiser ses fichiers ainsi que ses dossiers.
-On créera un **==dépôt Git==** intitulé "*journal.md*"qui permettra d'écrire notre journal de bord individuel. Dans ce journal, on y retrouvera notre progression et nos travaux lors des séances en indiquant nos réussites, les difficultés rencontrées et nos démarches pour les résoudres.
+- ***GitHub*** est une plateforme qui permet de partager en ligne et de collaborer ou encore de communiquer avec des personnes, notamment pour un projet. Nous pouvons ajouter des commentaires, se renseigner sur l’historique d'un projet, organiser ses fichiers ainsi que ses dossiers.
+On créera un **dépôt Git** intitulé "*journal.md*"qui permettra d'écrire notre journal de bord individuel. Dans ce journal, on y retrouvera notre progression et nos travaux lors des séances en indiquant nos réussites, les difficultés rencontrées et nos démarches pour les résoudres.
 
 - Pour le **projet encadré**, je dois choisir avec mes collègues (un étudiant de Nanterre et un étudiant d'Inalco), un mot et regarder ses variations dans 3 langues différentes sur Internet.
 J'ai pensé au français et à l'anglais mais, je réfléchis encore pour la dernière langue.
@@ -15,9 +15,9 @@ Je dois donc réaliser un corpus multilingue pour ce mot. En effet, chaque fichi
 Ce projet débutera à partir de la semaine 6. Il n’y aura pas d’exposé à l’oral mais un rendu écrit sera attendu.
 
 - Durant le cours, on a abordé rapidement l’histoire d’Unix avec le commencement de Bell Labs et des projets de GNU. On a également vu les définitions des mots du système de fichiers (cf. diaporama ***Unix***) dont la notion de **parent**, de **dossier** ainsi que l’**arborescence**. Enfin, nous avons survolé les commandes et nous avons commencé à créer une **clé de sécurité** (**SSH**) pour GitHub.
-La commande *ls* est la seule que je connaisse.
+La commande `ls` est la seule que je connaisse.
 
-- Nous utiliserons aussi une autre plateforme, il s'agira de ***==GitLab==***.
+- Nous utiliserons aussi une autre plateforme, il s'agira de ***GitLab***.
 
 
 ### **2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
@@ -36,7 +36,7 @@ Les 50 ressources (URLS) doivent prouver que le mot est attesté. On doit faire 
 
 - Je n'ai pas très bien compris les outils Unix.
 
-- Je n'ai pas compris les **pipelines** de l'Unix ni les “couches” d'un ordinateur mais, j'ai retenu l'essentiel. L'essentiel est que l’hardware permet de faire fonctionner l'ordinateur.
+- Je n'ai pas compris les **pipelines** de l'Unix ni les “couches” d'un ordinateur, mais j'ai retenu l'essentiel. L'essentiel est que l’hardware permet de faire fonctionner l'ordinateur.
 
 - Je ne sais pas encore utiliser GitHub ni ajouter des fichiers.
 
@@ -52,22 +52,17 @@ Les 50 ressources (URLS) doivent prouver que le mot est attesté. On doit faire 
 
 >- Je n’ai pas vraiment réussi à créer une clé de sécurité pour GitHub. J’avais peut-être oublié une étape ou j’avais mal écrit le code. Je n’ai donc pas pu ajouter la clé à GitHub en cours.
 
->- J’ai refait plusieurs fois les commandes pour décompresser le fichier zip mais, je n’ai pas réussi. Au début, j’ai placé le fichier zip dans un dossier sur le bureau de l’ordinateur et je pense que la machine ne le trouvait pas. Je l’ai alors déplacé manuellement dans le *Dossier Personnel*, puis je l’ai vérifié avec la commande *ls*, pour trouver son emplacement. J’ai de nouveau suivi les instructions mais, décompresser ce fichier fut de nouveau un échec (cf. Figure 1).
-
+>- J’ai refait plusieurs fois les commandes pour décompresser le fichier zip mais, je n’ai pas réussi. Au début, j’ai placé le fichier zip dans un dossier sur le bureau de l’ordinateur et je pense que la machine ne le trouvait pas. Je l’ai alors déplacé manuellement dans le *Dossier Personnel*, puis je l’ai vérifié avec la commande `ls`, pour trouver son emplacement. J’ai de nouveau suivi les instructions mais, décompresser ce fichier fut de nouveau un échec (cf. Figure 1).
 
 ![Figure 1 : Problèmes rencontrés lors de la décompression du fichier zip](/home/helena/Documents/M1TAL/images_journal_projet/ziptest.jpg "Problèmes rencontrés lors de la décompression du fichier zip.")
-*Figure 1 : Problèmes rencontrés lors de la décompression du fichier zip.*
 
 >>J’ai finalement réussi à décompresser le fichier zip après avoir compris mon erreur (l’url était soulignée). Par la suite, je n'ai pas réussi à comprendre comment rassembler les fichiers en formant une arborescence (cf. Figure 2).
 
-
 ![Figure 2 : Décompression du fichier zip](/home/helena/Documents/M1TAL/images_journal_projet/ziptest1.jpg "Décompression du fichier zip.")
-*Figure 2 : Décompression du fichier zip.*
-
 
 >- J’ai revu les diaporamas du premier cours pour réeffectuer la clé de sécurité sur mon terminal. J'ai suivi les instructions et je me suis aidée du lien sur la diaporama *Introduction* (la source : https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) pour réussir à créer une clé de sécurité et une clé publique pour GitHub.
 
->- A l’aide de mes notes et d’Internet, j’ai essayé de comprendre ce que c'était un "bash" et les "couches de l'ordinateur" : le **bash** va exécuter les commandes. Les **couches** permettent à l’ordinateur de fonctionner. D’abord, elle a un cœur qui lui permet de tourner (à partir d’un processeur, d’une mémoire, etc.) qu’on appelle le **Hardware**. L’ordinateur possède aussi un **système d’exploitation** (Kernel) et le **shell** permet de faire le lien entre l’utilisateur et la machine. C’est grâce au shell que nous pouvons utiliser des commandes (ex: *ls*) sur le terminal, soit la **Konsole**. Ses commandes sont les **outils Unix** que nous utiliserons dans  le terminal pour entrer des codes. En cours et à la maison, on effectuera souvent des exercices afin de se familiariser avec ces outils. Lors de l'*Exercice1*, j’ai revu les commandes comme *mkdir* et j’ai été surprise par son utilité lorsque l’on veut créer un dossier. Je me suis aperçue que ce dossier était lié avec mon ordinateur car il était également apparu dans mon dossier initial *Documents*.
+>- A l’aide de mes notes et d’Internet, j’ai essayé de comprendre ce que c'était un "bash" et les "couches de l'ordinateur" : le **bash** va exécuter les commandes. Les **couches** permettent à l’ordinateur de fonctionner. D’abord, elle a un cœur qui lui permet de tourner (à partir d’un processeur, d’une mémoire, etc.) qu’on appelle le **Hardware**. L’ordinateur possède aussi un **système d’exploitation** (Kernel) et le **shell** permet de faire le lien entre l’utilisateur et la machine. C’est grâce au shell que nous pouvons utiliser des commandes (ex: *ls*) sur le terminal, soit la **Konsole**. Ses commandes sont les **outils Unix** que nous utiliserons dans  le terminal pour entrer des codes. En cours et à la maison, on effectuera souvent des exercices afin de se familiariser avec ces outils. Lors de l'*Exercice1*, j’ai revu les commandes comme `mkdir` et j’ai été surprise par son utilité lorsque l’on veut créer un dossier. Je me suis aperçue que ce dossier était lié avec mon ordinateur car il était également apparu dans mon dossier initial *Documents*.
 
 >- Pour les pipelines de Unix, il s’agit de fabriquer des logiciels entre eux pour automatiser les tâches et produire des résultats complexes comme ***grep***, ***wc***, etc.
 
@@ -1191,7 +1186,11 @@ J'ai vérifié à l'aide de la correction ce qui posait problème dans mon code,
 ![Figure 74 : Correction du "miniprojet1" : métadonnées dans le fichier tmp."](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_28.jpg "Correction du "miniprojet1" : métadonnées dans le fichier tmp.")
 *Figure 74 : Correction du "miniprojet1" : métadonnées dans le fichier tmp.*
 
+###**5. Ce que je n’ai pas eu le temps de faire :**
 
+- Je dois terminer le "miniprojet2" et "miniprojet3" après avoir réussi à corriger le "miniprojet1".
+
+---
 # Séance 8 : 26-11-2025
 
 ###**1. Ce que j'ai compris :**
@@ -1273,7 +1272,11 @@ rapides (avec de l’habitude, c’est très rapide).
 
 >**Ce que j'ai réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
 
+###**5. Ce que je n’ai pas eu le temps de faire :**
 
+- Les images sur GitHub ne fonctionnent pas. Je dois les corriger.
+
+---
 
 
 
