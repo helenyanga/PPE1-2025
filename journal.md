@@ -1,13 +1,13 @@
 # Journal de bord du projet encadré
 
 
-# Séance 1 : [^1]24-09-2025
-[^1]: test.
+# Séance 1 : 24-09-2025
+
 
 ### **1. Ce que j'ai compris :**
 
-- ***GitHub*** est une plateforme qui permet de partager en ligne et de collaborer ou encore de communiquer avec des personnes, notamment pour un projet. Nous pouvons ajouter des commentaires, se renseigner sur l’historique d'un projet, organiser ses fichiers ainsi que ses dossiers.
-On créera un **dépôt Git** intitulé "*journal.md*"qui permettra d'écrire notre journal de bord individuel. Dans ce journal, on y retrouvera notre progression et nos travaux lors des séances en indiquant nos réussites, les difficultés rencontrées et nos démarches pour les résoudres.
+- ***`GitHub`*** est une plateforme qui permet de partager en ligne et de collaborer ou encore de communiquer avec des personnes, notamment pour un projet. Nous pouvons ajouter des commentaires, se renseigner sur l’historique d'un projet, organiser ses fichiers ainsi que ses dossiers.
+On créera un **==dépôt Git==** intitulé "*journal.md*"qui permettra d'écrire notre journal de bord individuel. Dans ce journal, on y retrouvera notre progression et nos travaux lors des séances en indiquant nos réussites, les difficultés rencontrées et nos démarches pour les résoudres.
 
 - Pour le **projet encadré**, je dois choisir avec mes collègues (un étudiant de Nanterre et un étudiant d'Inalco), un mot et regarder ses variations dans 3 langues différentes sur Internet.
 J'ai pensé au français et à l'anglais mais, je réfléchis encore pour la dernière langue.
@@ -17,13 +17,13 @@ Ce projet débutera à partir de la semaine 6. Il n’y aura pas d’exposé à 
 - Durant le cours, on a abordé rapidement l’histoire d’Unix avec le commencement de Bell Labs et des projets de GNU. On a également vu les définitions des mots du système de fichiers (cf. diaporama ***Unix***) dont la notion de **parent**, de **dossier** ainsi que l’**arborescence**. Enfin, nous avons survolé les commandes et nous avons commencé à créer une **clé de sécurité** (**SSH**) pour GitHub.
 La commande *ls* est la seule que je connaisse.
 
-- Nous utiliserons aussi une autre plateforme, il s'agira de ***GitLab***.
+- Nous utiliserons aussi une autre plateforme, il s'agira de ***==GitLab==***.
 
 
 ### **2. Ce que je pense avoir compris mais, je n'ai pas encore appliqué :**
 
 - Pour le projet encadré, il y a 2 phases à effectuer.
-La première consiste à choisir un mot et ses variations dans les 3 langues choisies. Pour ce faire, je dois collecter des données de ce mot à partir de **pages URLS**.
+La première consiste à choisir un mot et ses variations dans les 3 langues choisies. Pour ce faire, je dois collecter des données de ce mot à partir de **pages URLs**.
 Dans la deuxième phase, je dois analyser et présenter les corpus (on parle de **corpus textuel multilingue**) avec les **outils Unix**. Je dois effectuer cette démarche sur un fichier texte **HTML** pour les trois langues.
 Les 50 ressources (URLS) doivent prouver que le mot est attesté. On doit faire une analyse c’est-à-dire, regarder les contextes des mots et faire une **statistique** sur le nombre de fois qu’ils sont fréquents, et enfin, sans oublier de **comparer** les mots dans les langues. Puis, on doit réaliser un **site Web** en présentant tout le **cheminement** de notre projet (la récupération de l’IRL, le mot, comment on l’a analysé, etc).
 
