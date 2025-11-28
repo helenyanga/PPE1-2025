@@ -6,24 +6,25 @@ content-language: fr
 accept-ch: 
 last-modified: Fri, 28 Nov 2025 20:11:58 GMT
 content-type: text/html; charset=UTF-8
-age: 4349
+age: 7753
 accept-ranges: bytes
-x-cache: cp6014 hit, cp6016 miss
-x-cache-status: hit-local
-server-timing: cache;desc="hit-local", host;desc="cp6016"
+x-cache: cp6014 hit, cp6012 hit/15
+x-cache-status: hit-front
+server-timing: cache;desc="hit-front", host;desc="cp6012"
 strict-transport-security: max-age=106384710; includeSubDomains; preload
 report-to: { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
 nel: { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
 set-cookie: WMF-Last-Access=28-Nov-2025;Path=/;HttpOnly;secure;Expires=Tue, 30 Dec 2025 12:00:00 GMT
 set-cookie: WMF-Last-Access-Global=28-Nov-2025;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Tue, 30 Dec 2025 12:00:00 GMT
 set-cookie: WMF-DP=3bd;Path=/;HttpOnly;secure;Expires=Sat, 29 Nov 2025 00:00:00 GMT
-x-client-ip: 2a02:842b:8477:2601:667:41d6:af58:13de
+x-client-ip: 2a02:842b:8477:2601:a46a:37f9:4a17:799f
 cache-control: private, s-maxage=0, max-age=0, must-revalidate, no-transform
 vary: Accept-Encoding,X-Subdomain,Cookie,Authorization,User-Agent
 set-cookie: GeoIP=FR:IDF:Claye-Souilly:48.95:2.69:v4; Path=/; secure; Domain=.wikipedia.org
 set-cookie: NetworkProbeLimit=0.001;Path=/;Secure;SameSite=None;Max-Age=3600
-set-cookie: WMF-Uniq=038-6F43Uao_SXgNsot-kgK5AAAAAFvdIQss3a-zdB0f2Fyxme7vUNgyuG81Eh2P;Domain=.wikipedia.org;Path=/;HttpOnly;secure;SameSite=None;Expires=Sat, 28 Nov 2026 00:00:00 GMT
-x-request-id: 2769801c-0c26-4598-ae6c-4d3ea0f368f8
+set-cookie: WMF-Uniq=uDGLX9XYO2KtOeXXXjr0RwK5AAAAAFvdxQk2YBMZYGHbgiaqNfSRFpyXcu5u5q8H;Domain=.wikipedia.org;Path=/;HttpOnly;secure;SameSite=None;Expires=Sat, 28 Nov 2026 00:00:00 GMT
+content-length: 342125
+x-request-id: 656f75c9-bd20-4246-b44e-2cf58010dcdc
 
 <!DOCTYPE html>
 <html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="fr" dir="ltr">
