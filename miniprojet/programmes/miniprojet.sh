@@ -69,7 +69,7 @@ do
 done < $fichier_urls
 
 #Déplacement manuellement :
-echo e- "\n"
+echo -e "\n"
 echo "Quand le programme sera terminé : écrivez le chemin pour déplacer le fichier crée en sortie dans le dossier que vous souhaitez, avec la commande suivante : mv nomdufichier /chemin/"
 #Ou déplacer avec la commande suivante :
 echo "Ou avant de lancer le programme : vous pouvez également éxécuter votre fichier.sh suivi de votre premier argument qui est le chemin vers le fichier que vous souhaitez. A cela, vous ajoutez un deuxième argument à la suite qui va indiquer le chemin où vous souhaitez déplacé votre fichier de sortie généré. Cela devra prendre la forme suivante : ./nomdufichier.sh /chemin/fichier cheminrépertoirecourant/fichierdesortie (si cette option a été choisie, réexécuter le script en ajoutant le second argument)"
