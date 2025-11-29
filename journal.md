@@ -308,30 +308,24 @@ Après avoir écrit du texte ou un programme (soit un code) dans *Kate*, revenir
 
 > J'ai suivi les intructions vus en classe pour calculer le nombre de fois qu’on a "Location" dans les fichiers "ann2016". Je me suis placée dans le dossier "fichiers_ann" qui regroupait les dossiers "ann2016", "ann2017", "ann2018" et ait écrit les commandes sur la Konsole (cf. Figure 7). Ensuite, je me suis déplacée dans le dossier "ann2016" pour calculer le nombre de lignes qui comportent le mot "Location" mais, les résultats n'apparaissaient pas dans le fichier crée "output_ex1".
 
-![Figure 7 : Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash" (1).](/home/helena/Documents/M1TAL/images_journal_projet/location1.jpg "Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash". (1)")
-*Figure 7 : Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash" (1).*
+![Figure 7 : Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash" (1).](/home/helena/Documents/M1TAL/images_journal_projet/location1.jpg "Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash".")
 
 > Après avoir vérifié dans le fichier "ann2016", j'ai pu constater que le résultat s'imprimait dans un autre fichier "output_ex1" que je créais dans le dossier "ann2016". J'avais ainsi, deux fichiers "output_ex1" dont un dans le dossier "fichiers_ann" et un autre dans le dossier "ann2016". J’ai compris que je créais un autre fichier txt qui avait le même nom "output_ex1", alors pour éviter ça, j'ai déplacé le fichier "output_ex1" avec la commande `mv` dans chaque dossier "ann2016", "ann2017" et "ann2018" (cf.Figure 8, Figure 9).
 
-![Figure 8 : Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Scripts Bash" (2).](/home/helena/Documents/M1TAL/images_journal_projet/location2.jpg "Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash" (2).")
-*Figure 8 : Les commandes utilisées pour l'"Exercice 1 Un premier script" - "Scripts Bash" (2).*
+![Figure 8 : Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Scripts Bash" (2).](/home/helena/Documents/M1TAL/images_journal_projet/location2.jpg "Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash".")
 
-![Figure 9 : Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Scripts Bash" (3).](/home/helena/Documents/M1TAL/images_journal_projet/location2.jpg "Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash" (3).")
-*Figure 9 : Les commandes utilisées pour l'"Exercice 1 Un premier script" - "Scripts Bash" (3).*
+![Figure 9 : Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Scripts Bash" (3).](/home/helena/Documents/M1TAL/images_journal_projet/location2.jpg "Les commandes utilisées pour l'*Exercice 1 Un premier script* - "Script Bash".")
 
 > J'ai noté les résultats sur l'éditeur de texte *Kate* (cf. Figure 10). Je pensais avoir réussi l'exercice, mais quand on a discuté de cet exercice en cours, j'ai remarqué que le code devait se trouver sur l'éditeur *Kate* et non sur la Konsole. J'ai du refaire cet exercice avec *Kate* mais, j'ai rencontré des difficultés sur mon terminal (cf. Figure 11, 12, 13). En effet, je n'ai pas compris pourquoi le code ne fonctionnait pas, pourtant je suis dans le bon chemin. N'ayant pas compris le problème qui persistait, je n'ai pas pu avancer dans les autres exercices et je n'ai ni ajouté de tag car je n'ai pas pu réussir l'exercice du bash.
 
 ![Figure 10 : Résultats pour chaque année.](/home/helena/Documents/M1TAL/images_journal_projet/trace_ecrite_location.jpg "Résultats pour chaque année.")
 *Figure 10 : Résultats pour chaque année.*
 
-![Figure 11 : *Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (1).](/home/helena/Documents/M1TAL/images_journal_projet/comptessh1.jpg "*Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (3).")
-*Figure 11 : "Exercice 1 Un premier script" - "Scripts Bash" - en fichier ".sh" (1).*
+![Figure 11 : *Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (1).](/home/helena/Documents/M1TAL/images_journal_projet/comptessh1.jpg "*Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh".")
 
-![Figure 12 : *Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (2).](/home/helena/Documents/M1TAL/images_journal_projet/comptessh2.jpg "*Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (2).")
-*Figure 12 : "Exercice 1 Un premier script" - "Scripts Bash" - en fichier ".sh" (2).*
+![Figure 12 : *Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (2).](/home/helena/Documents/M1TAL/images_journal_projet/comptessh2.jpg "*Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh".")
 
-![Figure 13 : *Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (3).](/home/helena/Documents/M1TAL/images_journal_projet/comptessh3.jpg "*Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (3).")
-*Figure 13 : "Exercice 1 Un premier script" - "Scripts Bash" - en fichier ".sh" (3).*
+![Figure 13 : *Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh" (3).](/home/helena/Documents/M1TAL/images_journal_projet/comptessh3.jpg "*Exercice 1 Un premier script* - "Scripts Bash" - en fichier ".sh".")
 
 
 ### **5. Ce que je n’ai pas eu le temps de faire :**
@@ -359,16 +353,13 @@ Après avoir écrit du texte ou un programme (soit un code) dans *Kate*, revenir
 
 - On a fait la correction des exercices "Scripts Bash", notamment l'*Exercice 1 Un premier script*, où j'ai eu des difficultés avec mon terminal (cf. Séance 3). Après la correction en classe, j'ai refait l'*Exercice 1 Un premier script* (cf. Figure 14, 15, 16) d'où mon commit "erreur-correction1" qui a remplacé mon exercice par la correction dans le dépôt "comptes.sh", sur GitHub. Mais, sur ce site, j'ai remis mon exercice initiale au-dessus de la correction dans le fichier "comptes.sh" pour garder une trace des résultats pour chaque année (cf. Figure 11).
 
-![Figure 14 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (1).](/home/helena/Documents/M1TAL/images_journal_projet/corrige_comptessh.jpg " Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (1).")
-*Figure 14 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (1).*
+![Figure 14 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (1).](/home/helena/Documents/M1TAL/images_journal_projet/corrige_comptessh.jpg " Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash".")
 
 > On peut utiliser le **chemin absolu** à l'aide de la commande `pwd` pour que la machine écrit les résultats dans le fichier ".sh" pour l'*Exercice 1 Un premier script*.
 
-![Figure 15 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (2).](/home/helena/Documents/M1TAL/images_journal_projet/corrige_comptessh1.jpg " Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (2).")
-*Figure 15 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (1).*
+![Figure 15 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (2).](/home/helena/Documents/M1TAL/images_journal_projet/corrige_comptessh1.jpg " Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash".")
 
-![Figure 16 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (3).](/home/helena/Documents/M1TAL/images_journal_projet/corrige_comptessh2.jpg " Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (2).")
-*Figure 16 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (3).*
+![Figure 16 : Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash" (3).](/home/helena/Documents/M1TAL/images_journal_projet/corrige_comptessh2.jpg " Corrigé de l'*Exercice 1 Un premier script* - "Scripts Bash".")
 
 > `/tmp/` permet de stocker des fichiers temporaires.
 
@@ -676,48 +667,40 @@ On veut que la boucle *while* boucle sur le contenu du fichier.
 >-**Question 1** : La commande *cat* n’écrira pas le contenu, il l’affichera sur l’écran du terminal en passant par un pipeline, tandis que `echo` écrira et affichera le contenu de la ligne sur l'écran du terminal.
 >-**Question 2** : Il faut créer une variable pour ce fichier. On veut donc avoir `$urls/fr.txt` et pour celà, j'ai fait utiliser une commande `if` (cf. Figure 18).
 
-![Figure 18 : Exercice "Miniprojet" - Exercice 1 - question 2 (1).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_1.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (1).")
-*Figure 18 : Exercice "Miniprojet" - Exercice 1 - question 2 (1).*
+![Figure 18 : Exercice "Miniprojet" - Exercice 1 - question 2 (1).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_1.jpg " Exercice "Miniprojet" - Exercice 1 - question 2")
 
 >> La ligne 26 est amnigüe. Il ne reconnaît peut-être pas la variable *$1*. Il ne voit pas non plus le document/fichier "urls/fr.txt", c‘est pour cela que la machine affiche "No  such file or directory". En effet, j‘ai placé au mauvais endroit le fichier "testminiprojet". Je l’ai donc déplacer avec la commande `mv` dans le dossier "miniprojet", puis j’ai corrigé les lignes (cf. Figure 19).
 
-![Figure 19 : Exercice "Miniprojet" - Exercice 1 - question 2 (2).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_2.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (2).")
-*Figure 19 : Exercice "Miniprojet" - Exercice 1 - question 2 (2).*
+![Figure 19 : Exercice "Miniprojet" - Exercice 1 - question 2 (2).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_2.jpg " Exercice "Miniprojet" - Exercice 1 - question 2.")
 
 >> Mais, je remarque que mon code a par défaut afficher “Ce programme a un argument.” alors, pour être certaine, je fais un test du code en effaçant la condition *else* dans la première condition `if`. J'obtiens en sorite de la Konsole les deux contenus des deux `echo` comme sur l'image ci-dessous :
 
-![Figure 20 : Exercice "Miniprojet" - Exercice 1 - question 2 (3).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_3.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (3).")
-*Figure 20 : Exercice "Miniprojet" - Exercice 1 - question 2 (3).*
+![Figure 20 : Exercice "Miniprojet" - Exercice 1 - question 2 (3).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_3.jpg " Exercice "Miniprojet" - Exercice 1 - question 2.")
 
 >> Remarque : Je dois également faire faire attention aux espaces dans la condition entre crochet qui réfère à la syntaxe, sinon ca ne fonctionnera pas. On le voit avec les couleurs du code comme on peut le voir sur l’image suivante (cf. Figure 21) : 
 
-![Figure 21 : Exercice "Miniprojet" - Exercice 1 - question 2 (4).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_4.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (4).")
-*Figure 21 : Exercice "Miniprojet" - Exercice 1 - question 2 (4).*
+![Figure 21 : Exercice "Miniprojet" - Exercice 1 - question 2 (4).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_4.jpg " Exercice "Miniprojet" - Exercice 1 - question 2.")
 
 >> Je dois corriger mon programme.
 
-![Figure 22 : Exercice "Miniprojet" - Exercice 1 - question 2 (5).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_5.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (5).")
-*Figure 22 : Exercice "Miniprojet" - Exercice 1 - question 2 (5).*
+![Figure 22 : Exercice "Miniprojet" - Exercice 1 - question 2 (5).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_5.jpg " Exercice "Miniprojet" - Exercice 1 - question 2.")
 
 >> Je corrige encore mon code en changeant la variable car je l'avais mal nommée : `urls/fr.txt=$` au lieu de `fichier=$1` (nomination vérifiée avec le diaporama ***Unix***).
 
 >-**Question 2.1** : J'ai ajouté une deuxième condition `if` pour s’assurer qu’on donne bien un argument au script, si ce n'est pas le cas (d'où le *sinon*), on s’arrête (cf. Figure 23).
 D’abord, je me suis appercue que je n’étais pas dans le bon dossier alors, j'ai ajouté `cd ~/Documents/xxx/miniprojet/urls`. En effet, si je ne suis pas dans le bon dossier où il y a le fichier "fr.txt", quand je vais exécuter le script, la machine ne va pas savoir où se trouve le fichier "fr.txt". Ensuite, j’ai remodifé le code pour vérifier qu’on donne bien un argument au script :
 
-![Figure 23 : Exercice "Miniprojet" - Exercice 1 - question 2 (6).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_6.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (6).")
-*Figure 23 : Exercice "Miniprojet" - Exercice 1 - question 2 (6).*
+![Figure 23 : Exercice "Miniprojet" - Exercice 1 - question 2 (6).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_6.jpg " Exercice "Miniprojet" - Exercice 1 - question 2.")
 
 >> Dans la figure 23, la condition affiche bien les deux possibilités : si j'ai le fichier donné "fr.txt" en argument dans la Konsole et si je n'ai pas le fichier donné en argument dans la Konsole, je dois l'écrire sur le terminal. Cependant, on a une condition `else` dans la deuxième condition `if`. On voit que tout le script n'a pas été effectué en entier. En effet, la machine n'a pas pris en compte le bloc `while`.
 
 >> J’ai donc effacé `else` et j’ai laissé `exit` ainsi que le premier `echo` pour voir le résultat. J'ai également déplacé le second `echo "le fichier existe, c’est $1.”` pour l'ajouter après la deuxième condition `if`. Le but étant de dire à la machine que si la condition n'est pas validée, alors sur l'écran, la machine affichera “Erreur : le fichier '$1' n’existe pas.” et si la condition est vérifiée, elle n’affichera pas d'erreur et écrira directement “Le fichier existe, c’est '$1'.” comme on le voit dans la figure 24 :
 
-![Figure 24 : Exercice "Miniprojet" - Exercice 1 - question 2 (7).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_7.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (7).")
-*Figure 24 : Exercice "Miniprojet" - Exercice 1 - question 2 (7).*
+![Figure 24 : Exercice "Miniprojet" - Exercice 1 - question 2 (7).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_7.jpg " Exercice "Miniprojet" - Exercice 1 - question 2.")
 
 >> On voit bien dans la figure 24 que le contenu du texte a bien été lu. En effet, en créeant un test "2testminiprojet.sh", on peut s'apercevoir que si j’avais écrit le nom d’un autre fichier inexistant sur le dossier, la machine affichera "Erreur" sur l'écran du terminal comme le montre la figure 25 : 
 
-![Figure 25 : Exercice "Miniprojet" - Exercice 1 - question 2 (8).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_7.jpg " Exercice "Miniprojet" - Exercice 1 - question 2 (8).")
-*Figure 25 : Exercice "Miniprojet" - Exercice 1 - question 2 (8).*
+![Figure 25 : Exercice "Miniprojet" - Exercice 1 - question 2 (8).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q2_7.jpg " Exercice "Miniprojet" - Exercice 1 - question 2.")
 
 >> De plus, je peux dire que `$1` est donc la variable qui est donnée en argument et cette variable a pour valeur "fr.txt" soit, contient le fichier nommé "fr.txt" par exemple. Avec cette variable `$1`, je peux mettre n’importe quel fichier car elle se réfèrera au fichier que j’aurai défini.
 
@@ -762,14 +745,12 @@ D’abord, je me suis appercue que je n’étais pas dans le bon dossier alors, 
 >>J'ai utilisé le même code en lui rajoutant d'autres commandes pour imprimer chaque url avec un numéro à gauche qui commence par 1. Il s'agit ici, de noter chaque ligne par un numéro.
 J’ai crée une variable `LINE=$2` et je veux effectuer une opération qui incrémente +1 à une autre variable `LIGNECOMPTE=$3` qui permet de numéroter la ligne et le réaliser pour chaque url. C’est ce que je voulais établir (à l'aide de la source suivante : https://blog.stephane-robert.info/docs/admin-serveurs/linux/script-shell/) mais, voilà ce que j’ai obtenu :
 
-![Figure 26 : Exercice "Miniprojet" - Exercice 1 - question 3 (1).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_1.jpg " Exercice "Miniprojet" - Exercice 1 - question 3 (1).")
-*Figure 26 : Exercice "Miniprojet" - Exercice 1 - question 3 (1).*
+![Figure 26 : Exercice "Miniprojet" - Exercice 1 - question 3.](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_1.jpg " Exercice "Miniprojet" - Exercice 1 - question 3.")
 
 >>Dans la figure 26, j'ai remarqué qu'ajouter une variable *LINE=$2* n'était pas utile pour mon code car `echo${line}` permettait dejà d’afficher le contenu du fichier txt. Par ailleurs, mon code n'a pas fonctionné à cause de la syntaxe que je n'arrivais pas à construire alors, j'ai essayé avec un compteur à partir du lien suivant : https://blog.stephane-robert.info/docs/admin-serveurs/linux/script-shell/.
 Dans les cours en "Construction de données", je me suis souvenue du symbole pour la tabulation qui permettait de séparéer les valeurs. Il faut utiliser `\t`.
 
-![Figure 27 : Exercice "Miniprojet" - Exercice 1 - question 3 (2).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_2.jpg " Exercice "Miniprojet" - Exercice 1 - question 3 (2).")
-*Figure 27 : Exercice "Miniprojet" - Exercice 1 - question 3 (2).*
+![Figure 27 : Exercice "Miniprojet" - Exercice 1 - question 3.](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_2.jpg " Exercice "Miniprojet" - Exercice 1 - question 3.")
 
 >>Je n'ai pas réussi à écrire la syntaxe avec le "compteur" comme on peut le voir dans la figure 27. 
 Alors, je suis passée à la boucle `for` car cette boucle me permettra sûrement de répéter le processus plusieurs fois et c'est ce que je veux obtenir. Je veux, en effet, avoir un numéro pour chaque ligne d'url. Je me suis aider du diaporama ***Unix*** (p.42) pour établir le code suivant :
@@ -784,64 +765,52 @@ Alors, je suis passée à la boucle `for` car cette boucle me permettra sûremen
 >>-La boucle `for` se termine avec `done` ;
 >>-Au début, je n'avis pas fait attention à bien écrire le code de la boucle, car en effet, j'avais oublié `done` à la fin de la boucle `for` donc, j’obtenais "Erreur" en sortie sur la Konsole (cf.Figure 28). Après avoir corrigé les lignes, j'ai obtenu le résultat que je cherchais (cf. figure 29).
 
-![Figure 28 : Exercice "Miniprojet" - Exercice 1 - question 3 (3).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_3.jpg " Exercice "Miniprojet" - Exercice 1 - question 3 (3).")
-*Figure 28 : Exercice "Miniprojet" - Exercice 1 - question 3 (23.* 
+![Figure 28 : Exercice "Miniprojet" - Exercice 1 - question 3 (3).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_3.jpg " Exercice "Miniprojet" - Exercice 1 - question 3.")
 
-![Figure 29 : Exercice "Miniprojet" - Exercice 1 - question 3 (4).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_4.jpg " Exercice "Miniprojet" - Exercice 1 - question 3 (4).")
-*Figure 29 : Exercice "Miniprojet" - Exercice 1 - question 3 (4).* 
+![Figure 29 : Exercice "Miniprojet" - Exercice 1 - question 3 (4).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_4.jpg " Exercice "Miniprojet" - Exercice 1 - question 3.")
 
 >>Je dois maintenant ajouter les tabulations au programme : j’ai utlisé la commande *man echo* pour savoir s'il y a quelques indications pour faire fonctionner le symbole `\t` car en effet, la machine ne prenait pas en compte ce symbole comme une séparation des valeurs dans le code. J'ai donc trouvé l’option `-e` qui permet de dire à la machine d’activer l’interprétation de la barre oblique inversée comme le montre. Ensuite, je l'ai rajouté dans la commande `echo` en option afin que la machine interprète `\t` comme on peut le voir dans la figure 30 :
 
-![Figure 30 : Exercice "Miniprojet" - Exercice 1 - question 3 (5).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_5.jpg " Exercice "Miniprojet" - Exercice 1 - question 3 (5).")
-*Figure 30 : Exercice "Miniprojet" - Exercice 1 - question 3 (5).* 
+![Figure 30 : Exercice "Miniprojet" - Exercice 1 - question 3 (5).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx1q3_5.jpg " Exercice "Miniprojet" - Exercice 1 - question 3.")
 
 
 - **Exercice 2 :**
 
 >>Pour ce faire, on doit utiliser `curl` et `grep` pour rechercher les infos qu'on veut. J’ai essayé `curl -i adresseurl` mais, l'adresse comportait trop de métadonnées alors, je n’ai pas réussi à trouver l'**HTTP**. J'ai donc essayé la commande `wget` (sur Konsole):
 
-![Figure 31 : Exercice "Miniprojet" - Exercice 2 (1).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_1.jpg " Exercice "Miniprojet" - Exercice 2 (1).")
-*Figure 31 : Exercice "Miniprojet" - Exercice 2 (1).* 
+![Figure 31 : Exercice "Miniprojet" - Exercice 2 (1).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_1.jpg " Exercice "Miniprojet" - Exercice 2.")
 
 >>J’obtiens qu’une seule donnée qui m’intéresse ici, il s'agit du HTTP du premier url qui vaut **200**. Donc, le site fonctionne. Je me suis remis sur la Konsole dans le fichier *Kate* car au début, je n’y étais pas. J’essaye avec `curl -I adresseurl` que j'ai remarqué sur le diaporama ***web*** ("tiret i majuscule", équivalent à l’option "head" page 12). En effet, en effectuant cette commande, j'ai obtenu plus d’informations sur l'url tels que l'HTTP, l’**encodage de la page** , ici qui est **charset=UTF-8** pour la première page web (cf. Figure 32).
 
-![Figure 32 : Exercice "Miniprojet" - Exercice 2 (2).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_2.jpg " Exercice "Miniprojet" - Exercice 2 (2).")
-*Figure 32 : Exercice "Miniprojet" - Exercice 2 (2).*
+![Figure 32 : Exercice "Miniprojet" - Exercice 2 (2).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_2.jpg " Exercice "Miniprojet" - Exercice 2.")
 
 >>Ensuite, pour compter le nombre de mots, j’ai utilisé `cat adresseurl | grep | wc - w`, mais la commande n'a pas fonctionné. J'ai cherché dans `man grep` mais je n'ai pas trouvé d’options avec les adresses url. J’observe ma commande et remarque que `cat` est utilisé pour afficher quelque chose soit du texte qu'on a déja écrit dans un script alors, je remplace *cat* par `curl` dans `curl adresseurl | grep | wc - w`. Mais, cette commande ne fonctionne pas non plus. Alors, je fais `man curl` et je trouve l’option `-s`  (vu également dans le diaorama ***web***, page 12) qui permet de générer les métadonnées de l’url vers le terminal (cf. Figure 33) :
 
 Dans la figure 33, on peut voir que la Konsole ne nous affiche pas les réusltats qu'on veut.
 
-![Figure 33 : Exercice "Miniprojet" - Exercice 2 (3).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_3.jpg " Exercice "Miniprojet" - Exercice 2 (3).")
-*Figure 33 : Exercice "Miniprojet" - Exercice 2 (3).*
+![Figure 33 : Exercice "Miniprojet" - Exercice 2 (3).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_3.jpg " Exercice "Miniprojet" - Exercice 2.")
 
 >>Je me rends compte que `grep` est utiliser pour rechercher quelque chose de précis dans un fichier et ce que je veux est uniquement le nombre de mots, non une recherche spécifique. J'enlève donc `grep` et teste la commande suivante : `curl -s https://fr.wikipedia.org/wiki/Robot | wc - w`. J'obtiens ces résultats suivants (cf. Figure 34) :
 
-![Figure 34 : Exercice "Miniprojet" - Exercice 2 (4).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_4.jpg " Exercice "Miniprojet" - Exercice 2 (4).")
-*Figure 34 : Exercice "Miniprojet" - Exercice 2 (4).*
+![Figure 34 : Exercice "Miniprojet" - Exercice 2 (4).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_4.jpg " Exercice "Miniprojet" - Exercice 2.")
 
 >>J'ai donc le **nombre de mots** total qui est de 13904. Dans la sortie Konsole, je dois pouvoir afficher pour chaque ligne avec leurs propres résultats. Pour ce faire, je modifie le code de base (cf. Figure 35) dans la boucle `while`.
 
-![Figure 35 : Exercice "Miniprojet" - Exercice 2 (5).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_5.jpg " Exercice "Miniprojet" - Exercice 2 (5).")
-*Figure 35 : Exercice "Miniprojet" - Exercice 2 (5).*
+![Figure 35 : Exercice "Miniprojet" - Exercice 2 (5).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_5.jpg " Exercice "Miniprojet" - Exercice 2.")
 
 >> J'ajoute des commandes à l'intérieur de la condition `for` dans la `while` (cf. Figure 36).
 
-![Figure 36 : Exercice "Miniprojet" - Exercice 2 (6).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_6.jpg " Exercice "Miniprojet" - Exercice 2 (6).")
-*Figure 36 : Exercice "Miniprojet" - Exercice 2 (6).*
+![Figure 36 : Exercice "Miniprojet" - Exercice 2 (6).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_6.jpg " Exercice "Miniprojet" - Exercice 2.")
 
 >>Etant bloquée sur le code, je réalise manuellement (sans la boucle `for`) la même commande pour les 10 urls comme en figure 37 :
 
-![Figure 37 : Exercice "Miniprojet" - Exercice 2 (7).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_7.jpg " Exercice "Miniprojet" - Exercice 2 (67.")
-*Figure 37 : Exercice "Miniprojet" - Exercice 2 (7).*
+![Figure 37 : Exercice "Miniprojet" - Exercice 2 (7).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_7.jpg " Exercice "Miniprojet" - Exercice 2.")
 
 >> Ici, on voit que j'ai un problème avec le token parenthèse car en effet, la Konsole pense qu‘il s agit d’un caractère spécial en bash. Pour éviter ca, j’ajoute les guillemets et ca fonctionne comme on le voit sur la figure 38. Après avoir réaliser manuellement, j'obtiens une répétition de chaque ligne (cf. Figure 39) et je me rends compte que ce n'est pas ce que je voulais obtenir.
  
-![Figure 38 : Exercice "Miniprojet" - Exercice 2 (8).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_8.jpg " Exercice "Miniprojet" - Exercice 2 (8).")
-*Figure 38 : Exercice "Miniprojet" - Exercice 2 (8).*
+![Figure 38 : Exercice "Miniprojet" - Exercice 2 (8).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_8.jpg " Exercice "Miniprojet" - Exercice 2.")
 
-![Figure 39 : Exercice "Miniprojet" - Exercice 2 (9).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_9.jpg " Exercice "Miniprojet" - Exercice 2 (9).")
-*Figure 39 : Exercice "Miniprojet" - Exercice 2 (9).*
+![Figure 39 : Exercice "Miniprojet" - Exercice 2 (9).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_9.jpg " Exercice "Miniprojet" - Exercice 2.")
 
 >>J’ai compris comment faire pour que le fichier "fr.txt" soit détecter par la machine, je dois mettre le **chemin en argument** dans la Konsole (cf. Figure 39) : 
 
@@ -849,8 +818,7 @@ Dans la figure 33, on peut voir que la Konsole ne nous affiche pas les réusltat
 
 >>Maintenant, je vais compléter le code pour qu'il ajoute les 3 informations qui ous intéressent pour chaque ligne. Sur la figure 40, la machine n’effectue pas les commandes `curl` mais, elle affiche le texte dans la commande :
 
-![Figure 40 : Exercice "Miniprojet" - Exercice 2 (10).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_10.jpg " Exercice "Miniprojet" - Exercice 2 (10).")
-*Figure 40 : Exercice "Miniprojet" - Exercice 2 (10).*
+![Figure 40 : Exercice "Miniprojet" - Exercice 2 (10).](/home/helena/Documents/M1TAL/images_journal_projet/MpEx2_10.jpg " Exercice "Miniprojet" - Exercice 2.")
 
 >>Je n'ai pas réussi à terminé le code pour qu'il génère les 3 informations rechercheés pour chaque url (cf. "3. Ce que je j'ai pas compris - Séance 5").
 
@@ -1233,11 +1201,9 @@ J'ai vérifié à l'aide de la correction ce qui posait problème dans mon code,
 
 >-Remarque : au début, j'avais ajouté du texte "test test test" dans le dépôt "git-along" sur l'interface, puis je l'ai poussé sur le terminal. Mais, je l'ai supprimé pour effectuer les instructions demandées dans l'exercice.
 
-![Figure 77: Exercice 3 Créer un conflit - Exercice 3.b Simuler le commit d’une autre personne (1)](/home/helena/Documents/M1TAL/images_journal_projet/git2ex3b.jpg "Exercice 3 Créer un conflit - Exercice 3.b Simuler le commit d’une autre personne (1)")
-*Figure 77 Exercice 3 Créer un conflit - Exercice 3.b Simuler le commit d’une autre personne (1).*
+![Figure 77: Exercice 3 Créer un conflit - Exercice 3.b Simuler le commit d’une autre personne (1)](/home/helena/Documents/M1TAL/images_journal_projet/git2ex3b.jpg "Exercice 3 Créer un conflit - Exercice 3.b Simuler le commit d’une autre personne")
 
-![Figure 78: Exercice 3 Créer un conflit - Exercice 3.a Simuler le commit d’une autre personne (2)](/home/helena/Documents/M1TAL/images_journal_projet/git2ex3agit.jpg "Exercice 3 Créer un conflit - Exercice 3.a Simuler le commit d’une autre personne (2)")
-*Figure 78 Exercice 3 Créer un conflit - Exercice 3.a Simuler le commit d’une autre personne (2).*
+![Figure 78: Exercice 3 Créer un conflit - Exercice 3.a Simuler le commit d’une autre personne (2)](/home/helena/Documents/M1TAL/images_journal_projet/git2ex3agit.jpg "Exercice 3 Créer un conflit - Exercice 3.a Simuler le commit d’une autre personne.")
 
 >-Dans l'exercice 4.a, on va garder tous les changements en annulant la mise-en-place. Donc on va récupérer les métadonnées du dépôt "git-along" en ligne avec la commande `git fetch` (cf. figure 79). Ensuite, on va utiliser la commande `git status` pour que la machine nous montre de combien de commits on est en avance. Enfin, on termine par la commande `git reset` pour retourner au dernier commit en commun entre le dépôt en ligne et le dossier locale (dans la machine). On ajoutera à la commade `git reset` le `HEAD~2` pour indiquer à la machine qu'on a plus de deux commits de différence : `git reset HEAD~2`(cf. figure 80).
 Pour l'exercice 4.b, on va mettre de côté les modifications en ligne dans un premier temps, avant de les récupérer. Pour cela, on utilise la commande `git status` pour voir si tout est en ordre puis, on fait la commande `git stash push` suivit de l'option `-m` (`git stash push -m "ecriredutexte"`) pour mettre de côté les modifications (cf. figure 81).
@@ -1249,20 +1215,15 @@ Dans l'exercice 4.c (cf. figure 82) :
 
 >-Dans l'exercice 4.d : on veut montrer/afficher les changements appliqués avec le dernier `stash` pour voir s'il s'agit bien des mêmes changements qu'on a fait précédemment. Pour cela, on aura besoin de la commande `git stash show -p` (d'après le diaporama avec "help", on peut utiliser `-p` suivi du nombre de changement). Ensuite, il faut utiliser la commande `git stash apply` puis, `git stash pop` pour  appliquer les changements dans le stash. Et enfin, suivre les procédures de bases pour envoyer les changements effectués dans la machine vers le GitHub (cf. figure 83).
 
-![Figure 79: Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (1)](/home/helena/Documents/M1TAL/images_journal_projet/git2ex4a1.jpg "Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (1)")
-*Figure 79 Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (1).*
+![Figure 79: Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (1)](/home/helena/Documents/M1TAL/images_journal_projet/git2ex4a1.jpg "Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit ")
 
-![Figure 80: Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (2)](/home/helena/Documents/M1TAL/images_journal_projet/git2ex4a2.jpg "Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (2)")
-*Figure 80 Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (2).*
+![Figure 80: Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit (2)](/home/helena/Documents/M1TAL/images_journal_projet/git2ex4a2.jpg "Exercice 4 Débloquer la situation - Exercice 4.a Premier temps : annuler le commit")
 
 ![Figure 81: Exercice 4 Débloquer la situation - Exercice 4.b Deuxième temps : mettre ses modifications de coté](/home/helena/Documents/M1TAL/images_journal_projet/git2ex4b.jpg "Exercice 4 Débloquer la situation - Exercice 4.b Deuxième temps : mettre ses modifications de coté")
-*Figure 81 Exercice 4 Débloquer la situation - Exercice 4.b Deuxième temps : mettre ses modifications de coté.*
 
 ![Figure 82: Exercice 4 Débloquer la situation - Exercice 4.c Troisième temps : resynchroniser le dépôt et réappliquer les changements](/home/helena/Documents/M1TAL/images_journal_projet/git2ex4c.jpg "Exercice 4 Débloquer la situation - Exercice 4.c Troisième temps : resynchroniser le dépôt et réappliquer les changements")
-*Figure 82 Exercice 4 Débloquer la situation - Exercice 4.c Troisième temps : resynchroniser le dépôt et réappliquer les changements.*
 
 ![Figure 83 : Exercice 4 Débloquer la situation - Exercice 4.d Dernier temps : resynchroniser le dépôt et réappliquer les changements](/home/helena/Documents/M1TAL/images_journal_projet/git2ex4d.jpg "Exercice 4 Débloquer la situation - Exercice 4.d Dernier temps : resynchroniser le dépôt et réappliquer les changements")
-*Figure 83 Exercice 4 Débloquer la situation - Exercice 4.d Dernier temps : resynchroniser le dépôt et réappliquer les changements.*
 
 >-Remarque : d'après le pdf `git-more-exercices-help`, on peut voir qu'il y a une proposition complémentaire pour l'exercice 4.b. On peut utiliser `git diff` pour "voir les modifications réelles, au cas où".
 
@@ -1276,6 +1237,16 @@ rapides (avec de l’habitude, c’est très rapide).
 ## Exercices 1 et 2 : diaporama ***miniprojet*** - Correction du "miniprojet1" (suite 2)
 
 >**Ce que j'ai réussi à faire, les problèmes rencontrés et comment ai-je procédé pour les résoudres :**
+
+>J'ai refait le code du fichier "miniprojet.sh" car je me suis rendue compte que la première ligne commencçait par 0 dans le fichier (tableau) "fichier_data.tsv" (cf. figure 84 et 85).
+
+![Figure 84 : Fin correction du "miniprojet1".](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_tsv_url1.jpg "Correction du "miniprojet1"."")
+
+![Figure 85 : Fin correction du "miniprojet1".](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_tsv_url2.jpg "Correction du "miniprojet1"."")
+
+
+
+
 
 ###**5. Ce que je n’ai pas eu le temps de faire :**
 
