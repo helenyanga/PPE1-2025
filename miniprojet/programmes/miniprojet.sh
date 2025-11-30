@@ -1,5 +1,13 @@
 #!/usr/bin/bash
 
+#Déplacement manuellement :
+echo "Quand le programme sera terminé : écrivez le chemin pour déplacer le fichier crée en sortie dans le dossier que vous souhaitez, avec la commande suivante : mv nomdufichier /chemin/"
+echo "Ou déplacer avec la commande suivante :"
+echo "avant de lancer le programme : vous pouvez également éxécuter votre fichier.sh suivi de votre premier argument qui est le chemin vers le fichier que vous souhaitez. A cela, vous ajoutez un deuxième argument à la suite qui va indiquer le chemin où vous souhaitez déplacer votre fichier de sortie généré. Cela devra prendre la forme suivante : ./nomdufichier.sh /chemin/fichier chemin/fichierdesortie (si cette option a été choisie, réexécuter le script en ajoutant le second argument)"
+echo "Exemple : ./miniprojet.sh /chemin_absolu_ou_relatif/fichier ../tableaux/fichier_data.tsv"
+echo -e "\n"
+echo "On peut aussi transformer un fichier en un autre fichier : fichier_sortie > fichier_tsv"
+
 #Condition qui vérifie si la variable argument est différent de 1, c'est-à-dire, si un argument est donné.
 
 #On vérifie qu'on a un argument c'est-à-dire, que le fichier est bien un argument :
@@ -94,15 +102,4 @@ echo "   </table>
     </body>
 </html>"
 
-
-#Déplacement manuellement :
-#Quand le programme sera terminé : écrivez le chemin pour déplacer le fichier crée en sortie dans le dossier que vous souhaitez, avec la commande suivante : mv nomdufichier /chemin/
-
-#Ou déplacer avec la commande suivante :
-#avant de lancer le programme : vous pouvez également éxécuter votre fichier.sh suivi de votre premier argument qui est le chemin vers le fichier que vous souhaitez. A cela, vous ajoutez un deuxième argument à la suite qui va indiquer le chemin où vous souhaitez déplacer votre fichier de sortie généré. Cela devra prendre la forme suivante : ./nomdufichier.sh /chemin/fichier chemin/fichierdesortie (si cette option a été choisie, réexécuter le script en ajoutant le second argument)"
-#"Exemple : ./miniprojet.sh /chemin_absolu_ou_relatif/fichier ../tableaux/fichier_data.tsv"
-
-#On peut aussi transformer un fichier en un autre fichier :
-#fichier_sortie > fichier_tsv
-
-#rm fichier_data.tmp
+rm fichier_data.tmp

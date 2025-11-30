@@ -1,8 +1,8 @@
 Numéro_de_la_ligne	HTTP 	Encodage_Charset	Nombre_de_mots > envoyer_dans_le_fichier_en_sortie
 1	https://fr.wikipedia.org/wiki/Robot	200	UTF-8	5803
-2	https://fr.wikipedia.org/wiki/Robot_de_cuisine	200	UTF-8	1280
+2	https://fr.wikipedia.org/wiki/Robot_de_cuisine	200	UTF-8	1282
 3	fr.wikipedia.org/wiki/Robot_d%27indexation	200	UTF-8	1901
-4	https://fr.wikipedia.org/wiki/Bot_informatique	200	UTF-8	2702
+4	https://fr.wikipedia.org/wiki/Bot_informatique	200	UTF-8	2704
 5	https://fr.wikipedia.org/wiki/Atlas_(robot)	200	UTF-8	1286
 6	https://roboty.magistry.fr	200	rien	64
 7	https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)	404	UTF-8	543
