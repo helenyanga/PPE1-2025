@@ -1245,10 +1245,37 @@ rapides (avec de l’habitude, c’est très rapide).
 ![Figure 85 : Fin correction du "miniprojet1".](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_tsv_url2.jpg "Correction du "miniprojet1"."")
 
 
+## Exercice "transformer la sortie tabulaire en HTML" : diaporama ***htmpl*** - miniprojet2
+
+- On veut transformer notre tableau des métadonnées des urls en HTML : la page doit contenir une entête et un corps contenant le tableau avec une ligne d'entête et les résultats pour chaque URL. Le fichier HTML doit être écrit dans un fichier .html qui devra être lisible par un navigateur web quelconque.
+- On ajoute la balise ***html*** (sans oublier de rajouter la balise de fermeture à la fin en ajoutant la barre oblique "/") puis, la balise ***head*** (tête) pour le contenir les métadonnées. La balise *head* est placé entre la balise *html* et le corps *body* (selon la source suivante : https://www.w3schools.com/html/html_head.asp). En cherchant sur ce même site (w3schools), j'ai trouvé un exemple pour faire un tableau à l'aide des balises HTML (voir figure 86).
+
+![Figure 86 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html1.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+- Ensuite, j'ai suivi les instructions en définissant à quoi correspondait chaque balise avec le résultat sur le navigateur web pour créer un tableau (cf. figure 87).
+
+![Figure 87 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html2.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+- J'ai remplacé les valeurs du tableau en exemple sur le site par les valeurs de mon code. Mais, quand j'ai lancé le programme, je n'ai pas compris pourquoi la machine affichait en sortie sur le terminal que la syntaxe n'était pas correct, pourtant le fichier "test.html" fonctionnait bien. A l'aide de la correction, j'ai compris qu'il fallait rajouter les `echo` pour que le machine affiche le code HTML et faire attention à la hiérarchie des balises (cf. figure 88).
+
+![Figure 88 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html3.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+- Je l'ai alors corrigé (cf. figure 89, ).
+
+![Figure 89 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html4.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+![Figure 90 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html5.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+![Figure 91 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html6.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+![Figure 92 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html7.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+![Figure 93 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html8.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+- Enfin, on voit bien que le fichier "fichier_data.tmp" disparaît dans le répertoire où on était, c'est-à-dire dans le dossier "programmes".
 
 
-
-###**5. Ce que je n’ai pas eu le temps de faire :**
+### **5. Ce que je n’ai pas eu le temps de faire :**
 
 - Les images sur GitHub ne fonctionnent pas. Je dois les corriger.
 
