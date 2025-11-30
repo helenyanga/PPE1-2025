@@ -1260,7 +1260,7 @@ rapides (avec de l’habitude, c’est très rapide).
 
 ![Figure 88 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html3.jpg "Exercice "miniprojet2" - tableau HTML."")
 
-- Je l'ai alors corrigé (cf. figure 89, ).
+- Je l'ai alors corrigé (cf. figures 89, 90, 91, 92 et 93).
 
 ![Figure 89 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html4.jpg "Exercice "miniprojet2" - tableau HTML."")
 
@@ -1274,10 +1274,29 @@ rapides (avec de l’habitude, c’est très rapide).
 
 - Enfin, on voit bien que le fichier "fichier_data.tmp" disparaît dans le répertoire où on était, c'est-à-dire dans le dossier "programmes".
 
+- J'ai fais quelques modifications sur le code car j'ai constaté qu'il y avait encore des erreurs avec la hiérarchie des balises (cf. figure 93) par exemple. J'ai aussi ajouté en argument une troisième variable "fichier_html" et deux chevrons vers le fichier html, à côté de chaque balise "tr", afin de générer un fichier html (cf. figures 94, 95, 96, 97, 98).
+Les balises, d'après la source suivante : https://www.w3schools.com/html/html_tables.asp
+>- <table> : permet de créer une table
+>- <th> : permet de définir une cellule d'en-tête dans un tableau
+>- <tr> : il crée une ligne dans le tableau
+>- <td> : il permet de créer une cellule dans le tableau
+
+![Figure 94 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html9.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+![Figure 95 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html10.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+![Figure 96 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html11.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+![Figure 97 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html12.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+![Figure 98 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html13.jpg "Exercice "miniprojet2" - tableau HTML."")
+
 
 ### **5. Ce que je n’ai pas eu le temps de faire :**
 
 - Les images sur GitHub ne fonctionnent pas. Je dois les corriger.
+
+
 
 ---
 
