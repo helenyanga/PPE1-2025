@@ -1,30 +1,30 @@
 HTTP/2 200 
-date: Sun, 30 Nov 2025 16:41:00 GMT
+date: Sun, 30 Nov 2025 21:37:52 GMT
 server: ATS/9.2.11
 x-content-type-options: nosniff
 content-language: fr
 accept-ch: 
 last-modified: Fri, 28 Nov 2025 20:11:58 GMT
 content-type: text/html; charset=UTF-8
-age: 7209
+age: 4735
 accept-ranges: bytes
-x-cache: cp6014 hit, cp6015 hit/10
+x-cache: cp6014 miss, cp6014 hit/43
 x-cache-status: hit-front
-server-timing: cache;desc="hit-front", host;desc="cp6015"
+server-timing: cache;desc="hit-front", host;desc="cp6014"
 strict-transport-security: max-age=106384710; includeSubDomains; preload
 report-to: { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
 nel: { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
 set-cookie: WMF-Last-Access=30-Nov-2025;Path=/;HttpOnly;secure;Expires=Thu, 01 Jan 2026 12:00:00 GMT
 set-cookie: WMF-Last-Access-Global=30-Nov-2025;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Thu, 01 Jan 2026 12:00:00 GMT
 set-cookie: WMF-DP=a1c;Path=/;HttpOnly;secure;Expires=Mon, 01 Dec 2025 00:00:00 GMT
-x-client-ip: 2a02:842b:8477:2601:b4c5:ff21:1350:8342
+x-client-ip: 2a02:842b:8477:2601:953e:fc3e:555f:e8e0
 cache-control: private, s-maxage=0, max-age=0, must-revalidate, no-transform
 vary: Accept-Encoding,X-Subdomain,Cookie,Authorization,User-Agent
 set-cookie: GeoIP=FR:IDF:Claye-Souilly:48.95:2.69:v4; Path=/; secure; Domain=.wikipedia.org
 set-cookie: NetworkProbeLimit=0.001;Path=/;Secure;SameSite=None;Max-Age=3600
-set-cookie: WMF-Uniq=NtIepuYvtjUgrCEryjDTqgK7AAAAAFvdNzm-5UNrlo-0ewcCQ1nIc_eRCOiq9ek9;Domain=.wikipedia.org;Path=/;HttpOnly;secure;SameSite=None;Expires=Mon, 30 Nov 2026 00:00:00 GMT
+set-cookie: WMF-Uniq=G9ePryNRfDiDROD6Vx2KjgK7AAAAAFvdUqz4OrfVDFb9XXrWUPHCLh3_Wiw73fAY;Domain=.wikipedia.org;Path=/;HttpOnly;secure;SameSite=None;Expires=Mon, 30 Nov 2026 00:00:00 GMT
 content-length: 342125
-x-request-id: 10930b54-0075-4f45-a084-f195b3764f76
+x-request-id: 32351d02-76f4-4fd7-9dbe-7220bea63a32
 
 <!DOCTYPE html>
 <html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="fr" dir="ltr">
