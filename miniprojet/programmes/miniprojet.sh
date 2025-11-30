@@ -1,5 +1,13 @@
 #!/usr/bin/bash
 
+echo -e "\n"
+#Déplacement manuellement :
+echo "Quand le programme sera terminé : écrivez le chemin pour déplacer le fichier crée en sortie dans le dossier que vous souhaitez, avec la commande suivante : mv nomdufichier /chemin/"
+#Ou déplacer avec la commande suivante :
+echo "Ou avant de lancer le programme : vous pouvez également éxécuter votre fichier.sh suivi de votre premier argument qui est le chemin vers le fichier que vous souhaitez. A cela, vous ajoutez un deuxième argument à la suite qui va indiquer le chemin où vous souhaitez déplacé votre fichier de sortie généré. Cela devra prendre la forme suivante : ./nomdufichier.sh /chemin/fichier cheminrépertoirecourant/fichierdesortie (si cette option a été choisie, réexécuter le script en ajoutant le second argument)"
+echo "Exemple : ./miniprojet.sh /home/name/Documents/miniprojet/urls/fr.txt ../tableaux/fichier_data.tsv"
+echo -e "\n"
+
 #Condition qui vérifie si la variable argument est différent de 1, c'est-à-dire, si un argument est donné.
 
 #On vérifie qu'on a un argument c'est-à-dire, que le fichier est bien un argument :
@@ -48,6 +56,19 @@ echo "On doit avoir comme résultat :"
 echo -e "Numéro_de_la_ligne\tHTTP \tEncodage_Charset\tNombre_de_mots > envoyer_dans_le fichier_en_sortie : "$2""
 echo -e "Numéro_de_la_ligne\tHTTP \tEncodage_Charset\tNombre_de_mots > envoyer_dans_le_fichier_en_sortie" > "$fichier_sortie"
 
+echo "<html>
+    <head>
+        <meta charset="UTF=-8"/>
+            </head>
+                <body>
+                    <table>
+                        <tr>
+                            <th>Numéro_de_la_ligne</th>
+                            <th>HTTP</th>
+                            <th>tEncodage_Charset</th>
+                            <th>tNombre_de_mots</th>
+                        </tr>"
+
 N=1
 #On veut lire ligne par ligne le contenu du fichier.
 while read -r line
@@ -64,15 +85,21 @@ do
 
     nb_mots=$(cat ./.fichier_data.tmp | lynx -dump -nolist -stdin $line | wc -w)
 
-    echo -e "${N}\t${http_code}\t${content_type}\t${nb_mots}" >> $fichier_sortie #Les chevrons permettent d'envoyer les métadonnées dans le fichier de sortie "tsv".
+    echo -e "${N}\t${line}\t${http_code}\t${content_type}\t${nb_mots}" >> $fichier_sortie #Les chevrons permettent d'envoyer les métadonnées dans le fichier de sortie "tsv".
     N=$( expr $N + 1 )
+
+	echo -e "			<tr>
+                            <td>$N</td>
+                            <td>$line</td>
+                            <td>$http_code</td>
+                            <td>$content_type</td>
+                            <td>nb_mots</td>
+                        </tr>"
+
 done < $fichier_urls
 
-#Déplacement manuellement :
-echo -e "\n"
-echo "Quand le programme sera terminé : écrivez le chemin pour déplacer le fichier crée en sortie dans le dossier que vous souhaitez, avec la commande suivante : mv nomdufichier /chemin/"
-#Ou déplacer avec la commande suivante :
-echo "Ou avant de lancer le programme : vous pouvez également éxécuter votre fichier.sh suivi de votre premier argument qui est le chemin vers le fichier que vous souhaitez. A cela, vous ajoutez un deuxième argument à la suite qui va indiquer le chemin où vous souhaitez déplacé votre fichier de sortie généré. Cela devra prendre la forme suivante : ./nomdufichier.sh /chemin/fichier cheminrépertoirecourant/fichierdesortie (si cette option a été choisie, réexécuter le script en ajoutant le second argument)"
-echo "Exemple : ./miniprojet.sh /home/name/Documents/miniprojet/urls/fr.txt ../tableaux/fichier_data.tsv"
+echo "		     </table>
+            </body>
+        </html>"
 
-
+rm fichier_data.tmp
