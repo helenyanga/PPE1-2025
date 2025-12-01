@@ -55,7 +55,7 @@ fichier_sortie=$2
 fichier_html=$3
 echo "On doit avoir comme résultat :"
 echo -e "Numéro_de_la_ligne\tLien\tHTTP \tEncodage_Charset\tNombre_de_mots > envoyer_dans_le fichier_en_sortie : "$2""
-echo -e "Numéro_de_la_ligne\tHTTP \tEncodage_Charset\tNombre_de_mots > envoyer_dans_le_fichier_en_sortie" > "$fichier_sortie"
+echo -e "Numéro_de_la_ligne\tLien\tHTTP \tEncodage_Charset\tNombre_de_mots > envoyer_dans_le_fichier_en_sortie" > "$fichier_sortie"
 
 echo "<html>
     <head>
@@ -65,6 +65,7 @@ echo "<html>
         <table>
             <tr>
                 <th>Numéro_de_la_ligne</th>
+                <th>Lien</th>
                 <th>HTTP</th>
                 <th>Encodage_Charset</th>
                 <th>Nombre_de_mots</th>
@@ -87,11 +88,11 @@ do
     nb_mots=$(cat ./.fichier_data.tmp | lynx -dump -nolist -stdin $line | wc -w)
 
     echo -e " <tr>
-                <td>$N</td>
-                <td>$line</td>
-                <td>$http_code</td>
-                <td>$content_type</td>
-                <td>$nb_mots</td>
+                  <td>$N</td>
+                  <td>$line</td>
+                  <td>$http_code</td>
+                  <td>$content_type</td>
+                  <td>$nb_mots</td>
               </tr>" >> "$fichier_html"
 
     echo -e "${N}\t${line}\t${http_code}\t${content_type}\t${nb_mots}" >> $fichier_sortie #Les chevrons permettent d'envoyer les métadonnées dans le fichier de sortie "tsv".
