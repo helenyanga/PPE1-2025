@@ -1245,7 +1245,7 @@ rapides (avec de l’habitude, c’est très rapide).
 ![Figure 85 : Fin correction du "miniprojet1".](/home/helena/Documents/M1TAL/images_journal_projet/MpCorrect_tsv_url2.jpg "Correction du "miniprojet1"."")
 
 
-## Exercice "transformer la sortie tabulaire en HTML" : diaporama ***htmpl*** - miniprojet2
+## Exercice "transformer la sortie tabulaire en HTML" : diaporama ***html*** - miniprojet2
 
 - On veut transformer notre tableau des métadonnées des urls en HTML : la page doit contenir une entête et un corps contenant le tableau avec une ligne d'entête et les résultats pour chaque URL. Le fichier HTML doit être écrit dans un fichier .html qui devra être lisible par un navigateur web quelconque.
 - On ajoute la balise ***html*** (sans oublier de rajouter la balise de fermeture à la fin en ajoutant la barre oblique "/") puis, la balise ***head*** (tête) pour le contenir les métadonnées. La balise *head* est placé entre la balise *html* et le corps *body* (selon la source suivante : https://www.w3schools.com/html/html_head.asp). En cherchant sur ce même site (w3schools), j'ai trouvé un exemple pour faire un tableau à l'aide des balises HTML (voir figure 86).
@@ -1276,10 +1276,11 @@ rapides (avec de l’habitude, c’est très rapide).
 
 - J'ai fais quelques modifications sur le code car j'ai constaté qu'il y avait encore des erreurs avec la hiérarchie des balises (cf. figure 93) par exemple. J'ai aussi ajouté en argument une troisième variable "fichier_html" et deux chevrons vers le fichier html, à côté de chaque balise "tr", afin de générer un fichier html (cf. figures 94, 95, 96, 97, 98).
 Les balises, d'après la source suivante : https://www.w3schools.com/html/html_tables.asp
->- <table> : permet de créer une table
->- <th> : permet de définir une cellule d'en-tête dans un tableau
->- <tr> : il crée une ligne dans le tableau
->- <td> : il permet de créer une cellule dans le tableau
+
+>- `<table>` : permet de créer une table
+>- `<th>` : permet de définir une cellule d'en-tête dans un tableau
+>- `<tr>` : il crée une ligne dans le tableau
+>- `<td>` : il permet de créer une cellule dans le tableau
 
 ![Figure 94 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html9.jpg "Exercice "miniprojet2" - tableau HTML."")
 
@@ -1291,6 +1292,28 @@ Les balises, d'après la source suivante : https://www.w3schools.com/html/html_t
 
 ![Figure 98 : Exercice "miniprojet2" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/tab_html13.jpg "Exercice "miniprojet2" - tableau HTML."")
 
+## Exercice "Utiliser Bulma pour sur notre HTML" : diaporama ***html_css*** - miniprojet3
+
+- Sur ma machine, je copie le fichier "index.html" (dans le dossier PPE1-2526 des enseignants) puis l'ajoute à mon dossier PPE1-2025. Ensuite, je push sur GitHub. Je copie par la suite l'adresse ssh (aller sur le bouton vert `< > Code`, puis 'SSH') et effectue la commande suivante pour créer une copie d'un web url sur Internet : `git clone sshcopié` (cf. figure 99).
+
+![Figure 99 : Exercice "miniprojet3" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/Mp3_pagegit2.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+- J'ai d'abord crée une page git à l'aide du disporama "html_css" des professeurs (cf. figure 100).
+
+![Figure 100 : Exercice "miniprojet3" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/Mp3_pagegit1.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+- J'ai regardé Bulma (https://bulma.io/documentation/features/skeletons/) et le GitHub des enseignants () et ait recopié et collé les codes pour voir le résultat généré sur le navigateur web. Ensuite, je les ai appliqué sur le code de la page "index.html" (cf. figure 101) et la page "tableau_data.html" (cf. figure 102). A l'aide des codes sur leur GitHub, j'ai pu observer la hiérarchie des balises.
+
+![Figure 101 : Exercice "miniprojet3" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/Mp3_pagegit4.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+![Figure 102 : Exercice "miniprojet3" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/Mp3_pagegit3.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+- Remarque : j'avais oublié de corriger dans le fichier "fr.txt" l'erreur avec les URLs (cf. séance 7). Dans la figure 102, j'ai également remarqué que le tableau ne se fermait pas correctement et j'ai pu constaté que les résultats dans mon tableau tsv étaient décallés à cause du rajout du "Lien". J'ai de nouveau corrigé les exercices du miniprojet (cf. figure 103).
+
+![Figure 103 : Exercice "miniprojet3" - tableau HTML.](/home/helena/Documents/M1TAL/images_journal_projet/Mp3_pagegit5.jpg "Exercice "miniprojet2" - tableau HTML."")
+
+- Lien de la page : https://helenyanga.github.io/PPE1-2025/
+
 
 ### **5. Ce que je n’ai pas eu le temps de faire :**
 
@@ -1299,6 +1322,7 @@ Les balises, d'après la source suivante : https://www.w3schools.com/html/html_t
 
 
 ---
+
 
 
 
